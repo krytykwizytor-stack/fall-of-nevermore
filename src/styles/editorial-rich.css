@@ -50,3 +50,17 @@
 .article-head::before{mask-image:linear-gradient(90deg,transparent 10%,#000 100%);opacity:.055}
 .article-body::before{display:none!important}
 @media(max-width:600px){.chapter-section{margin-bottom:35px}.chapter-section+.chapter-section{padding-top:27px}.chapter-section:first-child p:first-of-type:first-letter{font-size:68px}}
+
+/* Liber Secundus: chapter-specific engraving and a distinct Crowe family section. */
+.article--swiat .article-head{isolation:isolate}
+.article--swiat .article-head::before{content:"";position:absolute;inset:0 -2% 0 32%;width:auto;height:auto;background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_19.jpeg");background-position:right center;background-size:contain;background-repeat:no-repeat;opacity:.07;filter:grayscale(1);mix-blend-mode:multiply;mask-image:radial-gradient(ellipse at 75% 48%,#000 12%,transparent 80%);pointer-events:none;z-index:-1}
+.article--swiat .chapter-section:nth-child(2){isolation:isolate}
+.article--swiat .chapter-section:nth-child(2)::after{content:"";position:absolute;right:-50px;top:38px;width:155px;height:260px;background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_16.jpeg") center/contain no-repeat;opacity:.045;filter:grayscale(1);mix-blend-mode:multiply;mask-image:linear-gradient(90deg,transparent,#000 60%,transparent);pointer-events:none;z-index:-1}
+.article--swiat .chapter-section--crowe{border-top:double 3px rgba(110,81,71,.43);border-bottom:double 3px rgba(110,81,71,.32);padding:45px 25px 22px;margin:0 -12px 52px;background:linear-gradient(120deg,rgba(119,84,74,.055),transparent 75%);position:relative}
+.article--swiat .chapter-section--crowe::before{content:"✥";position:absolute;top:-20px;left:50%;transform:translateX(-50%);padding:0 18px;background:#e9e0d3;color:#815f58;font:25px 'Cormorant Garamond',serif}
+.article--swiat .chapter-section--crowe h2::before{content:"DOMUS CROWE";display:block;font:600 10px 'DM Sans',sans-serif;letter-spacing:.24em;color:#8b6a57;margin-bottom:12px}
+.article--swiat .chapter-section--crowe h2{color:#4e3541}
+.article--swiat .chapter-section--crowe p:first-of-type:first-letter{float:none;font:inherit;padding:0;color:inherit}
+.article--swiat .chapter-section--crowe+.chapter-section{border-top:0;padding-top:0}
+.article--swiat .chapter-section--crowe+.chapter-section::before{display:none}
+@media(max-width:650px){.article--swiat .chapter-section--crowe{margin-left:0;margin-right:0;padding:34px 15px 14px}.article--swiat .chapter-section:nth-child(2)::after{display:none}}
