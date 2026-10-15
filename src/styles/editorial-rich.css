@@ -110,3 +110,17 @@
 .kinship-note{font:italic 16px/1.5 'Cormorant Garamond',serif!important;color:#76665e}
 .cast-entry{scroll-margin-top:22px}
 @media(max-width:650px){.kinship-grid{grid-template-columns:1fr}.kinship h2{font-size:36px}}
+
+/* Unified genealogical manuscript */
+.genealogy-plate{margin:43px 0;border-top:3px double rgba(114,77,77,.45);border-bottom:3px double rgba(114,77,77,.45);padding:30px 0}
+.genealogy-plate h2{font:600 42px/1.12 'Cormorant Garamond',serif;color:#51333d;margin:0 0 11px}
+.genealogy-plate>p{font:19px/1.45 'Cormorant Garamond',serif}
+.genealogy-scroll{width:100%;overflow-x:auto;background:linear-gradient(125deg,#f3ebde,#e6d9c7);border:1px solid #bea68f;box-shadow:inset 0 0 40px rgba(109,78,65,.075)}
+.genealogy-scroll svg{display:block;width:100%;min-width:740px;height:auto}
+.genealogy-scroll svg a{cursor:pointer}
+.genealogy-scroll svg a:hover text,.genealogy-scroll svg a:focus text{fill:#9e5364}
+.genealogy-caption{font:italic 16px/1.4 'Cormorant Garamond',serif!important;color:#76665e}
+.cast-intro{margin:0 auto 26px;max-width:725px}
+.cast-intro p{margin-bottom:18px}
+.cast-instruction{font-style:italic;border-left:2px solid #9b7a68;padding-left:16px}
+@media(max-width:760px){.genealogy-plate h2{font-size:34px}.genealogy-scroll svg{min-width:720px}}
