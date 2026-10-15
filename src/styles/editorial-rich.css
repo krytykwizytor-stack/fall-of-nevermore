@@ -124,3 +124,12 @@
 .cast-intro p{margin-bottom:18px}
 .cast-instruction{font-style:italic;border-left:2px solid #9b7a68;padding-left:16px}
 @media(max-width:760px){.genealogy-plate h2{font-size:34px}.genealogy-scroll svg{min-width:720px}}
+
+/* Genealogical notes within literary dossiers */
+.cast-family-note{background:rgba(120,83,74,.075);border-left:2px solid #a18278;margin-bottom:26px!important;padding:14px 18px;font:16px/1.5 'Cormorant Garamond',serif!important}
+.cast-family-note:first-letter{float:none!important;font-size:inherit!important;line-height:inherit!important;padding:0!important}
+.cast-family-note strong{display:block;font:600 10px/1.8 'DM Sans',sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#76515d;margin-bottom:4px}
+.cast-portrait>p:last-of-type{margin-bottom:27px}
+.cast-portrait>small{display:block}
+.genealogy-scroll svg a:focus-visible{outline:none}
+.genealogy-scroll svg a:focus-visible rect{stroke:#9a4b68;stroke-width:3}
