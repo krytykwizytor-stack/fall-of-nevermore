@@ -1,0 +1,222 @@
+export const cast=[
+  {
+    "id": "01",
+    "name": "Lord Ambrose Ravensmoor",
+    "age": 72,
+    "arcana": "IV",
+    "arcanaName": "Cesarz",
+    "poe": "Maska Czerwonego Moru",
+    "role": "Głowa rodu",
+    "group": "Ravensmoorowie",
+    "generation": "senior"
+  },
+  {
+    "id": "02",
+    "name": "Lady Morwen Ravensmoor",
+    "age": 69,
+    "arcana": "II",
+    "arcanaName": "Kapłanka",
+    "poe": "Ligeja",
+    "role": "Strażniczka tradycji",
+    "group": "Ravensmoorowie",
+    "generation": "senior"
+  },
+  {
+    "id": "03",
+    "name": "Lady Elspeth Ravensmoor",
+    "age": 67,
+    "arcana": "XII",
+    "arcanaName": "Wisielec",
+    "poe": "Przedwczesny pogrzeb",
+    "role": "Pamięć rodziny",
+    "group": "Ravensmoorowie",
+    "generation": "senior"
+  },
+  {
+    "id": "04",
+    "name": "Sir Edgar Ravensmoor",
+    "age": 46,
+    "arcana": "V",
+    "arcanaName": "Kapłan",
+    "poe": "Studnia i wahadło",
+    "role": "Oficjalny dziedzic",
+    "group": "Ravensmoorowie",
+    "generation": "adult"
+  },
+  {
+    "id": "05",
+    "name": "Lady Vivienne Ravensmoor",
+    "age": 44,
+    "arcana": "XVI",
+    "arcanaName": "Wieża",
+    "poe": "Zagłada domu Usherów",
+    "role": "Powracająca córka",
+    "group": "Ravensmoorowie",
+    "generation": "adult"
+  },
+  {
+    "id": "06",
+    "name": "Lady Beatrice Ravensmoor-Blackwood",
+    "age": 49,
+    "arcana": "XI",
+    "arcanaName": "Sprawiedliwość",
+    "poe": "Skradziony list",
+    "role": "Opiekunka majątku",
+    "group": "Ravensmoorowie",
+    "generation": "adult"
+  },
+  {
+    "id": "07",
+    "name": "Malcolm Ravensmoor",
+    "age": 42,
+    "arcana": "XV",
+    "arcanaName": "Diabeł",
+    "poe": "Demon przekory",
+    "role": "Skandalista",
+    "group": "Ravensmoorowie",
+    "generation": "adult"
+  },
+  {
+    "id": "08",
+    "name": "Lady Augusta Ravensmoor",
+    "age": 45,
+    "arcana": "III",
+    "arcanaName": "Cesarzowa",
+    "poe": "Morella",
+    "role": "Matka i gospodyni",
+    "group": "Ravensmoorowie",
+    "generation": "adult"
+  },
+  {
+    "id": "09",
+    "name": "Nathaniel Ravensmoor",
+    "age": 38,
+    "arcana": "IX",
+    "arcanaName": "Pustelnik",
+    "poe": "Latarnia morska",
+    "role": "Badacz genealogii",
+    "group": "Ravensmoorowie",
+    "generation": "adult"
+  },
+  {
+    "id": "10",
+    "name": "Sebastian Ravensmoor",
+    "age": 24,
+    "arcana": "XIX",
+    "arcanaName": "Słońce",
+    "poe": "Eldorado",
+    "role": "Przyszły pan młody",
+    "group": "Ravensmoorowie",
+    "generation": "young"
+  },
+  {
+    "id": "11",
+    "name": "Lenore Ravensmoor",
+    "age": 22,
+    "arcana": "XVIII",
+    "arcanaName": "Księżyc",
+    "poe": "Ulalume",
+    "role": "Chora córka rodu",
+    "group": "Ravensmoorowie",
+    "generation": "young"
+  },
+  {
+    "id": "12",
+    "name": "Clara Ravensmoor",
+    "age": 23,
+    "arcana": "VIII",
+    "arcanaName": "Siła",
+    "poe": "Hop-Frog",
+    "role": "Niepokorna wnuczka",
+    "group": "Ravensmoorowie",
+    "generation": "young"
+  },
+  {
+    "id": "13",
+    "name": "Orlando Ravensmoor",
+    "age": 21,
+    "arcana": "XIII",
+    "arcanaName": "Śmierć",
+    "poe": "Robak-Zwycięzca",
+    "role": "Poeta i esteta",
+    "group": "Ravensmoorowie",
+    "generation": "young"
+  },
+  {
+    "id": "14",
+    "name": "Thomas Vale-Ravensmoor",
+    "age": 20,
+    "arcana": "0",
+    "arcanaName": "Głupiec",
+    "poe": "Rękopis znaleziony w butelce",
+    "role": "Krewny o niepewnej pozycji",
+    "group": "Ravensmoorowie",
+    "generation": "young"
+  },
+  {
+    "id": "15",
+    "name": "Eleanor Wycliffe",
+    "age": 23,
+    "arcana": "VI",
+    "arcanaName": "Kochankowie",
+    "poe": "Eleonora",
+    "role": "Narzeczona Sebastiana",
+    "group": "Goście",
+    "generation": "guest"
+  },
+  {
+    "id": "16",
+    "name": "Basil March",
+    "age": 24,
+    "arcana": "XVII",
+    "arcanaName": "Gwiazda",
+    "poe": "Do Heleny",
+    "role": "Portrecista i przyjaciel domu",
+    "group": "Goście",
+    "generation": "guest"
+  },
+  {
+    "id": "17",
+    "name": "Horace Finch",
+    "age": 58,
+    "arcana": "I",
+    "arcanaName": "Mag",
+    "poe": "Złoty żuk",
+    "role": "Prawnik rodziny",
+    "group": "Goście",
+    "generation": "guest"
+  },
+  {
+    "id": "18",
+    "name": "Dr Samuel Ashdown",
+    "age": 55,
+    "arcana": "XIV",
+    "arcanaName": "Umiarkowanie",
+    "poe": "Fakty w sprawie pana Valdemara",
+    "role": "Lekarz rodziny",
+    "group": "Goście",
+    "generation": "guest"
+  },
+  {
+    "id": "19",
+    "name": "Father Matthias Grey",
+    "age": 62,
+    "arcana": "XX",
+    "arcanaName": "Sąd Ostateczny",
+    "poe": "Czarny kot",
+    "role": "Duchowny",
+    "group": "Goście",
+    "generation": "guest"
+  },
+  {
+    "id": "20",
+    "name": "Constable Alaric Vane",
+    "age": 41,
+    "arcana": "VII",
+    "arcanaName": "Rydwan",
+    "poe": "Przygody Artura Gordona Pyma",
+    "role": "Śledczy",
+    "group": "Goście",
+    "generation": "guest"
+  }
+];
