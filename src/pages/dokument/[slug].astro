@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { chapters } from '../../data/chapters.js';
+import { cast } from '../../data/cast.js';
 export function getStaticPaths(){return chapters.map(chapter=>({params:{slug:chapter.slug},props:{chapter}}));}
 const {chapter}=Astro.props;
 const index=chapters.findIndex(c=>c.slug===chapter.slug);
