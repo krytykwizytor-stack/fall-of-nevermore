@@ -135,3 +135,5 @@
 .genealogy-scroll svg a:focus-visible rect{stroke:#9a4b68;stroke-width:3}
 
 .cast-portrait-heading{display:flex;align-items:center;gap:20px;border-bottom:3px double #bfa995;padding:24px 0;margin-bottom:25px}.cast-portrait-heading h3{font-size:39px;margin:5px 0}.cast-raven{font-size:44px;color:#745261}.cast-portrait-masthead{display:flex;justify-content:space-between;border-bottom:1px solid #c2ab95;padding-bottom:13px;font-size:10px;letter-spacing:.1em}.cast-literary-colophon{border-top:1px solid #bda994;padding-top:13px;display:flex;gap:12px;align-items:center}.cast-colophon-number{margin-left:auto}
+
+.cast-catalog-heading{text-align:center;margin:48px auto 26px;max-width:720px;border-bottom:3px double #bba592;padding-bottom:22px}.cast-catalog-heading>span{font-size:10px;letter-spacing:.22em;color:#826269}.cast-catalog-heading h2{font-size:39px;color:#4b343d}.cast-catalog-heading p{font-style:italic;font-size:18px}.cast-summary-arcana{font:italic 16px Georgia,serif;color:#745660;white-space:nowrap}.cast-summary-arcana i{margin-left:10px;font-style:normal}.cast-arcana-line{font-size:11px;letter-spacing:.15em;color:#815c68}
