@@ -8,5 +8,15 @@ export const portraitInterludes={
 "07":"Jego żarty bywają bezlitosne, lecz potrafi też obdarzyć rozmówcę tak ujmującą uwagą, że temu trudno przypomnieć sobie poprzednią zniewagę. Zdaje się szczególnie biegły w sztuce odwracania uwagi.",
 "08":"Augusta poznała Nevermore jako młoda żona, długo zanim stała się jego strażniczką dobrych obyczajów. Dziś z zadziwiającą pewnością wskazuje Eleanor, jak należy prowadzić dom, w którym sama niegdyś musiała odnaleźć miejsce.",
 "09":"Nawet w czasie rodzinnej kolacji potrafi zanotować datę lub zapytać o imię, którego nikt nie wypowiadał od lat. Krewni uważają to za nieszkodliwą osobliwość, o ile nie dotyczy ich własnej przeszłości.",
-"10":"Narzeczona rozmawia z nim o przyszłości znacznie swobodniej niż krewni, którzy sądzą, że znają ją od dnia jego narodzin. Bywa, że Sebastian zazdrości Eleanor tej łatwości mówienia o rzeczach jeszcze niepostanowionych."
+"10":"Narzeczona rozmawia z nim o przyszłości znacznie swobodniej niż krewni, którzy sądzą, że znają ją od dnia jego narodzin. Bywa, że Sebastian zazdrości Eleanor tej łatwości mówienia o rzeczach jeszcze niepostanowionych.",
+"11":"Kiedy opiekunowie sądzą, że Lenore śpi, rozmawiają przy niej swobodniej. Młoda dama nauczyła się odróżniać zwykłą troskę od niepokoju, którego nikt nie zamierza z nią dzielić.",
+"12":"Niepodobna odmówić Clarze odwagi, lecz nieraz mówi za innych, nim zdążą poprosić ją o pomoc. W domu, w którym tyle osób nie bywa wysłuchanych, nawet życzliwy pośpiech może wywołać sprzeciw.",
+"13":"Basil maluje go z cierpliwością, która dla Orlanda jest równie pochlebna, co irytująca. Młody poeta chciałby chyba ujrzeć na płótnie kogoś wspanialszego niż człowiek poddawany lekarskim zaleceniom.",
+"14":"Thomas jest obecny w rodzinnym życiu od lat, mimo to każdy uroczysty posiłek niesie ze sobą to samo pytanie o miejsce i nazwisko. Czasem wystarczy przesunięte krzesło, aby przypomnieć mu całą historię tych wątpliwości.",
+"15":"Wielu krewnych mówi o Eleanor z życzliwością, w której trudno znaleźć miejsce dla jej własnych upodobań. Przymierzając przyszłą panią domu do utartego wzoru, zdają się zapominać, że jest już dorosłą osobą.",
+"16":"Na jego szkicach twarze mają niewiele wspólnego z pozą przyjmowaną podczas wizyt. Basil uwiecznia zwyczajne zmęczenie i chwilowe roztargnienie; cechy, które ich właściciele najchętniej kazaliby mu wymazać.",
+"17":"Krewni wspominają prawnika najczęściej wtedy, gdy potrzebują, aby jakaś sprawa przestała być kłopotliwa. Finch wie, jak wiele zależy od kolejności dokumentów, ale jeszcze lepiej rozumie cenę dyskrecji.",
+"18":"Przy łóżku chorego bywa uprzejmy, niemal serdeczny. Po wyjściu z pokoju znów staje się badaczem, który liczy objawy i rozważa możliwości. Nie wszystkim pacjentom odpowiada ta przemiana.",
+"19":"Zna imiona dzieci, które chrzcił, i małżeństwa, którym błogosławił. Właśnie dlatego odwiedziny w Nevermore nie przypominają dla niego zwykłej posługi: jest tu świadkiem losów ciągnących się przez długie lata.",
+"20":"Podczas rozmów z dawnymi towarzyszami broni jego głos staje się swobodniejszy. Gdy jednak przychodzi mu pytać o sprawy rodzinne, łatwo dostrzec wysiłek, z jakim przywraca sobie urzędowy ton."
 };
