@@ -1,1 +1,4 @@
-export const portraitsD={};
+export const portraitsD={
+"09":["Nathaniel Ravensmoor mógłby uchodzić za wzór pracowitego uczonego, gdyby przedmiotem jego badań nie byli niemal wyłącznie zmarli krewni.","Rzadko uczestniczy w rozmowach bez powodu. Gdy napotka świadectwo z przeszłości, zapomina o nieśmiałości. Pragnie znać historię rodu dokładniej niż ktokolwiek. Czy równie dobrze zna żyjących krewnych?"],
+"10":["Trudno znaleźć pośród Ravensmoorów młodzieńca, w którym pokładano by większe nadzieje niż w Sebastianie. Zdrowie i urok wyróżniają go pośród krewnych.","Jego przyszłość omawia się zwykle pod jego nieobecność. Ślub z panną Eleanor ma przypieczętować pomyślność rodu. Niektórzy rodzą się z gotowym miejscem w świecie. Nie zawsze potrafią je polubić."]
+};
