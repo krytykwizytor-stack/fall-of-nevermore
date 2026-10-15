@@ -1,0 +1,22 @@
+export const familyNotes={
+"01":"Syn Basiliusa; brat Morwen i Elspeth; mąż zmarłej Lucindy; ojciec Edgara i Vivienne.",
+"02":"Córka Basiliusa; siostra Ambrose’a i Elspeth; matka Nathaniela.",
+"03":"Córka Basiliusa; siostra Ambrose’a i Morwen; matka Beatrice i Malcolma.",
+"04":"Syn Ambrose’a i Lucindy; brat Vivienne; mąż Augusty; ojciec Sebastiana, Lenore i Orlanda.",
+"05":"Córka Ambrose’a i Lucindy; siostra Edgara; matka Clary.",
+"06":"Córka Elspeth; siostra Malcolma; wdowa nosząca nazwisko Ravensmoor-Blackwood.",
+"07":"Syn Elspeth; brat Beatrice; ojciec Thomasa Vale-Ravensmoora.",
+"08":"Żona Edgara, pochodząca spoza rodu Ravensmoorów; matka Sebastiana, Lenore i Orlanda.",
+"09":"Syn Morwen; bratanek lub siostrzeniec Ambrose’a i Elspeth.",
+"10":"Syn Edgara i Augusty; brat Lenore i Orlanda; narzeczony Eleanor Wycliffe.",
+"11":"Córka Edgara i Augusty; siostra Sebastiana i Orlanda.",
+"12":"Córka Vivienne; wnuczka Ambrose’a i Lucindy.",
+"13":"Syn Edgara i Augusty; brat Sebastiana i Lenore.",
+"14":"Syn Malcolma i Cecily Vale; członek bocznej linii Ravensmoorów.",
+"15":"Narzeczona Sebastiana Ravensmoora; przyszła członkini rodziny przez małżeństwo.",
+"16":"Przyjaciel Orlanda Ravensmoora; gość domu, niespokrewniony z rodem.",
+"17":"Wieloletni prawnik Ravensmoorów; osoba spoza rodziny.",
+"18":"Lekarz rodziny Ravensmoorów; osoba spoza rodziny.",
+"19":"Duchowny związany z domem; osoba spoza rodziny.",
+"20":"Śledczy i wieloletni znajomy rodziny; powiązany z nią towarzysko."
+};
