@@ -1,1 +1,1 @@
-export const portraitsE={};
+export const portraitsE={"11":["O pannie Lenore mówi się półgłosem, jak gdyby delikatne zdrowie wymagało ostrożności od całego domu.","Jej rodzina omawia przyszłość bez jej udziału. Niekiedy wypowiada uwagę tak przenikliwą, że milkną nawet ci, którzy uważają ją za bezbronną."],"12":["Clara odziedziczyła po matce niechęć do rodzinnych konwenansów. Wychowana częściowo poza Nevermore, wraca bez nabożnego szacunku dla nazwiska.","Pragnie wolności dla młodszych krewnych, choć bywa niecierpliwa wobec tych, którzy nie podzielają jej zapału."]};
