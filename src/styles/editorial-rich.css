@@ -70,3 +70,26 @@
 @media(max-width:760px){.main-frame::before,.main-frame::after{display:none}.article-body{font-size:20px}.article-head{padding-top:72px}.chapter-section--crowe{margin-inline:0;padding:27px 18px 12px!important}.introduction.editorial-wash{padding-inline:18px}}
 @media(max-width:480px){.article-body{font-size:19px}.article-head::before{opacity:.075}.cover::after{inset:9px}.chapter-section h2{font-size:31px}}
 @media(prefers-reduced-motion:reduce){.nav-item{transition:none}}
+
+/* Dramatis Personae: interactive book of portraits */
+.article--postacie{max-width:980px}
+.article--postacie .article-body{max-width:900px}
+.cast-index>p{max-width:700px;margin:0 auto 27px}
+.cast-index label{display:block;font:600 11px 'DM Sans',sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#75545b;margin-bottom:9px}
+#cast-search{width:100%;padding:15px 19px;border:1px solid #bea995;background:#f5eee4;color:#362d2f;font:18px 'Cormorant Garamond',serif;margin-bottom:25px}
+.cast-list{display:grid;gap:11px}
+.cast-entry{border:1px solid rgba(124,88,75,.38);background:linear-gradient(125deg,#f6efe5,#e9ddce);box-shadow:0 2px 0 rgba(80,53,47,.07)}
+.cast-entry[hidden]{display:none}
+.cast-entry>summary{display:grid;grid-template-columns:65px minmax(0,1fr) 23px;align-items:center;gap:14px;cursor:pointer;list-style:none;padding:17px 21px}
+.cast-entry>summary::-webkit-details-marker{display:none}
+.cast-entry>summary:focus-visible{outline:2px solid #805468;outline-offset:3px}
+.cast-no{font:500 42px/1 'Cormorant Garamond',serif;color:#8d6262;text-align:center;border-right:1px solid #b9a48d}
+.cast-entry strong{display:block;font:600 26px/1.12 'Cormorant Garamond',serif;color:#442b36}
+.cast-entry small{display:block;font:12px/1.6 'DM Sans',sans-serif;color:#77675f;margin-top:6px}
+.cast-entry[open]{border-color:#8f6670}
+.cast-entry[open]>summary{border-bottom:3px double rgba(130,90,76,.35)}
+.cast-portrait{padding:24px clamp(18px,5vw,57px) 30px}
+.cast-portrait p{font:21px/1.54 'Cormorant Garamond',serif;margin:0 0 17px}
+.cast-portrait p:first-child:first-letter{font-size:53px;line-height:.7;float:left;padding:8px 7px 0 0;color:#744655}
+.cast-portrait small{letter-spacing:.05em;border-top:1px solid #cbb9a2;padding-top:13px}
+@media(max-width:600px){.cast-entry>summary{grid-template-columns:38px 1fr 15px;gap:8px;padding:13px 10px}.cast-no{font-size:30px}.cast-entry strong{font-size:23px}.cast-portrait p{font-size:19px}}
