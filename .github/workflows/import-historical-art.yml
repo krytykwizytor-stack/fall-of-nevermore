@@ -1,0 +1,30 @@
+name: Import historical illustrations
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/import-historical-art.yml'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified public-domain engravings
+        run: |
+          set -euo pipefail
+          mkdir -p public/images
+          curl -fLsS --retry 4 -A 'FallOfNevermore/1.0 (historical illustration)' 'https://commons.wikimedia.org/wiki/Special:FilePath/Dore_The_Raven_1884-12.jpg' -o public/images/dore-raven-12.jpg
+          curl -fLsS --retry 4 -A 'FallOfNevermore/1.0 (historical illustration)' 'https://commons.wikimedia.org/wiki/Special:FilePath/Dore_The_Raven_1884-22.jpg' -o public/images/dore-raven-22.jpg
+          test "$(file -b --mime-type public/images/dore-raven-12.jpg)" = image/jpeg
+          test "$(file -b --mime-type public/images/dore-raven-22.jpg)" = image/jpeg
+      - name: Save illustrations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/images
+          if ! git diff --cached --quiet; then
+            git commit -m "Import public-domain Doré engravings (1884)"
+            git push
+          fi
