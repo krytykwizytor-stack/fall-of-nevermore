@@ -93,3 +93,20 @@
 .cast-portrait p:first-child:first-letter{font-size:53px;line-height:.7;float:left;padding:8px 7px 0 0;color:#744655}
 .cast-portrait small{letter-spacing:.05em;border-top:1px solid #cbb9a2;padding-top:13px}
 @media(max-width:600px){.cast-entry>summary{grid-template-columns:38px 1fr 15px;gap:8px;padding:13px 10px}.cast-no{font-size:30px}.cast-entry strong{font-size:23px}.cast-portrait p{font-size:19px}}
+
+/* Confirmed family lines; editorial miniature genealogy. */
+.kinship{margin:44px 0 37px;border-block:3px double rgba(114,77,77,.45);padding:32px 0}
+.kinship h2{font:600 43px/1.1 'Cormorant Garamond',serif;color:#51333d;margin:0 0 10px}
+.kinship>p{font-size:19px;line-height:1.45}
+.kinship-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:28px 0}
+.kinship-branch{text-align:center;position:relative;background:linear-gradient(140deg,#f8f0e5,#e9ddce);border:1px solid rgba(124,88,75,.45);padding:20px 12px 25px;min-height:177px}
+.kinship-branch>strong{font:600 13px 'DM Sans',sans-serif;letter-spacing:.10em;text-transform:uppercase;color:#75515b}
+.kinship-branch p{font:600 24px 'Cormorant Garamond',serif;margin:13px 0 0;color:#422d37}
+.kinship-branch>span{display:block;font:11px 'DM Sans',sans-serif;color:#8e7462;margin:9px auto 0;text-transform:uppercase;letter-spacing:.15em}
+.kinship-branch>span::after{content:"";display:block;height:18px;border-left:1px solid #9f806d;width:0;margin:auto}
+.kinship-branch>div{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;border-top:1px solid rgba(135,93,78,.36);padding-top:12px}
+.kinship-branch a{color:#653c4b;text-decoration:none;border-bottom:1px solid rgba(102,65,72,.32);font:600 19px 'Cormorant Garamond',serif}
+.kinship-branch a:hover{color:#9b536b;border-color:currentColor}
+.kinship-note{font:italic 16px/1.5 'Cormorant Garamond',serif!important;color:#76665e}
+.cast-entry{scroll-margin-top:22px}
+@media(max-width:650px){.kinship-grid{grid-template-columns:1fr}.kinship h2{font-size:36px}}
