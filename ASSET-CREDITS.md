@@ -18,3 +18,12 @@ Three plates from Augustus Pugin, *Gothic Ornaments, selected from various ancie
 - Plate 20: https://commons.wikimedia.org/wiki/File:Gothic_Ornaments,_selected_fom_various_ancient_buildings,_both_in_England_and_Franc,_during_the_years_1828,_1829,_and_1839_-_Agustus_Pugin_20.jpeg
 
 No generative AI artwork was used. Ornament glyphs, borders, textures and monograms are implemented with typography and CSS. The FN monogram is decorative and is not an official coat of arms.
+
+## Botanical memorial motifs — stage IV
+
+These are original historical illustrations, not AI-generated imagery. The designs are used as atmospheric references; no particular floral symbol is established as a canonical Ravensmoor family emblem.
+
+- **Ivy, Hedera helix** — Jacob Sturm, *Deutschlands Flora in Abbildungen*, 1796. Public-domain status documented by Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Hedera_helix_Sturm12001.jpg . Source image: https://commons.wikimedia.org/wiki/Special:FilePath/Hedera_helix_Sturm12001.jpg
+- **Rosa gallica regalis** — Pierre-Joseph Redouté, *Les Roses*, 1824. Public-domain status documented by Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg . Source image: https://commons.wikimedia.org/wiki/Special:FilePath/Redoute_-_Rosa_gallica_regalis.jpg
+
+Current integration references the original Wikimedia Commons file endpoints. No claim is made that the JPEGs have already been imported into the repository.
