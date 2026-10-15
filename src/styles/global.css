@@ -34,3 +34,41 @@ body{background:#d9d0c1;background-image:repeating-linear-gradient(90deg,transpa
 .engraving-section p{font:24px/1.4 'Cormorant Garamond',serif}
 .engraving-section small{font:14px 'Cormorant Garamond',serif;color:#766457}
 @media(max-width:640px){.engraving-section{grid-template-columns:1fr}.engraving-frame img{max-height:330px;object-fit:contain}}
+
+
+/* NEVERMORE · SECOND EDITION / purely CSS ornamentation, no generated imagery */
+:root{--nm-iron:#19171b;--nm-oxblood:#622f3e;--nm-gold:#a58761;--nm-paper:#e5d9c7}
+.sidebar::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,#876a4e 0 24px,#33272d 24px 27px)}
+.identity .seal{font-size:21px;position:relative}
+.identity .seal::after{content:"✦";position:absolute;bottom:-13px;background:#17171b;padding:0 4px;font-size:12px;color:#b99373}
+.nav-title::after{content:" ── ✧ ──";color:#aa8763;letter-spacing:3px}
+.masthead{background:linear-gradient(90deg,rgba(59,30,39,.045),transparent);border-bottom:1px solid #ad977e}
+.cover{min-height:685px}
+.cover::before{inset:27px;border:1px solid rgba(203,167,116,.65)}
+.cover::after{content:"";position:absolute;inset:35px;border:1px solid rgba(202,168,128,.32);pointer-events:none}
+.cover-ornament{letter-spacing:.65em}
+.introduction,.engraving-section{position:relative}
+.introduction::before,.engraving-section::before{content:"❧";position:absolute;top:-21px;left:50%;transform:translateX(-50%);font:30px 'Cormorant Garamond',serif;color:#805c51;background:#e6ddcf;padding:0 18px}
+.contents::before{content:"✦  ❧  ✦";display:block;margin-bottom:12px;color:#8a6455;letter-spacing:.7em;font-size:15px}
+.chapter-card{position:relative;overflow:hidden;padding-top:34px;padding-bottom:34px}
+.chapter-card::before{content:"";position:absolute;inset:8px;pointer-events:none;border:1px solid rgba(115,77,71,.18)}
+.chapter-card::after{content:"✧";position:absolute;bottom:-25px;right:8px;font:110px 'Cormorant Garamond',serif;color:rgba(103,57,69,.06);pointer-events:none}
+.chapter-card h3{position:relative}
+.article{position:relative}
+.article::before,.article::after{content:"✥";position:absolute;top:105px;color:#a88a71;font:19px 'Cormorant Garamond',serif}
+.article::before{left:0}.article::after{right:0}
+.article-head{background:radial-gradient(ellipse at center,rgba(139,88,81,.08),transparent 70%)}
+.article-head h1{color:#3a252e}
+.article-body{position:relative}
+.article-body::before{content:"";float:right;width:80px;height:115px;margin:0 0 10px 20px;background:repeating-linear-gradient(45deg,transparent 0 14px,rgba(106,72,65,.07) 14px 15px);border:double 4px rgba(125,91,77,.3);clip-path:polygon(0 0,100% 0,100% 78%,50% 100%,0 78%)}
+.ornament-line::before,.ornament-line::after{content:"━━━━━━━━";font:12px serif;letter-spacing:4px;margin:0 16px;color:#a18c77}
+.gothic-epigraph{width:min(790px,calc(100% - 52px));margin:28px auto 92px;text-align:center;padding:43px clamp(24px,5vw,75px);position:relative;border-top:1px solid #a79177;border-bottom:1px solid #a79177;background:rgba(67,36,44,.04)}
+.gothic-epigraph::before{content:"❦";position:absolute;top:-23px;left:50%;transform:translateX(-50%);padding:0 18px;background:#e4d9c9;color:#8a6150;font:34px 'Cormorant Garamond',serif}
+.gothic-epigraph blockquote{font:italic 500 clamp(27px,4vw,42px)/1.2 'Cormorant Garamond',serif;color:#4a2934;margin:0}
+.gothic-epigraph cite{display:block;margin-top:19px;font:10px 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.22em;color:#705d54}
+.gothic-miniature{width:min(950px,calc(100% - 52px));margin:0 auto 80px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:40px}
+.gothic-miniature img{display:block;width:100%;max-height:410px;object-fit:cover;filter:grayscale(1) sepia(.18);border:10px solid #211d20;outline:1px solid #9c7d5e}
+.gothic-miniature h2{font:500 clamp(40px,5vw,62px)/.98 'Cormorant Garamond',serif;margin:13px 0;color:#3d2730}
+.gothic-miniature p{font:23px/1.43 'Cormorant Garamond',serif}
+.gothic-miniature small{font:12px 'Cormorant Garamond',serif;color:#68574f}
+@media(max-width:650px){.gothic-miniature{grid-template-columns:1fr}.article::before,.article::after{display:none}.article-body::before{width:44px;height:65px}.ornament-line::before,.ornament-line::after{content:"━━";letter-spacing:0;margin:0 8px}}
