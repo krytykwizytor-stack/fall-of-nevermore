@@ -5,7 +5,12 @@ import { cast } from '../../data/cast.js';
 import { portraitsA } from '../../data/portraits-a.js';
 import { portraitsB } from '../../data/portraits-b.js';
 import { portraitsC } from '../../data/portraits-c.js';
-const portraits={...portraitsA,...portraitsB,...portraitsC};
+import { portraitsD } from '../../data/portraits-d.js';
+import { portraitsE } from '../../data/portraits-e.js';
+import { portraitsF } from '../../data/portraits-f.js';
+import { portraitsG } from '../../data/portraits-g.js';
+import { portraitsH } from '../../data/portraits-h.js';
+const portraits={...portraitsA,...portraitsB,...portraitsC,...portraitsD,...portraitsE,...portraitsF,...portraitsG,...portraitsH};
 export function getStaticPaths(){return chapters.map(chapter=>({params:{slug:chapter.slug},props:{chapter}}));}
 const {chapter}=Astro.props;
 const index=chapters.findIndex(c=>c.slug===chapter.slug);
