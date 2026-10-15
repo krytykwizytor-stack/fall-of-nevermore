@@ -1,0 +1,23 @@
+---
+import { genealogy } from '../data/genealogy.js';
+const nodes = new Map(genealogy.nodes.map(n=>[n.id,n]));
+const relations = genealogy.relations.map(r=>({...r,a:nodes.get(r.from),b:nodes.get(r.to)}));
+---
+<section class="genealogy-plate" aria-labelledby="genealogy-heading">
+<h2 id="genealogy-heading">Tablica genealogiczna Ravensmoorów</h2>
+<p>Wybierz osobę w rodowodzie, aby otworzyć jej portret. Linie wskazują tylko potwierdzone związki.</p>
+<div class="genealogy-scroll" tabindex="0" aria-label="Przewijana plansza genealogiczna">
+<svg viewBox="0 0 960 1085" role="img" aria-label="Genealogia rodziny Ravensmoorów i publicznie znane relacje z gośćmi" xmlns="http://www.w3.org/2000/svg">
+<rect x="8" y="8" width="944" height="1068" rx="5" fill="none" stroke="#a0806c" stroke-width="1"/>
+<rect x="18" y="18" width="924" height="1048" rx="2" fill="none" stroke="#baa48c" stroke-width=".8"/>
+<text x="480" y="37" text-anchor="middle" font-size="12" letter-spacing="4" fill="#765664">DOMUS RAVENSMOOR</text>
+{relations.map(link => <line x1={link.a.x} y1={link.a.y+29} x2={link.b.x} y2={link.b.y-29} stroke={link.type==='parent'?'#846a60':'#a17b83'} stroke-width={link.type==='parent'?1.5:1.2} stroke-dasharray={link.type==='engagement'?'7 4':link.type==='public_friendship'?'2 5':undefined} />)}
+{genealogy.nodes.map(node => <g>
+<rect x={node.x-66} y={node.y-28} width="132" height="56" rx="2" fill={node.kind==='guest'?'#eee4d9':'#f6ede0'} stroke={node.kind==='guest'?'#b5a598':'#8e6870'} stroke-width="1.1"/>
+{node.id==='basilius' ? <text x={node.x} y={node.y+4} text-anchor="middle" font-size="16" font-family="Cormorant Garamond,serif" fill="#442b36">Basilius Ravensmoor</text> : <a href={'#rola-'+node.id} aria-label={'Otwórz portret: '+node.label}><rect x={node.x-65} y={node.y-27} width="130" height="54" fill="transparent"/><text x={node.x} y={node.y+4} text-anchor="middle" font-size="17" font-family="Cormorant Garamond,serif" fill="#52313d" text-decoration="underline">{node.label}</text></a>}
+</g>)}
+<text x="480" y="1045" text-anchor="middle" font-size="13" fill="#826657" font-family="Cormorant Garamond,serif">Genealogia i związki domu Nevermore · MCMV</text>
+</svg>
+</div>
+<p class="genealogy-caption">Linia ciągła: pokrewieństwo lub małżeństwo · przerywana: zaręczyny · kropkowana: publiczna przyjaźń. Osoby o nieustalonym położeniu w rodowodzie umieszczono w dolnej części planszy bez przypisywania im rodziców.</p>
+</section>
