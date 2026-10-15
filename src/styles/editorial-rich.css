@@ -1,154 +1,72 @@
-/* Fall of Nevermore — rich editorial treatment. Original CSS ornament, no AI artwork. */
-:root{--edition-ink:#2b2027;--edition-brass:#947457;--edition-paper:#e8dccb;--edition-rule:rgba(107,76,70,.34)}
-.main-frame{background-image:radial-gradient(ellipse at 55% 10%,rgba(255,250,237,.50),transparent 75%),repeating-linear-gradient(0deg,transparent 0 5px,rgba(84,60,55,.009) 5px 6px)}
-.masthead{position:relative;border-bottom:1px solid var(--edition-brass);box-shadow:0 3px 0 rgba(151,117,93,.075)}
-.masthead::after{content:"";position:absolute;bottom:4px;left:6%;right:6%;border-bottom:1px solid rgba(142,105,83,.18);pointer-events:none}
-.sidebar{border-right:1px solid #917257}
-.identity{padding-top:9px}.identity .seal{font-size:23px}.nav-item{transition:background .2s,color .2s}.nav-item.active{box-shadow:inset 4px 0 0 rgba(189,150,108,.35)}
-.cover{border-radius:1px}
-.cover-ornament::before,.cover-ornament::after{content:"✥";font-size:17px;opacity:.75;margin:0 15px}
-.cover-bottom{border-top:1px solid rgba(205,166,117,.32);padding-top:16px}
-.introduction{padding:62px 24px 60px;margin-top:50px;border-top:1px solid var(--edition-rule);border-bottom:1px solid var(--edition-rule)}
-.introduction::before{content:"";position:absolute;left:9px;top:9px;bottom:9px;width:1px;background:linear-gradient(transparent,rgba(95,69,63,.36),transparent);pointer-events:none}
-.introduction h2{letter-spacing:-.026em}
-.introduction p:first-of-type:first-letter{float:left;font:600 62px/.86 'Cormorant Garamond',serif;color:#6d3747;margin:8px 8px 0 0}
-.gothic-epigraph{border-bottom:double 3px rgba(126,91,72,.5);border-top:double 3px rgba(126,91,72,.5)}
-.gothic-epigraph blockquote{text-wrap:balance}
-.contents{padding-bottom:30px}.contents h2::after{content:"✦";display:block;font:18px 'Cormorant Garamond',serif;margin:14px 0 0;color:#9c7d66}
-.chapter-grid{gap:18px}.chapter-card{border:1px solid rgba(120,85,73,.45);min-height:135px}
-.chapter-card::before{inset:7px;border:1px solid rgba(120,85,73,.20)}
-.chapter-card h3{font-size:31px}
-.article{max-width:790px}
-.article-meta{border-bottom:1px solid rgba(130,102,85,.18);padding-bottom:16px}
-.article-head{padding-top:110px;padding-bottom:64px}
-.article-head::after{content:"";position:absolute;bottom:12px;left:12%;right:12%;height:8px;border-top:1px solid rgba(139,106,82,.3);border-bottom:1px solid rgba(139,106,82,.17);pointer-events:none}
-.article-head h1{letter-spacing:-.035em;text-wrap:balance}
-.article-head .eyebrow{letter-spacing:.23em}
-.article-body{font-size:24px;line-height:1.54;max-width:690px}
-.article-body p{margin-bottom:1.15em}
-.article-body p:first-child:first-letter{font-size:83px;line-height:.76;padding-right:10px}
-.ornament-line{display:flex;align-items:center;justify-content:center;gap:22px;letter-spacing:.1em}
-.ornament-line::before,.ornament-line::after{content:"";height:1px;max-width:150px;flex:1;background:linear-gradient(90deg,transparent,rgba(137,101,79,.55))}
-.ornament-line::after{transform:rotate(180deg)}
-.pager{padding-top:26px;border-top:1px solid rgba(129,95,75,.33);margin-top:20px}
-.pager a{transition:color .2s}.pager a:hover{color:#78394b}
-.article-folio{text-align:center;color:#886e5c;font:13px 'Cormorant Garamond',serif;letter-spacing:.24em;margin:0 auto 38px}
-.article-folio::before,.article-folio::after{content:"❧";padding:0 13px;color:#906f59}
-.editorial-rule{height:18px;margin:32px auto;width:min(280px,60%);background:linear-gradient(90deg,transparent,#a28668 20%,#a28668 80%,transparent) center/100% 1px no-repeat;position:relative}
-.editorial-rule::after{content:"❦";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:26px 'Cormorant Garamond',serif;background:#e6dccd;padding:0 12px;color:#755363}
-@media(max-width:900px){.introduction{padding-left:18px;padding-right:18px}}
-@media(max-width:580px){.article-head{padding-top:80px}.article-body{font-size:22px}.introduction p:first-of-type:first-letter{font-size:53px}.cover-ornament::before,.cover-ornament::after{display:none}}
-@media(prefers-reduced-motion:reduce){.nav-item,.pager a{transition:none}}
-
-/* Chapter reading rhythm: text remains central; archival engravings recede into paper. */
-.chapter-section{position:relative;max-width:690px;margin:0 auto 48px;scroll-margin-top:32px}
-.chapter-section+.chapter-section{padding-top:31px;border-top:1px solid rgba(114,83,72,.23)}
-.chapter-section+.chapter-section::before{content:"❧";position:absolute;top:-17px;left:50%;transform:translateX(-50%);padding:0 15px;background:#e8dfd1;color:#8b695e;font:27px 'Cormorant Garamond',serif}
-.chapter-section h2{font:600 clamp(32px,4vw,43px)/1.07 'Cormorant Garamond',serif;color:#4a2c37;letter-spacing:-.025em;margin:0 0 18px;text-wrap:balance}
-.chapter-section p{font:inherit;margin:0 0 1.05em}
-.chapter-section:first-child p:first-of-type:first-letter{float:left;font:600 83px/.75 'Cormorant Garamond',serif;padding:10px 11px 0 0;color:#6c3745}
-.article-head::before{mask-image:linear-gradient(90deg,transparent 10%,#000 100%);opacity:.055}
-.article-body::before{display:none!important}
-@media(max-width:600px){.chapter-section{margin-bottom:35px}.chapter-section+.chapter-section{padding-top:27px}.chapter-section:first-child p:first-of-type:first-letter{font-size:68px}}
-
-/* Liber Secundus: chapter-specific engraving and a distinct Crowe family section. */
-.article--swiat .article-head{isolation:isolate}
-.article--swiat .article-head::before{content:"";position:absolute;inset:0 -2% 0 32%;width:auto;height:auto;background-image:url("https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_19.jpeg");background-position:right center;background-size:contain;background-repeat:no-repeat;opacity:.07;filter:grayscale(1);mix-blend-mode:multiply;mask-image:radial-gradient(ellipse at 75% 48%,#000 12%,transparent 80%);pointer-events:none;z-index:-1}
-.article--swiat .chapter-section:nth-child(2){isolation:isolate}
-.article--swiat .chapter-section:nth-child(2)::after{content:"";position:absolute;right:-50px;top:38px;width:155px;height:260px;background:url("https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_16.jpeg") center/contain no-repeat;opacity:.045;filter:grayscale(1);mix-blend-mode:multiply;mask-image:linear-gradient(90deg,transparent,#000 60%,transparent);pointer-events:none;z-index:-1}
-.article--swiat .chapter-section--crowe{border-top:double 3px rgba(110,81,71,.43);border-bottom:double 3px rgba(110,81,71,.32);padding:45px 25px 22px;margin:0 -12px 52px;background:linear-gradient(120deg,rgba(119,84,74,.055),transparent 75%);position:relative}
-.article--swiat .chapter-section--crowe::before{content:"✥";position:absolute;top:-20px;left:50%;transform:translateX(-50%);padding:0 18px;background:#e9e0d3;color:#815f58;font:25px 'Cormorant Garamond',serif}
-.article--swiat .chapter-section--crowe h2::before{content:"DOMUS CROWE";display:block;font:600 10px 'DM Sans',sans-serif;letter-spacing:.24em;color:#8b6a57;margin-bottom:12px}
-.article--swiat .chapter-section--crowe h2{color:#4e3541}
-.article--swiat .chapter-section--crowe p:first-of-type:first-letter{float:none;font:inherit;padding:0;color:inherit}
-.article--swiat .chapter-section--crowe+.chapter-section{border-top:0;padding-top:0}
-.article--swiat .chapter-section--crowe+.chapter-section::before{display:none}
-@media(max-width:650px){.article--swiat .chapter-section--crowe{margin-left:0;margin-right:0;padding:34px 15px 14px}.article--swiat .chapter-section:nth-child(2)::after{display:none}}
-
-/* Nevermore chapter: visible print ornaments that do not rely on remote images. */
-.article--swiat .article-head{background:radial-gradient(ellipse at 86% 40%,rgba(127,82,71,.13),transparent 54%);border-bottom:1px solid rgba(110,73,70,.43);margin-bottom:10px}
-.article--swiat .article-head::before{opacity:.17!important;z-index:0;right:0;top:4%;width:44%;height:87%;mask-image:linear-gradient(90deg,transparent,#000 65%);filter:grayscale(1) contrast(1.4)}
-.article--swiat .article-head::after{content:"✥  ❦  ✥";position:absolute;left:7%;right:auto;bottom:17px;width:auto;height:auto;border:0;background:none;font:21px 'Cormorant Garamond',serif;letter-spacing:.6em;color:#8a6558}
-.article--swiat .article-head h1,.article--swiat .article-head p,.article--swiat .article-head .eyebrow{position:relative;z-index:1}
-.article--swiat .chapter-section h2{position:relative;padding-left:22px}
-.article--swiat .chapter-section h2::after{content:"";position:absolute;left:0;top:8%;bottom:9%;width:3px;background:linear-gradient(#9c795d,#563746)}
-.article--swiat .chapter-section:nth-child(2){background:linear-gradient(90deg,transparent 65%,rgba(121,83,70,.065));padding-right:16px}
-.article--swiat .chapter-section:nth-child(2)::after{opacity:.16;z-index:0;mix-blend-mode:multiply;mask-image:linear-gradient(90deg,transparent,black 45%,transparent)}
-.article--swiat .chapter-section--crowe{isolation:isolate;border:1px solid rgba(96,65,65,.55);border-top:4px double #8f645b;border-bottom:4px double #8f645b;background:linear-gradient(115deg,rgba(122,82,75,.105),rgba(239,223,204,.07) 70%);box-shadow:inset 0 0 0 7px rgba(237,224,208,.65),inset 0 0 0 8px rgba(119,82,76,.22);padding:52px 34px 33px;margin:12px -20px 60px}
-.article--swiat .chapter-section--crowe::before{content:"✥";background:#e9e0d3;font-size:28px}
-.article--swiat .chapter-section--crowe h2{padding-left:0}
-.article--swiat .chapter-section--crowe h2::after{display:none}
-.article--swiat .chapter-section--crowe h2::before{font-size:12px;letter-spacing:.27em;color:#6d4948}
-.article--swiat .chapter-section--crowe p{position:relative;z-index:1}
-.article--swiat .chapter-section--crowe::after{content:"C";position:absolute;right:18px;bottom:1px;font:italic 180px/.8 'Cormorant Garamond',serif;color:rgba(93,54,63,.055);pointer-events:none;z-index:0}
-@media(max-width:650px){.article--swiat .article-head::before{opacity:.10!important}.article--swiat .chapter-section--crowe{margin-left:0;margin-right:0;padding:40px 18px 22px}.article--swiat .chapter-section h2{padding-left:14px}}
-
-/* SITE-WIDE VISIBILITY AUDIT / 2026-10.
-   Reliable ink ornaments: all pages readable and decorated without external JPGs. */
-:root{--nevermore-line:#906c64;--nevermore-gold:#947257}
-.cover{position:relative;isolation:isolate}
-.cover::before{content:"";position:absolute;inset:15px;border:1px solid rgba(201,164,121,.45);pointer-events:none;z-index:1}
-.cover::after{content:"";position:absolute;inset:24px;border:1px solid rgba(201,164,121,.17);pointer-events:none;z-index:1}
-.cover-ornament,.cover .flourish{color:#c7a57f;text-shadow:0 1px 8px rgba(0,0,0,.18)}
-.cover-engraving{opacity:.27!important;filter:grayscale(1) sepia(.25) contrast(1.2)}
-.gothic-epigraph{position:relative;padding-top:55px;padding-bottom:55px}
-.gothic-epigraph::before{content:"❦";display:block;font:35px 'Cormorant Garamond',serif;color:#80545b;margin:0 auto 17px}
-.introduction.editorial-wash{background-image:linear-gradient(110deg,rgba(136,94,75,.065),transparent 65%);border-top:3px double rgba(112,78,70,.55);border-bottom:3px double rgba(112,78,70,.55)}
-.introduction.editorial-wash::after{opacity:.19!important;z-index:0;right:-6%;width:44%;filter:grayscale(1) contrast(1.2);mask-image:linear-gradient(90deg,transparent,#000 48%,transparent)}
-.introduction.editorial-wash>div{position:relative;z-index:1}
-.contents.decorative-contents::after{opacity:.17!important;z-index:0;mask-image:radial-gradient(ellipse,black 25%,transparent 76%)}
-.contents.decorative-contents>.eyebrow,.contents.decorative-contents>h2,.contents.decorative-contents>.chapter-grid{position:relative;z-index:1}
-.contents.decorative-contents h2{position:relative;padding-bottom:24px;border-bottom:1px solid rgba(124,84,74,.42)}
-.contents.decorative-contents h2::before{content:"❧";display:block;font:26px 'Cormorant Garamond',serif;color:#80535a;padding-bottom:9px}
-.chapter-card{position:relative;box-shadow:0 2px 0 rgba(112,75,66,.13);background:linear-gradient(135deg,rgba(255,252,243,.6),rgba(226,207,187,.24))}
-.chapter-card::after{content:"";position:absolute;inset:12px;border-left:2px solid rgba(144,95,81,.36);pointer-events:none}
-.article-head{position:relative;isolation:isolate}
-.article-head::before{opacity:.16!important;mix-blend-mode:multiply;mask-image:radial-gradient(ellipse at 65% 45%,black 30%,transparent 80%)}
-.article-head h1,.article-head p,.article-head .eyebrow{position:relative;z-index:1}
-.article-head::after{opacity:1}
-.article-meta::before{content:"✥";font:17px 'Cormorant Garamond',serif;color:#98765f;margin-right:11px}
-.article .ornament-line{color:#754e5c;font-size:20px}
-.article .article-folio{font-size:14px;color:#785d55}
-.chapter-section h2{border-bottom:1px solid rgba(121,82,72,.38);padding-bottom:12px;margin-bottom:21px}
-.chapter-section h2::after{content:"";display:block;width:85px;height:3px;background:linear-gradient(90deg,#7d4d57,#aa8462);margin-top:12px}
-.chapter-section+.chapter-section{border-top:0;padding-top:40px}
-.chapter-section+.chapter-section::before{content:"❦";top:-7px;color:#855d5b;background:transparent}
-.chapter-floral-ending{border-top:1px solid rgba(122,86,75,.38);padding-top:21px}
-.article--swiat .article-head::before{opacity:.2!important}
-.article--swiat .chapter-section--crowe h2{border-bottom-color:rgba(99,61,68,.58)}
-.article--swiat .chapter-section--crowe h2::after{content:"";display:block;width:120px;height:2px;margin-top:12px;background:#916b5d}
-@media(max-width:700px){
- .cover::before{inset:9px}.cover::after{inset:16px}
- .introduction.editorial-wash::after,.contents.decorative-contents::after{opacity:.11!important}
- .article-head::before{opacity:.1!important}
- .chapter-section h2{padding-bottom:10px}
+/* FALL OF NEVERMORE | unified editorial layer, October 2026.
+   Base layout lives in global.css; this file sets one visual language. */
+:root{--paper:#e9dfd0;--ink:#382e30;--wine:#633d4c;--bronze:#9a795d;--rule:rgba(117,82,73,.34)}
+.main-frame{
+ position:relative;isolation:isolate;overflow:clip;
+ background:radial-gradient(ellipse at 50% 7%,#f5eee3 0%,#eae0d2 60%,#e3d7c6 100%);
 }
-
-/* Continuous editorial architecture: ornament follows the entire document. */
-.main-frame{position:relative;isolation:isolate;overflow:clip;background-color:#e9e1d3;
-background-image:
-linear-gradient(90deg,rgba(95,63,60,.10),transparent 9%,transparent 91%,rgba(95,63,60,.10)),
-repeating-linear-gradient(90deg,rgba(91,65,56,.024) 0 1px,transparent 1px 4px),
-radial-gradient(ellipse at 48% 10%,rgba(255,251,242,.72),transparent 69%);
+.main-frame::before,.main-frame::after{
+ content:"";position:absolute;z-index:0;top:110px;bottom:80px;width:56px;pointer-events:none;opacity:.65;
+ background:
+ radial-gradient(ellipse at center,transparent 42%,rgba(112,77,67,.28) 45% 48%,transparent 51%) center 18px/38px 78px repeat-y,
+ linear-gradient(to right,transparent 49%,rgba(125,91,72,.26) 49% 51%,transparent 51%) center/100% 100% no-repeat;
 }
-.main-frame::before,.main-frame::after{content:"";position:absolute;top:95px;bottom:70px;width:clamp(32px,7vw,105px);pointer-events:none;z-index:0;opacity:.68;
-background-image:
-linear-gradient(90deg,transparent 49%,rgba(115,80,69,.32) 49%,rgba(115,80,69,.32) 50%,transparent 50%),
-repeating-linear-gradient(180deg,transparent 0 27px,rgba(127,87,78,.22) 27px 28px,transparent 28px 82px),
-radial-gradient(circle at 50% 55px,rgba(125,82,78,.47) 0 3px,transparent 4px),
-radial-gradient(ellipse at 50% 55px,transparent 11px,rgba(126,89,75,.33) 12px 13px,transparent 14px);
-background-size:100% 100%,100% 130px,100% 130px,100% 130px}
-.main-frame::before{left:12px}
-.main-frame::after{right:12px;transform:scaleX(-1)}
+.main-frame::before{left:clamp(8px,2.5vw,42px)}
+.main-frame::after{right:clamp(8px,2.5vw,42px);transform:scaleX(-1)}
 .main-frame>header,.main-frame>main,.main-frame>footer{position:relative;z-index:1}
-.main-frame>main{min-height:65vh}
-.article{position:relative}
+.masthead{border-bottom:3px double rgba(128,89,77,.37)}
+.masthead::after{content:none}
+.sidebar{border-right:1px solid #96765e}
+.nav-item.active{box-shadow:inset 3px 0 #b08c66}
+.footer{border-top:3px double var(--rule)}
+.cover{position:relative;border-color:#92714f}
+.cover::after{content:"";position:absolute;inset:16px;border:1px solid rgba(202,167,119,.35);pointer-events:none}
+.cover-engraving{opacity:.50;filter:grayscale(1) sepia(.2)}
+.cover-ornament,.cover .flourish{color:#d1b18b}
+.gothic-epigraph{position:relative;border-block:3px double var(--rule);padding:50px 24px;margin:55px auto 76px}
+.gothic-epigraph::before{content:"❦";display:block;text-align:center;font:32px 'Cormorant Garamond',serif;color:#81555c;margin-bottom:15px}
+.introduction.editorial-wash{position:relative;isolation:isolate;border-block:3px double var(--rule);padding:49px 27px;background:linear-gradient(100deg,rgba(118,83,69,.055),transparent 75%)}
+.introduction.editorial-wash::before{content:none}
+.introduction.editorial-wash::after{content:"";position:absolute;right:0;top:4%;bottom:4%;width:34%;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Hedera_helix_Sturm12001.jpg') center/contain no-repeat;opacity:.12;filter:grayscale(1);mix-blend-mode:multiply;mask-image:linear-gradient(90deg,transparent,black 60%,transparent);pointer-events:none;z-index:-1}
+.introduction p:first-of-type:first-letter{float:left;font:600 58px/.85 'Cormorant Garamond',serif;color:var(--wine);margin:7px 7px 0 0}
+.contents.decorative-contents{position:relative;isolation:isolate}
+.contents.decorative-contents::after{content:"";position:absolute;right:0;top:0;width:190px;height:260px;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Redoute_-_Rosa_gallica_regalis.jpg') center/contain no-repeat;opacity:.10;filter:grayscale(1);mix-blend-mode:multiply;mask-image:radial-gradient(ellipse,black 22%,transparent 78%);pointer-events:none;z-index:-1}
+.contents h2::after{content:"❦";display:block;font:26px 'Cormorant Garamond',serif;color:#906d60;margin-top:11px}
+.chapter-card{position:relative;background:linear-gradient(140deg,#f7f1e7,#ece1d2);border:1px solid rgba(129,95,75,.46);box-shadow:0 2px 0 rgba(106,70,60,.10)}
+.chapter-card::before{content:none}.chapter-card::after{content:none}
+.article{position:relative;max-width:790px;isolation:isolate}
 .article::before,.article::after{display:none!important}
-.article-body{background:linear-gradient(90deg,rgba(242,236,225,.24),rgba(245,240,232,.49) 12%,rgba(245,240,232,.49) 88%,rgba(242,236,225,.24));border-left:1px solid rgba(122,86,73,.19);border-right:1px solid rgba(122,86,73,.19);padding:32px clamp(15px,2vw,25px) 2px;box-shadow:inset 8px 0 18px -18px #513d3c,inset -8px 0 18px -18px #513d3c}
-.article--swiat .chapter-section--crowe{margin-left:0;margin-right:0}
-.article-meta{position:relative}
-.article-meta::after{content:"";position:absolute;bottom:-6px;left:0;right:0;border-bottom:1px solid rgba(126,91,77,.13)}
-.footer{border-top:3px double rgba(112,81,73,.33)}
-@media(min-width:1250px){.main-frame::before{left:clamp(14px,4vw,65px)}.main-frame::after{right:clamp(14px,4vw,65px)}}
-@media(max-width:1050px){.main-frame::before,.main-frame::after{width:24px;opacity:.36}.main-frame::before{left:3px}.main-frame::after{right:3px}}
-@media(max-width:680px){.main-frame::before,.main-frame::after{display:none}.article-body{border-left:0;border-right:0;padding:16px 5px;background:transparent}.main-frame{background-image:radial-gradient(ellipse at 50% 10%,rgba(255,251,242,.65),transparent 65%)}}
+.article-meta{border-bottom:1px solid var(--rule);padding-bottom:15px}
+.article-head{position:relative;isolation:isolate;padding:98px 0 51px;border-bottom:1px solid var(--rule)}
+.article-head::before{content:"";position:absolute;right:0;top:5%;width:43%;height:88%;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_16.jpeg') center/contain no-repeat;opacity:.13;filter:grayscale(1);mix-blend-mode:multiply;mask-image:linear-gradient(90deg,transparent,black 68%);pointer-events:none;z-index:-1}
+.article-head::after{content:none}
+.article-head .eyebrow,.article-head h1,.article-head p{position:relative;z-index:1}
+.article-head h1{color:#412935;letter-spacing:-.025em;text-wrap:balance}
+.article-head p{max-width:570px;margin-inline:auto}
+.ornament-line{display:flex;align-items:center;justify-content:center;gap:14px;color:#855664;margin:25px 0 10px}
+.ornament-line::before,.ornament-line::after{content:"";display:block;max-width:125px;flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--rule))}
+.ornament-line::after{transform:rotate(180deg)}
+.article-folio{text-align:center;color:#896b5c;letter-spacing:.21em;font:12px 'Cormorant Garamond',serif;margin:0 auto 43px}
+.article-folio::before,.article-folio::after{content:"❧";padding:0 12px}
+.article-body{position:relative;display:block;z-index:1;max-width:710px;margin:0 auto;color:var(--ink);font:21px/1.54 'Cormorant Garamond',serif}
+.article-body::before{display:none!important;content:none!important}
+.article-body>p{margin-bottom:1.1em}
+.article-body>p:first-child:first-letter{float:left;font:600 70px/.82 'Cormorant Garamond',serif;color:var(--wine);padding:8px 9px 0 0}
+.chapter-section{position:relative;max-width:690px;margin:0 auto 55px}
+.chapter-section h2{position:relative;font:600 clamp(31px,3.4vw,41px)/1.13 'Cormorant Garamond',serif;color:#50303b;margin:0 0 22px;text-wrap:balance;padding:0 0 12px;border-bottom:1px solid var(--rule)}
+.chapter-section h2::after{content:"";position:absolute;bottom:-2px;left:0;width:90px;border-bottom:3px solid #9e7965}
+.chapter-section p{margin:0 0 1.08em;font:inherit}
+.chapter-section:first-child p:first-of-type:first-letter{float:left;font:600 76px/.79 'Cormorant Garamond',serif;padding:9px 10px 0 0;color:var(--wine)}
+.chapter-section+.chapter-section{padding-top:36px}
+.chapter-section+.chapter-section::before{content:"❦";position:absolute;top:-11px;left:50%;transform:translateX(-50%);color:#90685b;font:25px 'Cormorant Garamond',serif}
+.chapter-section--crowe{padding:35px 27px 19px!important;margin:14px -12px 60px;border:3px double rgba(119,80,74,.54);background:linear-gradient(120deg,rgba(117,75,69,.08),rgba(255,249,240,.32));box-shadow:inset 0 0 0 7px rgba(133,95,80,.06)}
+.chapter-section--crowe::before{content:"✥"!important;top:-19px!important;background:var(--paper);padding-inline:13px}
+.chapter-section--crowe h2::before{content:"DOMUS CROWE";display:block;color:#836052;font:600 10px 'DM Sans',sans-serif;letter-spacing:.24em;margin-bottom:9px}
+.chapter-section--crowe+.chapter-section::before{content:none}
+.chapter-floral-ending{border-top:1px solid var(--rule);padding-top:18px}
+.pager{border-top:1px solid var(--rule);padding-top:25px}
+.article--swiat .article-head::before{background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_19.jpeg')}
+@media(max-width:1050px){.main-frame::before,.main-frame::after{width:26px;opacity:.32}}
+@media(max-width:760px){.main-frame::before,.main-frame::after{display:none}.article-body{font-size:20px}.article-head{padding-top:72px}.chapter-section--crowe{margin-inline:0;padding:27px 18px 12px!important}.introduction.editorial-wash{padding-inline:18px}}
+@media(max-width:480px){.article-body{font-size:19px}.article-head::before{opacity:.075}.cover::after{inset:9px}.chapter-section h2{font-size:31px}}
+@media(prefers-reduced-motion:reduce){.nav-item{transition:none}}
