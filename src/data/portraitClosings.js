@@ -1,0 +1,22 @@
+export const portraitClosings={
+"01":"Ambrose przemawia z pewnością człowieka, który całe życie sprawował pieczę nad cudzym losem. Rzadko pyta, czy krewni są mu wdzięczni; znacznie częściej oczekuje, że sami okażą to bez przypominania.",
+"02":"Uważa, że każda rodzina ma obowiązki wobec własnej historii. Nie każdemu jednak odpowiada, kto i na jakiej podstawie rozstrzyga, które wspomnienia zasługują na zachowanie.",
+"03":"Gdy opowiada o Lady Lucindzie, wspomina żywą kobietę, nie idealną panią domu z rodzinnych portretów. Młodsi mogliby się od niej dowiedzieć wiele, gdyby pozwolono jej dokończyć opowieść.",
+"04":"Po wojnie szczególnie niechętnie znosi sprzeciw we własnym domu. Niektórzy mówią, że surowość ojca jest ceną za bezpieczeństwo rodziny; jego dzieci nie zawsze wydają się tego samego zdania.",
+"05":"Jej powrót do Nevermore rozpalił ciekawość towarzystwa. Vivienne, która kiedyś miała odwagę wyjechać, musi teraz ponownie spotkać ludzi pamiętających wszystkie słowa wypowiedziane przed rozstaniem.",
+"06":"Beatrice zna cichą władzę ksiąg rachunkowych i umów. Potrafi przemilczeć obelgę, jeśli właśnie w tej chwili ktoś potrzebuje jej podpisu.",
+"07":"Podczas kolacji Malcolm bywa duszą towarzystwa. Dopiero w późniejszych godzinach wieczoru widać niekiedy, jak często zerka ku drzwiom, gdy słyszy kroki na korytarzu.",
+"08":"Dla przyszłej synowej pozostaje życzliwa, choć wymagająca. Nie przychodzi jej do głowy, że Eleanor mogłaby mieć własne wyobrażenie o prowadzeniu Nevermore Hall.",
+"09":"W rodzinnych archiwach Nathaniel potrafi odnaleźć szczegół, który wszystkim innym umknął. Gorzej radzi sobie wtedy, gdy jedynym świadectwem jest czyjeś wzruszenie.",
+"10":"Obserwator łatwo zazdrościłby Sebastianowi jego pozycji. Trudniej byłoby mu wyobrazić sobie ciężar oczekiwań, które od dzieciństwa nazywano przywilejami.",
+"11":"Lenore zna rytm domu przede wszystkim z chwil, gdy inni ją odwiedzają. Być może właśnie dlatego tak dobrze odróżnia tych, którzy przychodzą porozmawiać, od tych, którzy chcą jedynie upewnić się o jej stanie.",
+"12":"Clara nie boi się zgorszenia, gdy uważa je za zasłużone. Niekiedy dopiero po fakcie dostrzega, że osoba, w której imieniu wystąpiła, wolałaby wypowiedzieć własne zdanie.",
+"13":"Wiersze, choroba i portret malowany przez Basila zajmują Orlando niemal bez reszty. Tylko w chwilach szczególnego zmęczenia pozwala sobie zapomnieć, że powinien być kimś niezwykłym.",
+"14":"Należy do najmłodszych gości rodzinnego stołu, a przecież zna jego obyczaje lepiej niż wielu uznanych krewnych. Wie dokładnie, kiedy spojrzenia odwracają się od niego i dlaczego.",
+"15":"Eleanor jest dość bystra, by wiedzieć, iż uprzejmie wyrażona rada może stanowić równie stanowcze żądanie co otwarty rozkaz. Nie zamierza jednak przyjmować wszystkich rad bez namysłu.",
+"16":"Malując portret, Basil spędza więcej czasu na obserwowaniu niż na mówieniu. W Nevermore jest gościem, a gość, nawet serdecznie witany, nie zawsze wie, jak głęboko sięgają domowe przyzwyczajenia.",
+"17":"Pismo Horace'a Fincha pozostaje równe nawet w pośpiechu. Rodzina ceni w nim tę niezawodność, szczególnie gdy potrzebuje, aby nieprzyjemne okoliczności przybrały postać zwyczajnej formalności.",
+"18":"Jego zawodowe opanowanie daje pacjentom poczucie bezpieczeństwa. Niekiedy jednak trudno zgadnąć, czy doktor rozmawia z człowiekiem, czy rozważa kolejny przypadek wymagający rozwiązania.",
+"19":"Niejeden przychodzi do niego z nadzieją na łatwe rozgrzeszenie. Matthias wysłuchuje cierpliwie, lecz nie zawsze potrafi podarować pociechę, której ktoś oczekiwał.",
+"20":"Nie wszystkie sprawy można zamknąć jednym raportem. Alaric wie o tym zapewne lepiej, niż chciałby przyznać, zwłaszcza gdy ślady prowadzą do domu, w którym niegdyś witano go jak przyjaciela."
+};
