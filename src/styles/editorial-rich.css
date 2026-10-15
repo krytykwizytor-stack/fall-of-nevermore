@@ -82,3 +82,44 @@
 .article--swiat .chapter-section--crowe p{position:relative;z-index:1}
 .article--swiat .chapter-section--crowe::after{content:"C";position:absolute;right:18px;bottom:1px;font:italic 180px/.8 'Cormorant Garamond',serif;color:rgba(93,54,63,.055);pointer-events:none;z-index:0}
 @media(max-width:650px){.article--swiat .article-head::before{opacity:.10!important}.article--swiat .chapter-section--crowe{margin-left:0;margin-right:0;padding:40px 18px 22px}.article--swiat .chapter-section h2{padding-left:14px}}
+
+/* SITE-WIDE VISIBILITY AUDIT / 2026-10.
+   Reliable ink ornaments: all pages readable and decorated without external JPGs. */
+:root{--nevermore-line:#906c64;--nevermore-gold:#947257}
+.cover{position:relative;isolation:isolate}
+.cover::before{content:"";position:absolute;inset:15px;border:1px solid rgba(201,164,121,.45);pointer-events:none;z-index:1}
+.cover::after{content:"";position:absolute;inset:24px;border:1px solid rgba(201,164,121,.17);pointer-events:none;z-index:1}
+.cover-ornament,.cover .flourish{color:#c7a57f;text-shadow:0 1px 8px rgba(0,0,0,.18)}
+.cover-engraving{opacity:.27!important;filter:grayscale(1) sepia(.25) contrast(1.2)}
+.gothic-epigraph{position:relative;padding-top:55px;padding-bottom:55px}
+.gothic-epigraph::before{content:"❦";display:block;font:35px 'Cormorant Garamond',serif;color:#80545b;margin:0 auto 17px}
+.introduction.editorial-wash{background-image:linear-gradient(110deg,rgba(136,94,75,.065),transparent 65%);border-top:3px double rgba(112,78,70,.55);border-bottom:3px double rgba(112,78,70,.55)}
+.introduction.editorial-wash::after{opacity:.19!important;z-index:0;right:-6%;width:44%;filter:grayscale(1) contrast(1.2);mask-image:linear-gradient(90deg,transparent,#000 48%,transparent)}
+.introduction.editorial-wash>div{position:relative;z-index:1}
+.contents.decorative-contents::after{opacity:.17!important;z-index:0;mask-image:radial-gradient(ellipse,black 25%,transparent 76%)}
+.contents.decorative-contents>.eyebrow,.contents.decorative-contents>h2,.contents.decorative-contents>.chapter-grid{position:relative;z-index:1}
+.contents.decorative-contents h2{position:relative;padding-bottom:24px;border-bottom:1px solid rgba(124,84,74,.42)}
+.contents.decorative-contents h2::before{content:"❧";display:block;font:26px 'Cormorant Garamond',serif;color:#80535a;padding-bottom:9px}
+.chapter-card{position:relative;box-shadow:0 2px 0 rgba(112,75,66,.13);background:linear-gradient(135deg,rgba(255,252,243,.6),rgba(226,207,187,.24))}
+.chapter-card::after{content:"";position:absolute;inset:12px;border-left:2px solid rgba(144,95,81,.36);pointer-events:none}
+.article-head{position:relative;isolation:isolate}
+.article-head::before{opacity:.16!important;mix-blend-mode:multiply;mask-image:radial-gradient(ellipse at 65% 45%,black 30%,transparent 80%)}
+.article-head h1,.article-head p,.article-head .eyebrow{position:relative;z-index:1}
+.article-head::after{opacity:1}
+.article-meta::before{content:"✥";font:17px 'Cormorant Garamond',serif;color:#98765f;margin-right:11px}
+.article .ornament-line{color:#754e5c;font-size:20px}
+.article .article-folio{font-size:14px;color:#785d55}
+.chapter-section h2{border-bottom:1px solid rgba(121,82,72,.38);padding-bottom:12px;margin-bottom:21px}
+.chapter-section h2::after{content:"";display:block;width:85px;height:3px;background:linear-gradient(90deg,#7d4d57,#aa8462);margin-top:12px}
+.chapter-section+.chapter-section{border-top:0;padding-top:40px}
+.chapter-section+.chapter-section::before{content:"❦";top:-7px;color:#855d5b;background:transparent}
+.chapter-floral-ending{border-top:1px solid rgba(122,86,75,.38);padding-top:21px}
+.article--swiat .article-head::before{opacity:.2!important}
+.article--swiat .chapter-section--crowe h2{border-bottom-color:rgba(99,61,68,.58)}
+.article--swiat .chapter-section--crowe h2::after{content:"";display:block;width:120px;height:2px;margin-top:12px;background:#916b5d}
+@media(max-width:700px){
+ .cover::before{inset:9px}.cover::after{inset:16px}
+ .introduction.editorial-wash::after,.contents.decorative-contents::after{opacity:.11!important}
+ .article-head::before{opacity:.1!important}
+ .chapter-section h2{padding-bottom:10px}
+}
