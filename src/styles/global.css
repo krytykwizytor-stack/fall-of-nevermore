@@ -88,3 +88,24 @@ body{background:#d9d0c1;background-image:repeating-linear-gradient(90deg,transpa
 .article-body{display:flow-root}
 @media(max-width:650px){.gothic-plates-grid{grid-template-columns:1fr 1fr}.gothic-plates figure:last-child{display:none}.gothic-plates figure img{height:185px}.chapter-plate{width:120px;margin-left:16px}.chapter-plate img{height:135px}}
 @media(max-width:370px){.gothic-plates-grid{grid-template-columns:1fr}.gothic-plates figure:nth-child(2){display:none}}
+
+/* Botanical mourning motifs, sourced from historical public-domain plates. */
+.mourning-botany{width:min(950px,calc(100% - 52px));margin:0 auto 92px;padding:44px clamp(18px,4vw,48px) 25px;border-top:1px solid #a18c77;border-bottom:1px solid #a18c77;background:linear-gradient(150deg,rgba(255,249,238,.35),rgba(102,67,68,.055));position:relative}
+.mourning-botany::before{content:"❦";position:absolute;top:-23px;left:50%;transform:translateX(-50%);padding:0 15px;background:#e5dbcc;color:#775457;font:36px 'Cormorant Garamond',serif}
+.botanical-heading{text-align:center;max-width:610px;margin:0 auto 30px}
+.botanical-heading h2{font:500 clamp(42px,6vw,66px)/1 'Cormorant Garamond',serif;color:#3b2930;margin:11px 0}
+.botanical-heading p{font:22px/1.45 'Cormorant Garamond',serif;margin:0;color:#584d48}
+.botanical-gallery{display:grid;grid-template-columns:minmax(0,1fr) 70px minmax(0,1fr);align-items:center;gap:12px}
+.botanical-gallery figure{min-width:0;margin:0;border:1px solid #bba58e;background:#e9ddca;padding:13px 13px 0;box-shadow:inset 0 0 0 5px #e0d1bb}
+.botanical-gallery img{width:100%;height:330px;display:block;object-fit:contain;mix-blend-mode:multiply;filter:saturate(.65) sepia(.1)}
+.botanical-gallery figcaption{padding:12px 5px 15px;text-align:center;border-top:1px solid rgba(110,82,66,.2);display:flex;flex-direction:column;gap:5px}
+.botanical-gallery figcaption strong{font:italic 23px 'Cormorant Garamond',serif;color:#502f38}
+.botanical-gallery figcaption span{font:11px 'DM Sans',sans-serif;color:#77675c;letter-spacing:.09em}
+.botanical-interlude{display:flex;flex-direction:column;align-items:center;gap:12px;color:#876451;font:30px 'Cormorant Garamond',serif}
+.botanical-stem{height:170px;width:1px;background:linear-gradient(transparent,#94755c,transparent)}
+.botanical-attribution{text-align:center;font:14px 'Cormorant Garamond',serif;color:#725f55;margin:22px 0 0}
+.chapter-floral-ending{text-align:center;margin:50px auto 35px;max-width:260px;color:#77505b;display:flex;gap:18px;align-items:center;justify-content:center}
+.chapter-floral-ending::before,.chapter-floral-ending::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#91775f)}
+.chapter-floral-ending::after{transform:rotate(180deg)}.chapter-floral-ending span{font:30px 'Cormorant Garamond',serif}
+@media(max-width:650px){.mourning-botany{padding:42px 12px 24px}.botanical-gallery{grid-template-columns:1fr 1fr;gap:12px}.botanical-interlude{display:none}.botanical-gallery img{height:210px}.botanical-gallery figure{padding:7px 7px 0}.botanical-gallery figcaption strong{font-size:18px}.botanical-gallery figcaption span{font-size:9px}}
+@media(max-width:390px){.botanical-gallery{grid-template-columns:1fr}.botanical-gallery img{height:265px}}
