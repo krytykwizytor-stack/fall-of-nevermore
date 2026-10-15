@@ -109,3 +109,21 @@ body{background:#d9d0c1;background-image:repeating-linear-gradient(90deg,transpa
 .chapter-floral-ending::after{transform:rotate(180deg)}.chapter-floral-ending span{font:30px 'Cormorant Garamond',serif}
 @media(max-width:650px){.mourning-botany{padding:42px 12px 24px}.botanical-gallery{grid-template-columns:1fr 1fr;gap:12px}.botanical-interlude{display:none}.botanical-gallery img{height:210px}.botanical-gallery figure{padding:7px 7px 0}.botanical-gallery figcaption strong{font-size:18px}.botanical-gallery figcaption span{font-size:9px}}
 @media(max-width:390px){.botanical-gallery{grid-template-columns:1fr}.botanical-gallery img{height:265px}}
+
+/* EDITORIAL RESET: illustrations are part of the paper, never stand-alone exhibits. */
+.article{isolation:isolate}
+.article-head{isolation:isolate}
+.article-head::before{content:"";position:absolute;right:-3%;top:0;width:49%;height:100%;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Gothic_Ornaments%2C_selected_fom_various_ancient_buildings%2C_both_in_England_and_Franc%2C_during_the_years_1828%2C_1829%2C_and_1839_-_Agustus_Pugin_16.jpeg') center/cover no-repeat;opacity:.065;mix-blend-mode:multiply;pointer-events:none;filter:grayscale(1)}
+.article-body::before{display:none!important}
+.article-body{max-width:700px;margin:0 auto}
+.article-prose,.article-body{position:relative;z-index:1}
+.article::after{display:none}
+.article::before{display:none}
+.introduction.editorial-wash{isolation:isolate;overflow:hidden}
+.introduction.editorial-wash::after{content:"";position:absolute;right:-6%;bottom:-55%;width:48%;height:180%;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Hedera_helix_Sturm12001.jpg') center/contain no-repeat;opacity:.08;filter:grayscale(1);mix-blend-mode:multiply;pointer-events:none;z-index:-1}
+.contents.decorative-contents{position:relative;isolation:isolate}
+.contents.decorative-contents::after{content:"";position:absolute;top:30px;right:-4%;width:260px;height:310px;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Redoute_-_Rosa_gallica_regalis.jpg') center/contain no-repeat;opacity:.065;mix-blend-mode:multiply;filter:grayscale(1);pointer-events:none;z-index:-1}
+.gothic-epigraph{margin-top:45px;margin-bottom:65px}
+.chapter-card{z-index:0}
+.chapter-plate,.engraving-section,.gothic-miniature,.gothic-plates,.mourning-botany{display:none!important}
+@media(max-width:650px){.article-head::before{opacity:.045;width:70%}.introduction.editorial-wash::after{opacity:.045;width:65%}.contents.decorative-contents::after{opacity:.04}}
