@@ -1,0 +1,4 @@
+export const portraitsC={
+"07":["Malcolm Ravensmoor jest człowiekiem równie zabawnym, co męczącym. Potrafi opowiedzieć niestosowną historię, a potem roześmiać się tak szczerze, że trudno pozostać obrażonym.","Od dawna mówi się o jego długach. Zwykle przyjmuje uwagi z wdziękiem, choć pytany o dawnych znajomych coraz łatwiej wpada w rozdrażnienie."],
+"08":["Lady Augusta troszczy się o dzieci z oddaniem, którego nikt rozsądny nie podważy. Dogląda zdrowia Lenore, czuwa nad ślubem Sebastiana i przypomina Orlandowi o zaleceniach lekarzy.","Młodzi traktują jej rady jak ograniczenia. Augusta przyjmuje tę niewdzięczność z bólem. Miłość rodzicielska bywa źródłem najsurowszych wymagań, choć ona sama nie zgodziłaby się z takim twierdzeniem."]
+};
