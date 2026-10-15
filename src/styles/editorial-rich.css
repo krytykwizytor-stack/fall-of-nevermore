@@ -39,3 +39,14 @@
 @media(max-width:900px){.introduction{padding-left:18px;padding-right:18px}}
 @media(max-width:580px){.article-head{padding-top:80px}.article-body{font-size:22px}.introduction p:first-of-type:first-letter{font-size:53px}.cover-ornament::before,.cover-ornament::after{display:none}}
 @media(prefers-reduced-motion:reduce){.nav-item,.pager a{transition:none}}
+
+/* Chapter reading rhythm: text remains central; archival engravings recede into paper. */
+.chapter-section{position:relative;max-width:690px;margin:0 auto 48px;scroll-margin-top:32px}
+.chapter-section+.chapter-section{padding-top:31px;border-top:1px solid rgba(114,83,72,.23)}
+.chapter-section+.chapter-section::before{content:"❧";position:absolute;top:-17px;left:50%;transform:translateX(-50%);padding:0 15px;background:#e8dfd1;color:#8b695e;font:27px 'Cormorant Garamond',serif}
+.chapter-section h2{font:600 clamp(32px,4vw,43px)/1.07 'Cormorant Garamond',serif;color:#4a2c37;letter-spacing:-.025em;margin:0 0 18px;text-wrap:balance}
+.chapter-section p{font:inherit;margin:0 0 1.05em}
+.chapter-section:first-child p:first-of-type:first-letter{float:left;font:600 83px/.75 'Cormorant Garamond',serif;padding:10px 11px 0 0;color:#6c3745}
+.article-head::before{mask-image:linear-gradient(90deg,transparent 10%,#000 100%);opacity:.055}
+.article-body::before{display:none!important}
+@media(max-width:600px){.chapter-section{margin-bottom:35px}.chapter-section+.chapter-section{padding-top:27px}.chapter-section:first-child p:first-of-type:first-letter{font-size:68px}}
