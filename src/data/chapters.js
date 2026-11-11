@@ -6,7 +6,7 @@ export const chapters = [
 ]},
 {heading:'Charakter gry',paragraphs:[
 'Fall of Nevermore to dwudniowy larp pałacowy osadzony w Anglii początku XX wieku. W centrum gry stoją relacje: między rodzicami i dziećmi, rodzeństwem, małżonkami, krewnymi z bocznych linii oraz ludźmi związanymi z domem od pokoleń. Testament i przygotowania do ślubu stwarzają powód do wspólnego spotkania. To, co wyniknie z rozmów, nie jest z góry przesądzone.',
-'Nie gramy opowieści o zwiedzaniu nawiedzonego budynku ani o kolejnych zadaniach do wykonania. Nevermore ma swój gotycki ciężar: choroby, żałobę, osobliwe rodzinne wspomnienia i anegdoty, których nie wszyscy słuchają z uśmiechem. Nie trzeba jednak wierzyć w każdą historię opowiadaną przy kominku. Niekiedy wystarczy, że dwie osoby pamiętają to samo zdarzenie zupełnie inaczej.'
+'Nie gramy opowieści o zwiedzaniu nawiedzonego budynku ani o kolejnych zadaniach do wykonania. W Nevermore wciąż pamięta się śmierć Lady Lucindy, a choroby niektórych członków rodziny trudno ukryć przed gośćmi. Krążą też opowieści o zdarzeniach, których nikt nie potrafi już wiarygodnie odtworzyć. Dla jednych są to rodzinne anegdoty, dla innych sprawy, o których nie należy rozmawiać przy stole.'
 ]},
 {heading:'Rola uczestnika',paragraphs:[
 'Każda osoba uczestnicząca w grze otrzyma przygotowaną postać z własną historią, przekonaniami i więziami z innymi bohaterami. Nie wszyscy przyjadą do Nevermore z równą swobodą. Miejsce przy stole, powinności wobec rodziny, pozycja społeczna i obyczaj epoki wpływają na to, co wypada powiedzieć publicznie, a co łatwiej wyznać w cztery oczy.',
