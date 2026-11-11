@@ -19,6 +19,9 @@ Zachować konkretny, ludzki, rozpoznawalny głos *Fall of Nevermore*. Redagować
 6. **Make It Credible**: konkrety mają wynikać z zatwierdzonego kanonu albo zweryfikowanej historii epoki; nie wymyślać faktów dla wiarygodności.
 7. **Top-Editor Pass**: czytać rozdział w całości, poprawić rytm, logiczny porządek, redundancję, brzmienie na głos.
 
+## Kontrola antyaforystyczna (doprecyzowanie autora)
+Nie kończyć akapitów efektownymi, dwuzdaniowymi sentencjami, które można przenieść do innego gotyckiego tekstu bez zmiany sensu. Szczególnie sprawdzać konstrukcje: „Nie trzeba X. Wystarczy Y”, „Nie zawsze X, czasem Y”, „Być może właśnie dlatego…”, „W tym domu…” oraz ogólne refleksje o pamięci, milczeniu i prawdzie. Ich obecność nie jest automatycznie błędem, ale bez konkretnej sytuacji i własnego znaczenia dla gry zwykle należy je usunąć, nie zastępować inną puentą. Zakończenie może pozostać rzeczowe, urwać się po ważnej informacji lub przejść naturalnie do kolejnego akapitu.
+
 ## Ograniczenia
 - Zachować kanon: rok 1905, bohaterów, ustaloną genealogię, pozycje i relacje, punkt wyjścia gry.
 - W tekstach publicznych **nie ujawniać sekretów organizatorskich** ani rozwiązań fabularnych.
