@@ -22,6 +22,16 @@ Zachować konkretny, ludzki, rozpoznawalny głos *Fall of Nevermore*. Redagować
 ## Kontrola antyaforystyczna (doprecyzowanie autora)
 Nie kończyć akapitów efektownymi, dwuzdaniowymi sentencjami, które można przenieść do innego gotyckiego tekstu bez zmiany sensu. Szczególnie sprawdzać konstrukcje: „Nie trzeba X. Wystarczy Y”, „Nie zawsze X, czasem Y”, „Być może właśnie dlatego…”, „W tym domu…” oraz ogólne refleksje o pamięci, milczeniu i prawdzie. Ich obecność nie jest automatycznie błędem, ale bez konkretnej sytuacji i własnego znaczenia dla gry zwykle należy je usunąć, nie zastępować inną puentą. Zakończenie może pozostać rzeczowe, urwać się po ważnej informacji lub przejść naturalnie do kolejnego akapitu.
 
+## Wzorzec referencyjny: Il Fuoco (zatwierdzony przez autora, 13 listopada 2026)
+Trzy dokumenty Il Fuoco (projektowy, mechaniczny, wakatowy) stanowią pozytywną referencję stylu, nie zbiór sformułowań do powielenia. Najważniejsze obserwacje:
+- Dokument projektowy może mieć temperament, opinię i konsekwentny autorski punkt widzenia, a poszczególne fragmenty — różną gęstość i długość.
+- Opis świata powinien pracować na konkretnych instytucjach, ludziach i interesach. Nevermore wymaga powściągliwego obserwatora edwardiańskiego, nie kopiowania włoskiej teatralności Cadenzii.
+- Dokument organizacyjny i mechaniczny ma być bezpośredni, sprawdzalny i praktyczny; literacki ornament nie może przesłaniać zasad.
+- Portret postaci powinien pokazywać jej repertuar zachowań, reputację, słabości i miejsce w społeczności. Postacie mają różnić się narracyjnie, również długością i rytmem opisów.
+- **Dopuszczać nierówny rytm**: bez obowiązkowych puent, identycznych struktur akapitów, równej liczby metafor i podsumowań.
+- Nie naśladować mechanicznie fraz i konstrukcji z materiałów referencyjnych; szczególnie nie kopiować serii pytań retorycznych i wzniosłych ogólników.
+- Rozdzielać publiczne opisy, wiedzę postaci i tajemnice organizatorskie.
+
 ## Ograniczenia
 - Zachować kanon: rok 1905, bohaterów, ustaloną genealogię, pozycje i relacje, punkt wyjścia gry.
 - W tekstach publicznych **nie ujawniać sekretów organizatorskich** ani rozwiązań fabularnych.
