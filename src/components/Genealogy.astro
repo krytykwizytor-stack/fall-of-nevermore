@@ -1,23 +1,101 @@
 ---
 import { genealogy } from '../data/genealogy.js';
-const nodes = new Map(genealogy.nodes.map(n=>[n.id,n]));
+const nodes = new Map(genealogy.nodes.map(node=>[node.id,node]));
 const relations = genealogy.relations.map(r=>({...r,a:nodes.get(r.from),b:nodes.get(r.to)}));
+const lineKind = {
+  parent:'blood', marriage:'marriage', engagement:'engagement', public_friendship:'friendship'
+};
 ---
 <section class="genealogy-plate" aria-labelledby="genealogy-heading">
-<h2 id="genealogy-heading">Tablica genealogiczna Ravensmoorów</h2>
-<p>Wybierz osobę w rodowodzie, aby otworzyć jej portret. Linie wskazują tylko potwierdzone związki.</p>
-<div class="genealogy-scroll" tabindex="0" aria-label="Przewijana plansza genealogiczna">
-<svg viewBox="0 0 1380 1100" role="img" aria-label="Genealogia rodziny Ravensmoorów i publicznie znane relacje z gośćmi" xmlns="http://www.w3.org/2000/svg">
-<rect x="8" y="8" width="1364" height="1084" rx="5" fill="none" stroke="#a0806c" stroke-width="1"/>
-<rect x="18" y="18" width="1344" height="1064" rx="2" fill="none" stroke="#baa48c" stroke-width=".8"/>
-<text x="690" y="37" text-anchor="middle" font-size="12" letter-spacing="4" fill="#765664">DOMUS RAVENSMOOR</text>
-{relations.map(link => <line x1={link.type==='marriage'?link.a.x+68:link.a.x} y1={link.type==='marriage'?link.a.y:link.a.y+29} x2={link.type==='marriage'?link.b.x-68:link.b.x} y2={link.type==='marriage'?link.b.y:link.b.y-29} stroke={link.type==='parent'?'#846a60':'#a17b83'} stroke-width={link.type==='parent'?1.5:1.2} stroke-dasharray={link.type==='engagement'?'7 4':link.type==='public_friendship'?'2 5':undefined} />)}
-{genealogy.nodes.map(node => <g>
-<rect x={node.x-66} y={node.y-28} width="132" height="56" rx="2" fill={node.kind==='guest'?'#eee4d9':'#f6ede0'} stroke={node.kind==='guest'?'#b5a598':'#8e6870'} stroke-width="1.1"/>
-{node.id==='basilius'||node.id==='lady-lenore' ? <text x={node.x} y={node.y+4} text-anchor="middle" font-size="16" font-family="Cormorant Garamond,serif" fill="#442b36">{node.label}</text> : <a href={'#rola-'+node.id} aria-label={'Otwórz portret: '+node.label}><rect x={node.x-65} y={node.y-27} width="130" height="54" fill="transparent"/><text x={node.x} y={node.y+4} text-anchor="middle" font-size="17" font-family="Cormorant Garamond,serif" fill="#52313d" text-decoration="underline">{node.label}</text></a>}
-<text x={node.x} y={node.y+19} text-anchor="middle" font-size="10" font-family="Cormorant Garamond,serif" fill="#78665f">{node.sub}</text></g>)}
-<text x="690" y="1080" text-anchor="middle" font-size="13" fill="#826657" font-family="Cormorant Garamond,serif">Genealogia i związki domu Nevermore · MCMV</text>
-</svg>
-</div>
-<p class="genealogy-caption">Linia ciągła: pokrewieństwo lub małżeństwo · przerywana: zaręczyny · kropkowana: publiczna przyjaźń. Pokazano trzy linie potomków Basiliusa oraz osoby związane z domem.</p>
+  <div class="genealogy-intro">
+    <span class="genealogy-kicker">ARCHIVUM FAMILIAE · ANNO DOMINI MCMV</span>
+    <h2 id="genealogy-heading">Rodowód domu Ravensmoor</h2>
+    <p>Zapisano tu jawne pokrewieństwa oraz osoby związane z domem. Wybierz nazwisko, aby otworzyć portret.</p>
+  </div>
+  <div class="genealogy-scroll" tabindex="0" aria-label="Przewijana tablica genealogiczna, 21 postaci graczy, Basilius i zmarła Lady Lenore">
+    <svg class="genealogy-chart" viewBox="0 0 1380 1100" role="img" aria-label="Drzewo genealogiczne Ravensmoorów: imiona, orientacyjne roczniki i rodzaje więzi" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <pattern id="genealogy-paper" width="24" height="24" patternUnits="userSpaceOnUse">
+          <path d="M0 24L24 0" stroke="#9b8173" stroke-width=".25" opacity=".19"/>
+        </pattern>
+        <linearGradient id="genealogy-vellum" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f8f0e1"/>
+          <stop offset=".52" stop-color="#f0e5d4"/>
+          <stop offset="1" stop-color="#eadccb"/>
+        </linearGradient>
+      </defs>
+      <rect width="1380" height="1100" rx="6" fill="url(#genealogy-vellum)"/>
+      <rect width="1380" height="1100" fill="url(#genealogy-paper)"/>
+      <rect x="9" y="9" width="1362" height="1082" rx="3" fill="none" stroke="#77545e" stroke-width="1.6"/>
+      <rect x="18" y="18" width="1344" height="1064" rx="2" fill="none" stroke="#b89b7d" stroke-width="1"/>
+      <path d="M29 104V29H104 M1276 29H1351V104 M29 996V1071H104 M1276 1071H1351V996" fill="none" stroke="#825565" stroke-width="2"/>
+      <path d="M38 96V38H96 M1284 38H1342V96 M38 1004V1062H96 M1284 1062H1342V1004" fill="none" stroke="#c5a77e" stroke-width="1"/>
+      <g fill="#795161" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif">
+        <text x="690" y="49" font-size="15" letter-spacing="5">✦ DOMUS RAVENSMOOR ✦</text>
+        <text x="690" y="1064" font-size="17" letter-spacing="2">✥  FAMILIA · SANGUIS · MEMORIA  ✥</text>
+      </g>
+      <g class="genealogy-connections">
+        {relations.map(link => <line
+          x1={link.type==='marriage' ? link.a.x+72 : link.a.x}
+          y1={link.type==='marriage' ? link.a.y : link.a.y+37}
+          x2={link.type==='marriage' ? link.b.x-72 : link.b.x}
+          y2={link.type==='marriage' ? link.b.y : link.b.y-37}
+          stroke={link.type==='parent'?'#865965':'#987b70'}
+          stroke-width={link.type==='parent'?2:1.8}
+          stroke-dasharray={link.type==='engagement'?'9 6':link.type==='public_friendship'?'2 7':undefined}
+          stroke-linecap="round"
+          class={`relation relation--${lineKind[link.type]}`}
+        />)}
+      </g>
+      {genealogy.nodes.map(node => <g class:list={['genealogy-person',`genealogy-person--${node.kind}`]}>
+        <rect x={node.x-73} y={node.y-38} width="146" height="76" rx="3"
+          fill={node.kind==='deceased'?'#e2d6ca':node.kind==='guest'?'#eee6da':'#f9f1e5'}
+          stroke={node.kind==='deceased'?'#938080':node.kind==='guest'?'#aa957e':'#815661'}
+          stroke-width="1.4"/>
+        <rect x={node.x-69} y={node.y-34} width="138" height="68" rx="1" fill="none" stroke="#bb9b80" stroke-width=".55"/>
+        {node.kind==='deceased' && <text x={node.x-57} y={node.y-11} fill="#8b5761" font-size="20" font-family="Georgia, serif" aria-label="Osoba zmarła">†</text>}
+        {node.kind==='ancestor' && <text x={node.x-57} y={node.y-12} fill="#8b5761" font-size="14">✥</text>}
+        {node.kind==='deceased'||node.kind==='ancestor'
+          ? <text x={node.x} y={node.y-11} text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="18" font-weight="600" fill="#4c313e">{node.label}</text>
+          : <a href={'#rola-'+node.id} aria-label={`Otwórz portret ${node.label}, ${node.born}`}>
+            <rect x={node.x-72} y={node.y-37} width="144" height="74" rx="2" fill="transparent"/>
+            <text x={node.x} y={node.y-11} text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif"
+              font-size={node.label.length>13?15:18} font-weight="600" fill="#51323e" text-decoration="underline">{node.label}</text>
+          </a>}
+        <text x={node.x} y={node.y+7} text-anchor="middle" font-family="DM Sans, sans-serif" font-size={node.sub.length>25?9:10} fill="#685861">{node.sub}</text>
+        <path d={`M${node.x-24} ${node.y+14}h48`} stroke="#c7a98d" stroke-width=".8"/>
+        <text x={node.x} y={node.y+28} text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="14" letter-spacing=".4" fill="#865767">{node.born}</text>
+      </g>)}
+    </svg>
+  </div>
+  <div class="genealogy-legend" aria-label="Legenda linii i oznaczeń">
+    <span><i class="line blood"></i> Pokrewieństwo</span>
+    <span><i class="line marriage"></i> Małżeństwo</span>
+    <span><i class="line engagement"></i> Zaręczyny</span>
+    <span><i class="line friendship"></i> Publicznie znana przyjaźń</span>
+    <span><strong>†</strong> Osoba zmarła</span>
+  </div>
+  <p class="genealogy-caption">{genealogy.note} Linia przerywana oznacza zaręczyny Sebastiana i Eleanor; kropkowana — znaną rodzinie przyjaźń Orlanda i Basila. Pozostali goście są umieszczeni osobno, ponieważ linie nie sugerują niepotwierdzonego pokrewieństwa.</p>
 </section>
+<style>
+.genealogy-plate{position:relative;margin:2.6rem 0;padding:17px;background:#eadfce;border:1px solid #957984;box-shadow:0 0 0 5px #eee5d7,0 12px 30px #392c2c18}
+.genealogy-intro{text-align:center;padding:15px 12px 18px;color:#4d303b}
+.genealogy-kicker{display:block;font:600 10px 'DM Sans',sans-serif;letter-spacing:.21em;color:#88636c}
+.genealogy-intro h2{font:600 clamp(30px,4vw,46px)/1 'Cormorant Garamond',serif;margin:.45rem 0}
+.genealogy-intro p{font:16px/1.4 'Cormorant Garamond',serif;margin:0}
+.genealogy-scroll{overflow:auto;max-width:100%;border:1px solid #b29a8d;background:#f1e5d4;scrollbar-color:#9d7780 #e9dece}
+.genealogy-chart{display:block;width:100%;min-width:970px;height:auto}
+.genealogy-person a{cursor:pointer}
+.genealogy-person a:hover text{fill:#9c5066;text-decoration-thickness:2px}
+.genealogy-person a:focus-visible{outline:none}
+.genealogy-person a:focus-visible rect{stroke:#9c5066;stroke-width:2px}
+.genealogy-legend{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;column-gap:20px;row-gap:10px;padding:18px 12px 11px;font:12px/1.4 'DM Sans',sans-serif;color:#593e48}
+.genealogy-legend>span{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.genealogy-legend i.line{display:inline-block;width:32px;border-top:2px solid #865965}
+.genealogy-legend i.engagement{border-top-style:dashed;border-color:#987b70}
+.genealogy-legend i.friendship{border-top-style:dotted;border-width:3px;border-color:#987b70}
+.genealogy-legend i.marriage{border-color:#987b70}
+.genealogy-legend strong{font:24px Georgia,serif;color:#865965;line-height:.6}
+.genealogy-caption{margin:0;padding:0 14px 15px;text-align:center;font:12px/1.6 'DM Sans',sans-serif;color:#78656a}
+@media(max-width:760px){.genealogy-plate{padding:10px;margin:2rem 0}.genealogy-scroll{max-height:65vh}.genealogy-intro{padding:13px 4px}.genealogy-legend{justify-content:flex-start;padding:16px 7px}.genealogy-caption{text-align:left;padding:0 7px 9px}}
+</style>
