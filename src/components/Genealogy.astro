@@ -10,10 +10,10 @@ const lineKind = {
   <div class="genealogy-intro">
     <span class="genealogy-kicker">ARCHIVUM FAMILIAE · ANNO DOMINI MCMV</span>
     <h2 id="genealogy-heading">Rodowód domu Ravensmoor</h2>
-    <p>Zapisano tu jawne pokrewieństwa oraz osoby związane z domem. Wybierz nazwisko, aby otworzyć portret.</p>
+    <p>Wybierz nazwisko, aby otworzyć portret.</p>
   </div>
-  <div class="genealogy-scroll" tabindex="0" aria-label="Przewijana tablica genealogiczna, 21 postaci graczy, Basilius i zmarła Lady Lenore">
-    <svg class="genealogy-chart" viewBox="0 0 1380 1100" role="img" aria-label="Drzewo genealogiczne Ravensmoorów: imiona, orientacyjne roczniki i rodzaje więzi" xmlns="http://www.w3.org/2000/svg">
+  <div class="genealogy-scroll" tabindex="0" aria-label="Przewijana tablica genealogiczna Ravensmoorów">
+    <svg class="genealogy-chart" viewBox="0 0 1380 1100" role="img" aria-label="Drzewo genealogiczne Ravensmoorów" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <pattern id="genealogy-paper" width="24" height="24" patternUnits="userSpaceOnUse">
           <path d="M0 24L24 0" stroke="#9b8173" stroke-width=".25" opacity=".19"/>
@@ -79,7 +79,6 @@ const lineKind = {
     <span><i class="line friendship"></i> Publicznie znana przyjaźń</span>
     <span><strong>†</strong> Osoba zmarła</span>
   </div>
-  <p class="genealogy-caption">{genealogy.note} Złoty znak ⚭ oznacza małżeństwo. Linia przerywana oznacza zaręczyny Sebastiana i Eleanor; kropkowana — znaną rodzinie przyjaźń Orlanda i Basila. Pozostali goście są umieszczeni osobno, ponieważ linie nie sugerują niepotwierdzonego pokrewieństwa.</p>
 </section>
 <style>
 .genealogy-plate{position:relative;margin:2.6rem 0;padding:17px;background:#eadfce;border:1px solid #957984;box-shadow:0 0 0 5px #eee5d7,0 12px 30px #392c2c18}
@@ -100,6 +99,5 @@ const lineKind = {
 .genealogy-legend i.friendship{border-top-style:dotted;border-width:3px;border-color:#987b70}
 .genealogy-legend i.marriage{border-color:#ac8357}\n.genealogy-legend .marriage-symbol{font:700 22px/1 Georgia,serif;color:#906637;display:inline-flex;align-items:center;justify-content:center;width:32px;height:18px;border:1px solid #bd9a6b;border-radius:8px;background:#f5ead9}
 .genealogy-legend strong{font:24px Georgia,serif;color:#865965;line-height:.6}
-.genealogy-caption{margin:0;padding:0 14px 15px;text-align:center;font:12px/1.6 'DM Sans',sans-serif;color:#78656a}
-@media(max-width:760px){.genealogy-plate{padding:10px;margin:2rem 0}.genealogy-scroll{max-height:65vh}.genealogy-intro{padding:13px 4px}.genealogy-legend{justify-content:flex-start;padding:16px 7px}.genealogy-caption{text-align:left;padding:0 7px 9px}}
+@media(max-width:760px){.genealogy-plate{padding:10px;margin:2rem 0}.genealogy-scroll{max-height:65vh}.genealogy-intro{padding:13px 4px}.genealogy-legend{justify-content:flex-start;padding:16px 7px}}
 </style>
