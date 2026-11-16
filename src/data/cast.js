@@ -111,7 +111,7 @@ export const cast=[
   },
   {
     "id": "11",
-    "name": "Lenore Ravensmoor",
+    "name": "Lucinda Ravensmoor",
     "age": 22,
     "arcana": "XVIII",
     "arcanaName": "Księżyc",
@@ -218,5 +218,6 @@ export const cast=[
     "role": "Śledczy",
     "group": "Goście",
     "generation": "guest"
-  }
+  },
+  {"id":"21","name":"Mrs. Prudence Grace-Ashdown","age":47,"arcana":"X","arcanaName":"Koło Fortuny","poe":"W bezdni Maelströmu","role":"Dawna guwernantka, towarzyszka Lucindy","group":"Goście","generation":"guest"}
 ];
