@@ -40,12 +40,16 @@ const lineKind = {
           y1={link.type==='marriage' ? link.a.y : link.a.y+37}
           x2={link.type==='marriage' ? link.b.x-68 : link.b.x}
           y2={link.type==='marriage' ? link.b.y : link.b.y-37}
-          stroke={link.type==='parent'?'#865965':'#987b70'}
-          stroke-width={link.type==='parent'?2:1.8}
+          stroke={link.type==='parent'?'#774452':link.type==='marriage'?'#ac8357':'#987b70'}
+          stroke-width={link.type==='parent'?2.8:link.type==='marriage'?3:1.8}
           stroke-dasharray={link.type==='engagement'?'9 6':link.type==='public_friendship'?'2 7':undefined}
           stroke-linecap="round"
           class={`relation relation--${lineKind[link.type]}`}
         />)}
+        {relations.filter(link=>link.type==='marriage').map(link => <g aria-label="Małżeństwo" class="genealogy-marriage-mark" transform={`translate(${(link.a.x+link.b.x)/2},${(link.a.y+link.b.y)/2})`}>
+          <rect x="-12" y="-11" width="24" height="22" rx="7" fill="#f5ead9" stroke="#ad875b" stroke-width=".85"/>
+          <text x="0" y="6" font-family="Georgia,serif" text-anchor="middle" font-size="19" font-weight="700" fill="#906637">⚭</text>
+        </g>)}
       </g>
       {genealogy.nodes.map(node => <g class:list={['genealogy-person',`genealogy-person--${node.kind}`]}>
         <rect x={node.x-73} y={node.y-38} width="146" height="76" rx="3"
@@ -70,12 +74,12 @@ const lineKind = {
   </div>
   <div class="genealogy-legend" aria-label="Legenda linii i oznaczeń">
     <span><i class="line blood"></i> Pokrewieństwo</span>
-    <span><i class="line marriage"></i> Małżeństwo</span>
+    <span><i class="marriage-symbol" aria-hidden="true">⚭</i> Małżeństwo</span>
     <span><i class="line engagement"></i> Zaręczyny</span>
     <span><i class="line friendship"></i> Publicznie znana przyjaźń</span>
     <span><strong>†</strong> Osoba zmarła</span>
   </div>
-  <p class="genealogy-caption">{genealogy.note} Linia przerywana oznacza zaręczyny Sebastiana i Eleanor; kropkowana — znaną rodzinie przyjaźń Orlanda i Basila. Pozostali goście są umieszczeni osobno, ponieważ linie nie sugerują niepotwierdzonego pokrewieństwa.</p>
+  <p class="genealogy-caption">{genealogy.note} Złoty znak ⚭ oznacza małżeństwo. Linia przerywana oznacza zaręczyny Sebastiana i Eleanor; kropkowana — znaną rodzinie przyjaźń Orlanda i Basila. Pozostali goście są umieszczeni osobno, ponieważ linie nie sugerują niepotwierdzonego pokrewieństwa.</p>
 </section>
 <style>
 .genealogy-plate{position:relative;margin:2.6rem 0;padding:17px;background:#eadfce;border:1px solid #957984;box-shadow:0 0 0 5px #eee5d7,0 12px 30px #392c2c18}
@@ -94,7 +98,7 @@ const lineKind = {
 .genealogy-legend i.line{display:inline-block;width:32px;border-top:2px solid #865965}
 .genealogy-legend i.engagement{border-top-style:dashed;border-color:#987b70}
 .genealogy-legend i.friendship{border-top-style:dotted;border-width:3px;border-color:#987b70}
-.genealogy-legend i.marriage{border-color:#987b70}
+.genealogy-legend i.marriage{border-color:#ac8357}\n.genealogy-legend .marriage-symbol{font:700 22px/1 Georgia,serif;color:#906637;display:inline-flex;align-items:center;justify-content:center;width:32px;height:18px;border:1px solid #bd9a6b;border-radius:8px;background:#f5ead9}
 .genealogy-legend strong{font:24px Georgia,serif;color:#865965;line-height:.6}
 .genealogy-caption{margin:0;padding:0 14px 15px;text-align:center;font:12px/1.6 'DM Sans',sans-serif;color:#78656a}
 @media(max-width:760px){.genealogy-plate{padding:10px;margin:2rem 0}.genealogy-scroll{max-height:65vh}.genealogy-intro{padding:13px 4px}.genealogy-legend{justify-content:flex-start;padding:16px 7px}.genealogy-caption{text-align:left;padding:0 7px 9px}}
