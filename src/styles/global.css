@@ -148,3 +148,18 @@ body{background:#d9d0c1;background-image:repeating-linear-gradient(90deg,transpa
 .cast-trigger-content p:last-child{margin-bottom:0!important}
 .cast-trigger-content .cast-trigger-disclaimer{color:#806a68;font-size:12px!important}
 @media(max-width:600px){.cast-theme-tags{gap:6px}.cast-theme-tag{font-size:11px}.cast-trigger-details>summary{padding:14px 12px}.cast-trigger-content{padding:13px}}
+
+/* Dramatis Personae — unobtrusive glossary of role themes */
+.cast-tags-explainer{margin:20px 0 30px;padding:18px 20px 15px;background:linear-gradient(135deg,#ede3d5,#f4ece0);border-top:1px solid #bb9f95;border-bottom:1px solid #bb9f95;color:#594a46}
+.cast-tags-explainer>p{font:15px/1.65 'Cormorant Garamond',serif;margin:0 0 11px}
+.cast-tags-glossary{border-top:1px solid #ccb7a8;padding-top:7px}
+.cast-tags-glossary>summary{list-style:none;display:flex;align-items:center;gap:8px;padding:7px 1px;cursor:pointer;color:#694852;font:600 12px/1.5 'DM Sans',sans-serif}
+.cast-tags-glossary>summary::-webkit-details-marker{display:none}
+.cast-tags-glossary>summary span:last-child{margin-left:auto;font-size:16px;transition:transform .15s}
+.cast-tags-glossary[open]>summary span:last-child{transform:rotate(180deg)}
+.cast-tags-glossary>summary:focus-visible{outline:2px solid #976a77;outline-offset:2px}
+.cast-tags-glossary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:23px;row-gap:0;margin:12px 0 5px}
+.cast-tags-glossary-entry{padding:9px 0;border-top:1px solid #dac8b7;min-width:0}
+.cast-tags-glossary dt{font:600 12px/1.4 'DM Sans',sans-serif;color:#6b4756}
+.cast-tags-glossary dd{font:13px/1.55 'DM Sans',sans-serif;color:#625a56;margin:4px 0 0}
+@media(max-width:610px){.cast-tags-explainer{padding:14px}.cast-tags-glossary-grid{grid-template-columns:1fr}}
