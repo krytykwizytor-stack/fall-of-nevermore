@@ -1,16 +1,14 @@
 export const approvedPortraitsD={
   "16": [
-    "Pan Basil March należy do ludzi, którym przyjemniej jest patrzeć na cudzą twarz niż słuchać cudzej opowieści. Przywiązuje szczególną wagę do drobnych zmian wyrazu twarzy, których większość z nas nie dostrzega.",
-    "Przybył do Nevermore jako przyjaciel Orlanda i autor jego portretu.",
-    "Młody malarz posiada talent, choć być może jeszcze większą cierpliwość. Orlando, którego usposobienie zmienia się niemal równie gwałtownie jak angielska pogoda, wielokrotnie przerywał mu pracę. Basil zawsze powracał do sztalug.",
-    "Nie jest artystą, który pochlebia modelowi dla łatwego uznania. Potrafi godzinami poprawiać drobny szczegół, a jego zainteresowanie człowiekiem nie kończy się w chwili, gdy ten opuszcza pracownię.",
-    "Pewnego dnia zapytałem, kiedy obraz zostanie ukończony.",
-    "— Kiedy wreszcie przestanie poprawiać ułożenie włosów i pozwoli mi malować — odpowiedział Basil, wskazując na Orlanda.",
-    "Orlando uznał tę uwagę za wyjątkowo niesprawiedliwą."
+    "Basil March poznał Orlanda podczas studiów. Łączyła ich fascynacja sztuką, a zapewne także szczególna przyjemność z drażnienia ludzi przekonanych, że młodzi dżentelmeni powinni zajmować się czymś pożyteczniejszym.",
+    "Do Nevermore przyjechał jako przyjaciel domu i malarz portretu Orlanda. Jest tu mile widziany, choć rodzina najchętniej rozmawia z nim o obrazie, a nie o jego własnych planach. Basil przyjmuje to ze spokojem. Przy sztalugach ma znacznie więcej do powiedzenia.",
+    "Orlando nie jest łatwym modelem. Potrafi przerwać sesję, aby odczytać świeżo napisany wiersz, po czym oburza się, że malarz nie zapamiętał każdej strofy. Basil słucha go cierpliwie do chwili, gdy trzeba po raz czwarty poprawić ułożenie włosów.",
+    "— Jeszcze jedna chwila — prosił Orlando podczas ostatniego pozowania.",
+    "— Powtarzasz to od godziny — odpowiedział malarz, nie odrywając wzroku od płótna."
   ],
   "17": [
     "Pan Horace Finch jest prawnikiem.",
-    "Na pierwszy rzut oka trudno byłoby powiedzieć o nim coś bardziej interesującego. Ma zwyczajne maniery, mówi spokojnie, nie opowiada dowcipów i w czasie posiłków zachowuje się tak, jak przystoi człowiekowi dobrze wychowanemu.",
+    "Na przyjęciu trudno go zauważyć. Finch nie przerywa rozmów i prawie nigdy nie usiłuje ich prowadzić. Za to pamięta dobrze, kto zwrócił się do niego o pomoc nazajutrz.",
     "Finch prowadzi sprawy Ravensmoorów od lat. Zna testamenty i dawne dokumenty, których treść bywa niekiedy przedmiotem rodzinnych sporów. Przywykł też, że ludzie przekonani o własnej nieomylności proszą go następnie o pomoc w naprawianiu skutków swoich decyzji.",
     "Kiedy Ambrose zapowiedział ogłoszenie ostatniej woli, podobno pierwszą osobą wezwaną do jego gabinetu był właśnie prawnik.",
     "Widziałem później Fincha przy kolacji. Jeden z krewnych próbował wypytać go o treść testamentu, drugi zaś przedstawił własną opinię o prawie dziedziczenia. Finch wysłuchał obu, poprosił o sól i wrócił do posiłku."
@@ -19,23 +17,22 @@ export const approvedPortraitsD={
     "Doktor Ashdown ma niezwykle spokojne dłonie.",
     "Zauważyłem to podczas jednej z wizyt, gdy Lucinda poczuła się gorzej. Wszyscy w pokoju okazali niepokój, z wyjątkiem lekarza. Ten otworzył torbę, wyjął przyrządy i przystąpił do badania z taką dokładnością, jakby nic poza chorą nie miało w owej chwili znaczenia.",
     "Rodzina ufa mu od lat. Podczas wojny burskiej zdobył doświadczenie, o którym niechętnie opowiada w towarzystwie.",
-    "Ashdown zajmuje się obecnie również badaniami nad nowymi preparatami. Jego zainteresowanie medycyną wykracza daleko poza zwyczajne obowiązki lekarza domowego. Kiedy wspomniałem o pewnej niedawnej publikacji, ożywił się natychmiast i zaprosił mnie do gabinetu.",
+    "Po wojnie zainteresował się nowymi preparatami leczniczymi. Kiedy wspomniałem o niedawnej publikacji medycznej, natychmiast zaprosił mnie do gabinetu.",
     "Spędziliśmy tam dwie godziny. Na stole leżały zapisane drobnym pismem arkusze, a kilka szklanych naczyń nosiło etykiety z nazwami substancji, których nie rozpoznałem.",
-    "Doktor z wielkim zapałem objaśniał wyniki swoich doświadczeń. Ledwie zauważył, że z powodu późnej pory opuściłem już porę kolacji."
+    "Doktor objaśniał wyniki doświadczeń aż do późnego wieczora. Dopiero gdy służący przyszedł po raz drugi, przypomniał sobie o kolacji."
   ],
   "19": [
-    "Ojciec Matthias słucha ze spuszczonym wzrokiem. Nie przerywa. Czasami odnosiłem wrażenie, że człowiek mógłby wyznać mu najstraszniejszą rzecz, a on przyjąłby ją z tą samą łagodnością, z jaką wysłuchuje opowieści o zwyczajnej ludzkiej słabości.",
+    "Ojciec Matthias słucha ze spuszczonym wzrokiem. Kiedy ktoś długo szuka odpowiednich słów, nie ponagla go ani gestem, ani pytaniem.",
     "Zna Ravensmoorów od lat i pozostaje jednym z niewielu gości domu, których obecność nikogo nie dziwi.",
-    "Przyglądałem mu się podczas nabożeństwa. Kiedy przyszła kolej na słowa o odpuszczeniu grzechów, zawahał się niemal niedostrzegalnie. Później przez długi czas pozostawał sam w kościele.",
-    "Widziałem go także podczas rozmowy z Lady Morwen. Duchowny, zazwyczaj spokojny, utracił na chwilę swobodę; Morwen zaś uśmiechała się z nieprzeniknioną uprzejmością.",
-    "Kiedy później zapytałem ojca Matthiasa o zdrowie, odpowiedział, że doskwiera mu jedynie zmęczenie. Odmówił również zaproszenia na wieczorną kolację."
+    "Podczas nabożeństwa przy słowach o odpuszczeniu grzechów na chwilę zamilkł. Kiedy wierni wyszli, długo pozostawał w pustym kościele.",
+    "Rozmowa z Lady Morwen trwała krótko. Później duchowny przeprosił gospodarzy i nie pojawił się przy wieczornej kolacji."
   ],
   "20": [
     "Alaric Vane jest człowiekiem, z którym nie należy prowadzić rozmowy, jeżeli nie pamięta się dokładnie własnych wcześniejszych słów.",
-    "Podczas pewnego przyjęcia usłyszał dwie odmienne wersje zupełnie nieistotnego zdarzenia. Nie komentował ich od razu. Dopiero następnego dnia zapytał jednego z rozmówców o szczegół, który różnił obie historie.",
+    "Kiedy podczas przyjęcia usłyszał dwie różne wersje drobnego zajścia, zapamiętał obie. Następnego dnia wrócił do sprawy, chociaż nikt inny nie przywiązywał już do niej znaczenia.",
     "Uczynił to z wyraźnym zadowoleniem.",
     "Vane służył podczas wojny burskiej i zna Sir Edgara od wielu lat. W Nevermore nie jest traktowany jak osoba obca, choć jego zawodowa dociekliwość bywa przyczyną zakłopotania gospodarzy.",
-    "Ceni starannie prowadzone raporty, a ludzkie wspomnienia poddaje skrupulatnej ocenie. Podczas rozmów o dawnej służbie wojskowej staje się jednak znacznie mniej rozmowny.",
+    "Z dawnych lat wojskowych pamięta Sir Edgara dobrze. Gdy rozmowa przechodzi od towarzyskich wspomnień do wojennych raportów, Vane odpowiada coraz oszczędniej.",
     "Zapytałem go kiedyś o Edgara, licząc na ciekawą historię z wojny. Otrzymałem kilka słów o sprawnym dowodzeniu i wzorowej dyscyplinie.",
     "Trudno byłoby zacytować bardziej urzędową pochwałę przyjaciela."
   ],
@@ -44,7 +41,7 @@ export const approvedPortraitsD={
     "Usłyszałem kiedyś, jak Mrs. Prudence Grace-Ashdown zwróciła się tymi słowami do dorosłego już młodzieńca podczas rodzinnego spotkania.",
     "Wszyscy wybuchnęli śmiechem. Sebastian również, choć posłusznie zamknął tom.",
     "Prudence spędziła w Nevermore wiele lat jako guwernantka młodego pokolenia. Obecnie pozostaje towarzyszką Lucindy, której zdrowie wymaga częstej opieki. Dla pozostałych wychowanków jest nadal osobą dobrze znaną, a niektórzy nie potrafią w jej obecności pozbyć się dawnych uczniowskich przyzwyczajeń.",
-    "Sama zajmuje w domu miejsce niełatwe do określenia. Nie jest członkiem rodziny, lecz przez lata znała dzieci Ravensmoorów lepiej niż wielu ich krewnych. Pamięta dawne przewinienia i sukcesy, a wraz z nimi zdarzenia, do których dorośli wychowankowie nie zawsze chcą wracać.",
+    "Prudence zna dorosłych dziś Ravensmoorów od czasów, gdy musiała pilnować ich lekcji. Zna ich znacznie lepiej, niż pozwalałaby jej o tym mówić pozycja dawnej guwernantki.",
     "Widziałem, jak podczas jednego z obiadów Clara zwróciła się do niej po imieniu. Prudence spojrzała na młodą damę z tak szczerym zdumieniem, że ta natychmiast poprawiła się i użyła właściwego tytułu.",
     "Przez resztę posiłku obie zachowywały się nadzwyczaj uprzejmie."
   ]
