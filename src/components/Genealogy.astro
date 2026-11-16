@@ -36,9 +36,9 @@ const lineKind = {
       </g>
       <g class="genealogy-connections">
         {relations.map(link => <line
-          x1={link.type==='marriage' ? link.a.x+72 : link.a.x}
+          x1={link.type==='marriage' ? link.a.x+68 : link.a.x}
           y1={link.type==='marriage' ? link.a.y : link.a.y+37}
-          x2={link.type==='marriage' ? link.b.x-72 : link.b.x}
+          x2={link.type==='marriage' ? link.b.x-68 : link.b.x}
           y2={link.type==='marriage' ? link.b.y : link.b.y-37}
           stroke={link.type==='parent'?'#865965':'#987b70'}
           stroke-width={link.type==='parent'?2:1.8}
