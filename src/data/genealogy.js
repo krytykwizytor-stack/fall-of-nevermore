@@ -37,6 +37,5 @@ relations:[
 {from:"04",to:"13",type:"parent"},{from:"08",to:"13",type:"parent"},
 {from:"05",to:"12",type:"parent"},{from:"07",to:"14",type:"parent"},
 {from:"10",to:"15",type:"engagement"},{from:"13",to:"16",type:"public_friendship"}
-],
-note:"Roczniki postaci graczy są orientacyjne, obliczone na podstawie wieku w 1905 roku; nie oznaczają zatwierdzonych dat urodzenia. Na planszy pokazano wyłącznie jawne relacje."
+]
 };
