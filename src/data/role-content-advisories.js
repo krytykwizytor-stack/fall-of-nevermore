@@ -10,7 +10,7 @@ export const threadTagDescriptions={
   "troublemaker": "Bunt i prowokowanie konfliktów.",
   "secrets & lies": "Przemilczenia i ukryte wydarzenia z przeszłości.",
   "guilt": "Wina, odpowiedzialność i możliwość odkupienia.",
-  "occult": "Rytuały, pakt i gotycka groza.",
+  "occult": "Motywy nadprzyrodzone, rytuały i gotycka groza.",
   "faith & doubt": "Wiara, religijne rozdarcie i przebaczenie.",
   "fragile body": "Choroba, leczenie i ograniczenia ciała.",
   "art & obsession": "Sztuka, idealizacja i obsesyjne zainteresowania.",
@@ -25,7 +25,7 @@ export const roleContentAdvisories={
       "family drama",
       "duty & honor"
     ],
-    "triggers": "Przymus i presja małżeńska, śmierć rodzeństwa w okresie niemowlęcym, rytualna ofiara jako możliwa decyzja, rodzinne manipulacje, przemoc psychiczna."
+    "triggers": "Presja i przymus małżeński, śmierć niemowlęcia, przemoc rytualna, mocne motywy okultystyczne, manipulacja, przemoc psychiczna w rodzinie."
   },
   "11": {
     "tags": [
@@ -34,7 +34,7 @@ export const roleContentAdvisories={
       "outsider",
       "secrets & lies"
     ],
-    "triggers": "Krwioplucie, omdlenia, katalepsja, zagrożenie śmiercią, kontrola medyczna i rodzinna, utrata autonomii, rytualne upokorzenie w grze młodych."
+    "triggers": "Krwioplucie, omdlenia, katalepsja, zagrożenie życia, kontrola medyczna i rodzinna, ograniczanie autonomii, upokorzenie grupowe."
   },
   "12": {
     "tags": [
@@ -43,7 +43,7 @@ export const roleContentAdvisories={
       "outsider",
       "guilt"
     ],
-    "triggers": "Przemoc psychiczna w rodzinie, porwanie i skrzywdzenie dziecka, upokorzenia grupowe, rytualna ofiara, trudne decyzje dotyczące bezpieczeństwa bliskich."
+    "triggers": "Przemoc psychiczna w rodzinie, porwanie i przemoc wobec dziecka, upokorzenie grupowe, przemoc rytualna, zagrożenie bliskich."
   },
   "13": {
     "tags": [
@@ -52,7 +52,7 @@ export const roleContentAdvisories={
       "art & obsession",
       "outsider"
     ],
-    "triggers": "Porfiria, światłowstręt, przewlekły ból, społeczna homofobia, ukrywanie związku, upokorzenie grupowe, tematy śmierci i autodestrukcji."
+    "triggers": "Choroba przewlekła, porfiria i światłowstręt, ból, homofobia społeczna, ukrywanie relacji romantycznej, upokorzenie grupowe, tematy śmierci i autodestrukcji."
   },
   "14": {
     "tags": [
@@ -61,7 +61,7 @@ export const roleContentAdvisories={
       "family drama",
       "guilt"
     ],
-    "triggers": "Porwanie w dzieciństwie, przemoc wobec dziecka, oszpecenie twarzy, trauma, społeczne odrzucenie, śmierć matki, dyskryminacja klasowa, upokorzenie."
+    "triggers": "Porwanie i przemoc wobec dziecka, oszpecenie i urazy twarzy, trauma, stygmatyzacja wyglądu, żałoba, dyskryminacja klasowa, upokorzenie."
   },
   "15": {
     "tags": [
@@ -70,7 +70,7 @@ export const roleContentAdvisories={
       "control",
       "outsider"
     ],
-    "triggers": "Przymus małżeński, presja reprodukcyjna, utrata autonomii, rytualna ofiara, podporządkowanie tradycji, manipulacja i porównywanie ze zmarłą kobietą."
+    "triggers": "Przymus małżeński, presja reprodukcyjna, ograniczanie autonomii, mocne motywy okultystyczne, przemoc rytualna, manipulacja, porównywanie do zmarłych."
   },
   "16": {
     "tags": [
@@ -79,7 +79,7 @@ export const roleContentAdvisories={
       "outsider",
       "fragile body"
     ],
-    "triggers": "Społeczna homofobia, ukrywany związek, przewlekła choroba bliskiej osoby, upokorzenie grupowe, zagrożenie rytualną przemocą, uprzedmiotowienie gościa."
+    "triggers": "Homofobia społeczna, ukrywanie relacji romantycznej, choroba przewlekła bliskiej osoby, upokorzenie grupowe, mocne motywy okultystyczne, zagrożenie przemocą rytualną, uprzedmiotowienie."
   },
   "17": {
     "tags": [
@@ -88,7 +88,7 @@ export const roleContentAdvisories={
       "secrets & lies",
       "guilt"
     ],
-    "triggers": "Tuszowanie śmierci, legalizowanie przemocy, odpowiedzialność za krzywdę dziecka, manipulowanie dokumentami, współudział w zbrodniach."
+    "triggers": "Tuszowanie przestępstw, morderstwa i śmierć, przemoc wobec dziecka, manipulowanie dokumentami, współudział w przemocy, presja prawna i społeczna."
   },
   "18": {
     "tags": [
@@ -97,7 +97,7 @@ export const roleContentAdvisories={
       "guilt",
       "war scars"
     ],
-    "triggers": "Eksperymenty medyczne, uzależnienie od substancji, śmierć niemowlęcia, katalepsja, trauma wojenna, krzywda cywilów, naruszanie autonomii pacjentów."
+    "triggers": "Eksperymenty medyczne, nadużywanie substancji, śmierć niemowlęcia, katalepsja, zbrodnie wojenne, trauma wojenna, naruszanie autonomii pacjenta."
   },
   "19": {
     "tags": [
@@ -106,7 +106,7 @@ export const roleContentAdvisories={
       "guilt",
       "duty & honor"
     ],
-    "triggers": "Lucyferianizm, apostazja i kryzys religijny, profanacja, rytualna ofiara, morderstwa, wojenne zbrodnie i cierpienie cywilów, moralny współudział."
+    "triggers": "Mocne motywy okultystyczne, kryzys religijny, profanacja, przemoc rytualna, morderstwo, zbrodnie wojenne, poczucie winy i moralnego współudziału."
   },
   "20": {
     "tags": [
@@ -115,7 +115,7 @@ export const roleContentAdvisories={
       "duty & honor",
       "guilt"
     ],
-    "triggers": "Morderstwo, zaginięcie kobiety, porwanie i okaleczenie dziecka, zbrodnie wojenne, krzywda ludności cywilnej, tuszowanie przestępstw."
+    "triggers": "Morderstwo, zaginięcie, porwanie i przemoc wobec dziecka, zbrodnie wojenne, trauma wojenna, tuszowanie przestępstw."
   },
   "21": {
     "tags": [
@@ -124,7 +124,7 @@ export const roleContentAdvisories={
       "fragile body",
       "outsider"
     ],
-    "triggers": "Przewlekła choroba podopiecznej, zależność zawodowa i klasowa, przemoc psychiczna wobec młodzieży, upokorzenie grupowe, rodzinne sekrety dotyczące dzieci."
+    "triggers": "Choroby przewlekłe, zależność zawodowa i klasowa, przemoc psychiczna wobec młodzieży, upokorzenie grupowe, przymus rodzinny, zagrożenie bezpieczeństwa dzieci."
   },
   "01": {
     "tags": [
@@ -134,7 +134,7 @@ export const roleContentAdvisories={
       "occult",
       "guilt"
     ],
-    "triggers": "Diabelski pakt, rytualna ofiara, współodpowiedzialność za śmierć, manipulacja rodziną, presja wywierana na potomków, uprzedzenia klasowe."
+    "triggers": "Mocne motywy okultystyczne, przemoc rytualna, śmierć i morderstwo, przemoc psychiczna, szantaż i manipulacja, przymus rodzinny, uprzedzenia klasowe."
   },
   "02": {
     "tags": [
@@ -144,7 +144,7 @@ export const roleContentAdvisories={
       "faith & doubt",
       "secrets & lies"
     ],
-    "triggers": "Lucyferianizm, rytuały okultystyczne, udział w przygotowaniu ofiary, śmierć człowieka, przemoc psychiczna, religijna profanacja."
+    "triggers": "Mocne motywy okultystyczne, profanacja religijna, przemoc rytualna, morderstwo i śmierć, przemoc psychiczna, przymus i manipulacja."
   },
   "03": {
     "tags": [
@@ -153,7 +153,7 @@ export const roleContentAdvisories={
       "secrets & lies",
       "guilt"
     ],
-    "triggers": "Katalepsja, pozorna śmierć, zagrożenie pogrzebaniem żywcem, utrata kontroli nad własnym ciałem, zaniedbanie przez rodzinę, śmierć bliskich."
+    "triggers": "Katalepsja, stany pozornej śmierci, lęk przed pogrzebaniem żywcem, utrata kontroli nad ciałem, zaniedbanie przez bliskich, śmierć."
   },
   "04": {
     "tags": [
@@ -162,7 +162,7 @@ export const roleContentAdvisories={
       "control",
       "family drama"
     ],
-    "triggers": "Przemoc kolonialna, krzywda ludności cywilnej podczas wojny, trauma wojenna, śmierć niemowlęcia, przemoc psychiczna wobec dzieci, presja małżeńska."
+    "triggers": "Zbrodnie wojenne, trauma wojenna, śmierć niemowlęcia, przemoc psychiczna wobec dzieci, presja małżeńska i rodzinna."
   },
   "05": {
     "tags": [
@@ -171,7 +171,7 @@ export const roleContentAdvisories={
       "guilt",
       "outsider"
     ],
-    "triggers": "Przemoc rodzinna i psychiczna, rozłąka z bliskimi, porwanie i krzywda dziecka, poczucie winy wynikające z zaniechania, przemoc kolonialna jako temat rozmów."
+    "triggers": "Przemoc psychiczna i rodzinna, rozłąka z bliskimi, porwanie i przemoc wobec dziecka, poczucie winy, zbrodnie wojenne jako temat rozmów."
   },
   "06": {
     "tags": [
@@ -180,7 +180,7 @@ export const roleContentAdvisories={
       "family drama",
       "guilt"
     ],
-    "triggers": "Bezpłodność, poronienia, martwe porody, presja reprodukcyjna, wdowieństwo, uzależnienie pozycji kobiety od macierzyństwa, dyskryminacja ze względu na pochodzenie."
+    "triggers": "Bezpłodność, poronienia, martwe porody, presja dotycząca macierzyństwa, wdowieństwo, dyskryminacja społeczna i klasowa."
   },
   "07": {
     "tags": [
@@ -190,7 +190,7 @@ export const roleContentAdvisories={
       "family drama",
       "occult"
     ],
-    "triggers": "Seryjne zabójstwa, rytualna śmierć, porwanie i okaleczenie dziecka, uzależnienia i używki, panika, psychologiczne objawy winy, kontakty z lucyferianizmem."
+    "triggers": "Seryjne morderstwa, mocne motywy okultystyczne, przemoc rytualna, porwanie i okaleczenie dziecka, używki i uzależnienia, stany lękowe, poczucie winy."
   },
   "08": {
     "tags": [
@@ -199,7 +199,7 @@ export const roleContentAdvisories={
       "inheritance",
       "fragile body"
     ],
-    "triggers": "Przemoc psychiczna wobec dzieci, choroby przewlekłe, śmierć noworodka, nadmierna kontrola leczenia, ograniczanie autonomii, presja małżeńska i reprodukcyjna."
+    "triggers": "Przemoc psychiczna i kontrola rodzicielska, choroby przewlekłe, śmierć noworodka, ograniczanie autonomii w leczeniu, przymus małżeński, presja reprodukcyjna."
   },
   "09": {
     "tags": [
@@ -208,6 +208,6 @@ export const roleContentAdvisories={
       "art & obsession",
       "secrets & lies"
     ],
-    "triggers": "Spirytyzm i nekromancja, śmierć krewnych, choroby dziedziczne, eksperymenty medyczne, ingerowanie w prywatność chorych, obsesyjne poszukiwanie prawdy."
+    "triggers": "Mocne motywy okultystyczne, spirytyzm i nekromancja, śmierć, choroby dziedziczne, eksperymenty medyczne, naruszanie prywatności i autonomii."
   }
 };
