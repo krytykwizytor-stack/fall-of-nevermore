@@ -127,3 +127,24 @@ body{background:#d9d0c1;background-image:repeating-linear-gradient(90deg,transpa
 .chapter-card{z-index:0}
 .chapter-plate,.engraving-section,.gothic-miniature,.gothic-plates,.mourning-botany{display:none!important}
 @media(max-width:650px){.article-head::before{opacity:.045;width:70%}.introduction.editorial-wash::after{opacity:.045;width:65%}.contents.decorative-contents::after{opacity:.04}}
+
+/* Dramatis Personae — thematic tags and user-revealed content notices */
+.cast-theme-section{margin:30px 0 16px;padding:18px 0 0;border-top:1px solid rgba(112,78,81,.25)}
+.cast-theme-title{display:block;font:600 10px 'DM Sans',sans-serif;letter-spacing:.16em;color:#73505b;margin-bottom:13px}
+.cast-theme-tags{display:flex;flex-wrap:wrap;gap:8px}
+.cast-theme-tag{display:inline-block;padding:7px 10px;border:1px solid #b99e98;color:#603d4b;background:rgba(237,225,211,.56);font:500 12px/1.25 'DM Sans',sans-serif;letter-spacing:.015em}
+.cast-trigger-details{margin:20px 0 24px;border:1px solid #b59a8f;background:#f0e6da}
+.cast-trigger-details>summary{list-style:none;display:flex;align-items:center;gap:12px;padding:15px 17px;cursor:pointer;color:#573541;font:600 13px/1.5 'DM Sans',sans-serif}
+.cast-trigger-details>summary::-webkit-details-marker{display:none}
+.cast-trigger-details>summary:hover{background:rgba(128,89,100,.07)}
+.cast-trigger-details>summary:focus-visible{outline:2px solid #976a77;outline-offset:3px}
+.cast-trigger-details .cast-trigger-icon{font:24px/1 'Cormorant Garamond',serif;color:#89616c}
+.cast-trigger-details>summary span:nth-child(2){flex:1}
+.cast-trigger-details>summary small{display:block;font:400 11px/1.5 'DM Sans',sans-serif;color:#866e70;margin-top:2px}
+.cast-trigger-caret{font-size:19px;color:#8d6a73;transition:transform .15s}
+.cast-trigger-details[open] .cast-trigger-caret{transform:rotate(180deg)}
+.cast-trigger-content{border-top:1px solid #c9b3a9;padding:14px 18px 18px;color:#493b3a}
+.cast-trigger-content p{margin:0 0 10px!important;font:14px/1.65 'DM Sans',sans-serif!important}
+.cast-trigger-content p:last-child{margin-bottom:0!important}
+.cast-trigger-content .cast-trigger-disclaimer{color:#806a68;font-size:12px!important}
+@media(max-width:600px){.cast-theme-tags{gap:6px}.cast-theme-tag{font-size:11px}.cast-trigger-details>summary{padding:14px 12px}.cast-trigger-content{padding:13px}}
