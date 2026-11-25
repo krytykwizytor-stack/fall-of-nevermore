@@ -5,7 +5,6 @@ import { cast } from '../../data/cast.js';
 import { familyNotes } from '../../data/familyNotes.js';
 import { roleContentAdvisories, threadTagDescriptions } from '../../data/role-content-advisories.js';
 import Genealogy from '../../components/Genealogy.astro';
-import Marginalia from '../../components/Marginalia.astro';
 import PracticalInfo from '../../components/PracticalInfo.astro';
 import { approvedPortraitsA } from '../../data/approved-portraits-a.js';
 import { approvedPortraitsB } from '../../data/approved-portraits-b.js';
@@ -17,14 +16,14 @@ const {chapter}=Astro.props;
 const index=chapters.findIndex(c=>c.slug===chapter.slug);
 const previous=chapters[index-1],next=chapters[index+1];
 ---
-<Base title={chapter.title} active={chapter.slug}><article class:list={["article", `article--${chapter.slug}`]}><div class="article-meta"><a href="/">← Spis treści</a><span>Rozdział {chapter.number} / {chapters.at(-1)?.number}</span></div><div class="article-head"><span class="chapter-watermark">{chapter.number}</span><div class="eyebrow">Fall of Nevermore · Anno Domini MCMV</div><h1>{chapter.title}</h1><p>{chapter.description}</p></div><div class="ornament-line">✦</div><div class="article-folio" aria-hidden="true">RAVENSMOOR · MCMV</div><div class="article-body">{chapter.slug==='informacje' ? <PracticalInfo/> : chapter.sections ? chapter.sections.map((section, i) => <section class:list={["chapter-section", {"chapter-section--crowe":chapter.slug==="swiat" && section.heading==="Rodzina Crowe\'ów"}]} id={`sekcja-${i+1}`} aria-labelledby={`section-${i+1}`}><h2 id={`section-${i+1}`}>{section.heading}</h2><Marginalia slug={chapter.slug} section={section.heading} />{section.paragraphs.map(p=><p class:list={[{
+<Base title={chapter.title} active={chapter.slug}><article class:list={["article", `article--${chapter.slug}`]}><div class="article-meta"><a href="/">← Spis treści</a><span>Rozdział {chapter.number} / {chapters.at(-1)?.number}</span></div><div class="article-head"><span class="chapter-watermark">{chapter.number}</span><div class="eyebrow">Fall of Nevermore · Anno Domini MCMV</div><h1>{chapter.title}</h1><p>{chapter.description}</p></div><div class="ornament-line">✦</div><div class="article-folio" aria-hidden="true">RAVENSMOOR · MCMV</div><div class="article-body">{chapter.slug==='informacje' ? <PracticalInfo/> : chapter.sections ? chapter.sections.map((section, i) => <section class:list={["chapter-section", {"chapter-section--crowe":chapter.slug==="swiat" && section.heading==="Rodzina Crowe\'ów"}]} id={`sekcja-${i+1}`} aria-labelledby={`section-${i+1}`}><h2 id={`section-${i+1}`}>{section.heading}</h2>{section.paragraphs.map(p=><p class:list={[{
 "mechanics-note":chapter.slug==="mechanika" && /^(GREEN|YELLOW|RED|BŁĘKITNE ŚWIATŁO|FIOLETOWE ŚWIATŁO)\b/.test(p),
 "mechanics-note--green":chapter.slug==="mechanika" && p.startsWith("GREEN"),
 "mechanics-note--yellow":chapter.slug==="mechanika" && p.startsWith("YELLOW"),
 "mechanics-note--red":chapter.slug==="mechanika" && p.startsWith("RED"),
 "mechanics-note--blue":chapter.slug==="mechanika" && p.startsWith("BŁĘKITNE ŚWIATŁO"),
 "mechanics-note--violet":chapter.slug==="mechanika" && p.startsWith("FIOLETOWE ŚWIATŁO")
-}]}>{p}</p>)}</section>) : chapter.slug==='postacie' ? <div class="cast-index"><div class="cast-intro"><Marginalia slug="postacie" section="katalog" />{chapter.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div><p class="cast-instruction">Wybierz nazwisko w rodowodzie lub rozwiń portret w katalogu. Możesz również wyszukać postać po imieniu, Arkanie lub hashtagu.</p><label for="cast-search">Szukaj postaci</label><input id="cast-search" type="search" placeholder="Imię, nazwisko, Arkana lub hashtag"/><Genealogy /><div class="cast-catalog-heading"><span>INDEX PERSONARUM</span><h2>Portrety mieszkańców i gości</h2><p>Z notatek pewnego gościa Nevermore Hall.</p></div>
+}]}>{p}</p>)}</section>) : chapter.slug==='postacie' ? <div class="cast-index"><div class="cast-intro">{chapter.paragraphs.map(paragraph=><p>{paragraph}</p>)}</div><p class="cast-instruction">Wybierz nazwisko w rodowodzie lub rozwiń portret w katalogu. Możesz również wyszukać postać po imieniu, Arkanie lub hashtagu.</p><label for="cast-search">Szukaj postaci</label><input id="cast-search" type="search" placeholder="Imię, nazwisko, Arkana lub hashtag"/><Genealogy /><div class="cast-catalog-heading"><span>INDEX PERSONARUM</span><h2>Portrety mieszkańców i gości</h2><p>Z notatek pewnego gościa Nevermore Hall.</p></div>
 <div class="cast-tags-explainer">
   <p>Hashtagi podpowiadają, jakich wątków można spodziewać się w grze. Możesz wyszukiwać według nich postaci.</p>
   <details class="cast-tags-glossary">
