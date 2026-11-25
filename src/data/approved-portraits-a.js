@@ -7,11 +7,10 @@ export const approvedPortraitsA={
     "Sądzę, że z największą przyjemnością pozostawiłby testament zamknięty w szufladzie jeszcze przez dwadzieścia lat. Samo jego ogłoszenie stanowi przecież nieprzyjemne przyznanie, iż pewnego dnia ktoś inny zasiądzie u szczytu stołu."
   ],
   "02": [
-    "— Moja droga, u nas nigdy nie postępowano w ten sposób.",
-    "Lady Morwen wypowiedziała te słowa podczas rozmowy o pewnej zupełnie błahej sprawie. Nie pamiętam już nawet, czego dotyczyła. Pamiętam natomiast, że młoda dama, do której je skierowano, przez resztę wieczoru unikała odzywania się bez wyraźnego zaproszenia.",
-    "Morwen jest siostrą lorda Ambrose'a i od lat pilnuje rodzinnego ceremoniału. Traktuje go z dokładnością, która czyni wszelkie odstępstwa niebezpiecznym eksperymentem.",
-    "Jej uwagi są tak uprzejme, że rozmówcy często nie znajdują w porę odpowiedzi.",
-    "Rodzinne dokumenty zna niemal na pamięć. Przechowuje również zadziwiająco wiele wspomnień o ludziach, którzy dawno przestali móc jej zaprzeczyć. Niektóre młodsze osoby uważają ją za kobietę pozbawioną sentymentu. Podejrzewam, że uznałaby to za pochwałę."
+    "Morwen jest siostrą lorda Ambrose'a i od lat pilnuje rodzinnego ceremoniału. Traktuje go z dokładnością, która czyni wszelkie odstępstwa niebezpiecznym eksperymentem. Ciotka Morwen nie waha się też karać za podobne przewinienia, niezależnie od wieku winowajcy.",
+    "Pozostaje przy tym niebezpiecznie uprzejma. Potrafi udzielić reprymendy tak delikatnym tonem, że dorosły człowiek natychmiast przypomina sobie najgorsze szkolne przewinienie i odruchowo spuszcza wzrok.",
+    "Rodzinne dokumenty zna niemal na pamięć. Zachowała również zadziwiająco wiele wspomnień o ludziach, którzy byli z domem związani jedynie nieformalnie. Dzisiaj i tak nie mogliby już zaprzeczyć jej wersji wydarzeń, gdyż cóż… Morwen po prostu ich przeżyła.",
+    "Niektóre młodsze osoby uważają ją za kobietę pozbawioną sentymentu. Podejrzewam, że sama zainteresowana przyjęłaby to jako pochwałę. Słyszałem też kiedyś szeptaną w kuluarach opinię, że gdyby Morwen była najstarszym dzieckiem Basiliusa, ten gotów byłby uczynić wyjątek od rodzinnej reguły i powierzyć jej pieczę nad całym rodem. Osobiście nie miałbym odwagi sprawdzić, czy istotnie."
   ],
   "03": [
     "Przestrzegano mnie, abym nie niepokoił Lady Elspeth. Podobno tego dnia była szczególnie słaba.",
@@ -24,16 +23,15 @@ export const approvedPortraitsA={
   "04": [
     "Weteran wojny burskiej. Oficjalny dziedzic Nevermore. Mąż i ojciec, człowiek o nieskazitelnej reputacji.",
     "Tak przedstawiono mi Sir Edgara, kiedy spotkaliśmy się po raz pierwszy. Przyznam, że rozmowa z nim była niemal dokładnie tak przyjemna, jak zapowiadał ów życiorys.",
-    "Edgar wierzy w obowiązek z żarliwością, którą chętniej widziałbym u człowieka mniej skłonnego do wydawania poleceń. Przez lata służby wojskowej nabrał przekonania, że stanowczość stanowi najlepszy sposób rozwiązywania trudności. W codziennym życiu stosuje tę zasadę równie chętnie, choć z mniejszym powodzeniem.",
-    "W domu również oczekuje posłuszeństwa. Gdy rozmawia z dziećmi, często zaczyna od ogłoszenia własnej decyzji. Orlando ma zwyczaj podważać ją jeszcze przy stole, ku wielkiemu niezadowoleniu ojca.",
-    "Edgar nie mówi wiele o wojnie. Opowiada natomiast o honorze i konieczności, a pewnego razu poświęcił niemal cały obiad na przekonywanie młodego krewnego, że dobry człowiek musi umieć podejmować nieprzyjemne decyzje.",
-    "Wypowiedział te słowa z taką pewnością, że nikt nie poprosił go o przykład."
+    "Edgar wierzy w obowiązek wobec rodziny z żarliwością, którą chętniej widziałbym u człowieka mniej skłonnego do wydawania poleceń. Przez lata służby wojskowej nabrał przekonania, że stanowczość stanowi najlepszy sposób rozwiązywania trudności. W codziennym życiu stosuje tę zasadę równie chętnie, choć z mniejszym powodzeniem.",
+    "W domu również oczekuje posłuszeństwa, jak gdyby wciąż pozostawał w koszarach. Gdy rozmawia z dziećmi, często zaczyna od ogłoszenia własnej decyzji jako niepodważalnego rozkazu. Niestety, jego potomstwu wyraźnie brakuje żołnierskiego drygu. Zdarza im się podważać ojcowskie decyzje jeszcze przy stole, ku wielkiemu niezadowoleniu Edgara. Konsekwencje takich wystąpień bywają dotkliwsze od samej reprymendy.",
+    "Edgar nie mówi wiele o wojnie. Opowiada natomiast o honorze i konieczności, a pewnego razu poświęcił niemal cały obiad na przekonywanie młodego krewnego, że dobry człowiek musi umieć podejmować nieprzyjemne decyzje. Wypowiedział te słowa z taką pewnością, że nikt nie poprosił go o przykład. Resztę posiłku skończyliśmy w ciszy."
   ],
   "05": [
     "Lady Vivienne opuściła Nevermore przed laty, zabierając ze sobą córkę. Wówczas mówiono o jej postępowaniu z oburzeniem, później z zakłopotaniem, aż wreszcie przestano wspominać o całej sprawie przy obcych.",
     "Jej powrót niewątpliwie położy kres temu wygodnemu zwyczajowi.",
-    "Vivienne otwarcie kwestionuje salonowe zwyczaje, w których ją wychowano. Wystarczy wspomnieć o powinnościach córki wobec ojca, by odezwała się z taką swobodą, że ciotki przestają udawać, iż nie słuchają.",
+    "Vivienne otwarcie kwestionuje salonowe zwyczaje, w których ją wychowano. Wystarczy wspomnieć o powinnościach córki wobec ojca, by odezwała się z taką swobodą, że większość ciotek w pośpiechu opuszcza pomieszczenie. Rumieńca na ich policzkach nie sposób już wtedy przypisać wyłącznie sztucznemu różowi.",
     "Sama wychowała się pośród obyczajów, których dzisiaj tak chętnie się wyrzeka. Jej córka Clara bywa w swoich sądach jeszcze bardziej bezkompromisowa, co prowadzi obie panie do sporów zdumiewająco podobnych do tych, które Vivienne niegdyś toczyła z własnym ojcem.",
-    "Podczas poprzedniej rodzinnej wizyty odmówiła wysłuchania uwag Ambrose'a na temat wychowania Clary. Ojciec zażądał posłuszeństwa. Vivienne odpowiedziała, że ma już czterdzieści cztery lata."
+    "Podczas poprzedniej rodzinnej wizyty odmówiła wysłuchania uwag Ambrose'a na temat wychowania Clary. Ojciec zażądał posłuszeństwa. Vivienne odpowiedziała, że ma już czterdzieści cztery lata i z pewnością nie przybyła do domu z tęsknoty za ojcowską reprymendą. Było mi aż wstyd, że pozostawałem świadkiem tej wymiany zdań."
   ]
 };
