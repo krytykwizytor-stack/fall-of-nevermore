@@ -252,3 +252,40 @@
   color:inherit;
   padding:0;
 }
+
+
+/* Mechanics: compact reference typography and legible technical signals. */
+.article--mechanika .chapter-section:first-child p:first-of-type::first-letter{
+  float:none;
+  font:inherit;
+  color:inherit;
+  padding:0;
+}
+.article--mechanika .chapter-section{margin-bottom:34px}
+.article--mechanika .chapter-section+.chapter-section{padding-top:20px}
+.article--mechanika .chapter-section+.chapter-section::before{content:none}
+.article--mechanika .chapter-section h2{
+  font:600 clamp(27px,2.8vw,34px)/1.15 'Cormorant Garamond',serif;
+  margin-bottom:18px;
+}
+.article--mechanika .chapter-section p{font:19px/1.52 'Cormorant Garamond',serif;margin-bottom:.78em}
+.article--mechanika .chapter-section .mechanics-note{
+  --mechanics-accent:#6c5260;
+  position:relative;
+  border-left:3px solid var(--mechanics-accent);
+  background:rgba(102,74,76,.06);
+  padding:10px 15px 10px 19px;
+  font:15px/1.6 'DM Sans',sans-serif;
+  margin:13px 0;
+}
+.article--mechanika .mechanics-note--green{--mechanics-accent:#3c866e}
+.article--mechanika .mechanics-note--yellow{--mechanics-accent:#b28b34}
+.article--mechanika .mechanics-note--red{--mechanics-accent:#ab555a}
+.article--mechanika .mechanics-note--blue{--mechanics-accent:#3886bf}
+.article--mechanika .mechanics-note--violet{--mechanics-accent:#8b58b5}
+@media(max-width:640px){
+  .article--mechanika .chapter-section{margin-bottom:25px}
+  .article--mechanika .chapter-section+.chapter-section{padding-top:14px}
+  .article--mechanika .chapter-section p{font-size:18px}
+  .article--mechanika .chapter-section .mechanics-note{font-size:13px;padding:10px 12px}
+}
