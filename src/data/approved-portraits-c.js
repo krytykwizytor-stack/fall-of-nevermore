@@ -1,11 +1,9 @@
 export const approvedPortraitsC={
   "11": [
-    "O pannie Lucindzie mówi się najczęściej półgłosem.",
-    "Lucinda mogłaby zapewne cieszyć się powodzeniem na przyjęciach, gdyby pozwalano jej uczestniczyć w nich bez nieustannych ostrzeżeń. W Nevermore wystarczy, że zakaszle, a ktoś już sięga po wodę lub posyła po doktora Ashdowna.",
-    "Kiedy rozmowa przy jej łóżku schodzi na zdrowie, Lucinda potrafi wtrącić uwagę, po której matka natychmiast zmienia temat.",
+    "O pannie Lucindzie mówi się najczęściej półgłosem, z takim przestrachem, jakby samo głośniejsze słowo mogło ją rozsypać.",
+    "Lucinda mogłaby zapewne cieszyć się powodzeniem na przyjęciach, gdyby pozwalano jej uczestniczyć w nich bez nieustannych ostrzeżeń. W Nevermore wystarczy, że zakaszle, a ktoś już sięga po wodę lub posyła po doktora Ashdowna. Zadziwia mnie, jak wiele niespożytkowanej, niemal ognistej energii mieści się w tak schorowanym ciele. Gdzież znajduje ona ujście?",
     "Mrs. Prudence Grace-Ashdown towarzyszy jej od dzieciństwa. Lucinda zna na pamięć dobre rady dawnej guwernantki i nie wszystkie zamierza nadal stosować.",
-    "Pewnego popołudnia zobaczyłem ją samotnie przy oknie. Trzymała w dłoni książkę, ale nie czytała. Na mój widok uśmiechnęła się i zapytała, czy na zewnątrz pada.",
-    "Był piękny, słoneczny dzień."
+    "Pewnego popołudnia zobaczyłem ją samotnie przy oknie. Trzymała w dłoni książkę, ale nie czytała. Na mój widok uśmiechnęła się i zapytała, czy na zewnątrz pada. Był piękny, słoneczny dzień."
   ],
   "12": [
     "Clara ma zwyczaj odpowiadać, zanim starsi krewni skończą przemawiać. Jest to niewątpliwie zachowanie naganne, choć zdarza się, że pozwala oszczędzić wszystkim sporo czasu.",
@@ -17,11 +15,10 @@ export const approvedPortraitsC={
   ],
   "13": [
     "Poeta, dekadent i najgorliwszy wielbiciel własnych nieszczęść, jakiego zdarzyło mi się poznać.",
-    "Orlando przeczytał zapewne więcej wierszy o śmierci, niż niejeden duchowny wygłosił kazań pogrzebowych. Jego choroba jest jednak rzeczywista, a ból nie ustępuje tylko dlatego, że poeta nada mu piękną nazwę. Doktor Ashdown nalega na leczenie, ku niezadowoleniu pacjenta.",
+    "Orlando przeczytał zapewne więcej wierszy o śmierci, niż niejeden duchowny wygłosił kazań pogrzebowych. Jego choroba jest jednak rzeczywista, a ból nie ustępuje tylko dlatego, że potrafi on nadać cierpieniu poetycką postać. Doktor Ashdown nalega na leczenie, ku niezadowoleniu pacjenta.",
     "Orlando nie znosi ostrego światła. Woli opowiadać o własnym przekleństwie niż o lekarskich zaleceniach; jeśli gość okaże niedowierzanie, natychmiast otrzymuje recytację odpowiedniego wiersza.",
     "Spędza dużo czasu w towarzystwie Basila Marcha, malarza pracującego nad jego portretem.",
-    "Widziałem wstępny szkic obrazu. Orlando wyglądał na nim zaskakująco zwyczajnie, niemal zdrowo.",
-    "Model był z tego powodu bardzo niezadowolony."
+    "Widziałem wstępny szkic obrazu. Orlando wyglądał na nim zaskakująco zwyczajnie, niemal zdrowo. Model był z tego powodu bardzo niezadowolony. Oskarżył Basila, że na rzecz prozaicznej natury sprzeniewierzył się sztuce."
   ],
   "14": [
     "Popełniłem błąd i nietakt, kiedy po raz pierwszy przedstawiono mi Thomasa Vale-Ravensmoora. Spojrzałem na jego maskę. Młodzieniec zauważył to natychmiast, a ja, usiłując naprawić niezręczność, zadałem mu pytanie jeszcze bardziej niestosowne.",
@@ -35,8 +32,7 @@ export const approvedPortraitsC={
     "Przygotowania do ślubu idą znakomicie.",
     "Augusta przygotowuje Eleanor do nowych obowiązków z wielką starannością. O tym, jak ma wyglądać jej przyszłe życie w Nevermore, chętnie wypowiadają się również inni krewni narzeczonego.",
     "Sama Eleanor wydaje się nieco zdziwiona, jak niewiele pozostało jej do zorganizowania.",
-    "Eleanor słucha cierpliwie, ale umie zadać pytanie, którego nie przewidziano w wygłaszanej do niej przemowie.",
     "Widziałem ją kiedyś podczas rozmowy o jednej z dawnych pań domu. Słuchała uważnie, a kiedy opowieść dobiegła końca, zapytała, czy owa dama była szczęśliwa. Zapadła cisza. Ktoś odpowiedział wreszcie, że była znakomitą żoną.",
-    "Eleanor odparła, że to nie jest odpowiedź na jej pytanie."
+    "Eleanor odparła, że to nie jest odpowiedź na jej pytanie. Jedna z ciotek zaproponowała wówczas, by omówić zabawy weselne, i rozmowa potoczyła się dalej, jak gdyby nic się nie stało."
   ]
 };
