@@ -1,0 +1,94 @@
+---
+const themes = [
+  'dramat rodzinny i konflikty pokoleń',
+  'dziedziczenie, reputacja i zobowiązania',
+  'romanse, małżeństwo i presja społeczna',
+  'gotycka groza i tajemnice przeszłości',
+  'choroba, żałoba i stosunek do śmierci',
+  'religia, okultyzm i moralne kompromisy'
+];
+const warnings = [
+  'silne motywy okultystyczne, lucyferianizm i profanacja religijna',
+  'przemoc psychiczna, kontrola w rodzinie i przymus małżeński',
+  'morderstwa, śmierć i motywy ofiary rytualnej',
+  'choroby przewlekłe, katalepsja, oszpecenie i eksperymenty medyczne',
+  'bezpłodność, poronienia, martwe porody i presja reprodukcyjna',
+  'porwanie i krzywda dziecka',
+  'społeczna homofobia i konieczność ukrywania związku',
+  'zbrodnie wojenne, trauma wojenna i przemoc kolonialna',
+  'uzależnienia, używki i nierówności klasowe',
+  'kazirodztwo i obsesja czystości krwi jako temat rodzinnego tła, bez odgrywania scen erotycznych'
+];
+---
+<div class="practical-info">
+  <section class="event-overview" aria-labelledby="event-overview-title">
+    <div class="event-overview-label">Informator uczestnika · Fall of Nevermore</div>
+    <h2 id="event-overview-title">Przed przyjazdem do Nevermore</h2>
+    <p>Najważniejsze informacje organizacyjne dotyczące kameralnego larpa w konwencji edwardiańskiego dramatu rodzinnego i gotyckiej grozy. Akcja rozgrywa się jesienią 1905 roku w fikcyjnym Nevermore Hall; uczestnicy spotykają się w rzeczywistym Pałacu Gruszów.</p>
+    <dl class="event-facts">
+      <div class="event-fact">
+        <dt>Gdzie?</dt>
+        <dd><strong>Pałac Gruszów</strong><span>Gruszów 10, 58-124 Marcinowice, Dolny Śląsk</span><a href="https://www.palac-gruszow.pl/" target="_blank" rel="noopener noreferrer">Strona obiektu ↗</a></dd>
+      </div>
+      <div class="event-fact">
+        <dt>Kiedy?</dt>
+        <dd><strong>Piątek–niedziela</strong><span>Gra w piątek i sobotę, do godzin wieczorno-nocnych. Niedziela jest dniem wyjazdu.</span><a href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">Dokładne daty w wydarzeniu ↗</a></dd>
+      </div>
+      <div class="event-fact">
+        <dt>Koszt udziału</dt>
+        <dd><strong>1440 zł / osoba</strong><span>Zasady płatności i zakres świadczeń sprawdź w komunikacie organizatorów.</span></dd>
+      </div>
+      <div class="event-fact">
+        <dt>Liczba wakatów</dt>
+        <dd><strong>21 postaci graczy</strong><span>14 osób z rodu Ravensmoorów i 7 gości oraz osób spoza rodziny. Służbę i część postaci drugoplanowych prowadzi obsługa.</span><a href="/dokument/postacie/">Przejrzyj wakaty ↗</a></dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="event-part" aria-labelledby="event-tempo">
+    <div class="event-part-index" aria-hidden="true">I</div>
+    <h2 id="event-tempo">Przebieg weekendu</h2>
+    <div class="event-timeline">
+      <div><span>Piątek</span><p>Przyjazd do Nevermore i pierwsze wydarzenia rodzinnego zjazdu. Późnym wieczorem odbędzie się odczytanie testamentu lorda Ambrose'a.</p></div>
+      <div><span>Sobota</span><p>Dalsza część rozgrywki, przygotowania do ślubu Sebastiana i Eleanor. Ceremonia ślubna zaplanowana jest na wieczór, a finał larpa na godziny wieczorno-nocne.</p></div>
+      <div><span>Niedziela</span><p>Zakończenie pobytu i wyjazd; bez dalszej rozgrywki fabularnej.</p></div>
+    </div>
+    <p class="event-fineprint">Dokładne daty, godziny przyjazdu, warunki zakwaterowania i wyżywienia oraz harmonogram organizacyjny należy sprawdzić w <a href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">oficjalnym wydarzeniu na Facebooku</a>.</p>
+  </section>
+
+  <section class="event-part" aria-labelledby="event-character">
+    <div class="event-part-index" aria-hidden="true">II</div>
+    <h2 id="event-character">Charakter gry i uczestnictwo</h2>
+    <p><em>Fall of Nevermore</em> jest larpem nastawionym na relacje. Uczestnicy otrzymują przygotowane postacie z własną historią i powiązaniami. Rozgrywka korzysta z realiów edwardiańskiej Anglii, rodzinnej hierarchii oraz etykiety epoki, ale pozostawia miejsce na gotycką teatralność.</p>
+    <p>Najwięcej znajdą tu dla siebie osoby zainteresowane dramatem rodzinnym, niejednoznacznymi moralnie bohaterami i powoli narastającym horrorem. Nie jest to larp bojowy ani gra oparta na zdobywaniu punktów czy wykonywaniu zadań. Znajomość realiów epoki będzie mile widziana; przed wydarzeniem przewidujemy podstawowe przygotowanie do konwencji.</p>
+    <div class="event-themes" aria-label="Główne motywy">
+      {themes.map(theme => <span>{theme}</span>)}
+    </div>
+  </section>
+
+  <section class="event-part" aria-labelledby="event-triggers">
+    <div class="event-part-index" aria-hidden="true">III</div>
+    <h2 id="event-triggers">Treści trudne</h2>
+    <p>Gra zawiera tematy związane z przemocą psychiczną, chorobą i śmiercią. Istotną częścią konwencji jest również silny okultyzm. Przed wyborem postaci warto zapoznać się z pełniejszą listą treści trudnych.</p>
+    <details class="event-trigger-details">
+      <summary><span aria-hidden="true">✥</span> Ujawnij szczegółowe ostrzeżenia <small>Lista może lekko zdradzać tematykę niektórych wątków</small><b aria-hidden="true">⌄</b></summary>
+      <div class="event-trigger-body">
+        <ul>{warnings.map(warning => <li>{warning}</li>)}</ul>
+        <p>Obecność motywu w ostrzeżeniach nie oznacza, że każdy uczestnik zetknie się z nim bezpośrednio. Indywidualne ostrzeżenia znajdują się przy <a href="/dokument/postacie/">poszczególnych wakatach</a>.</p>
+      </div>
+    </details>
+    <p class="event-fineprint">Zasady komunikowania granic, przerywania scen i odgrywania przemocy opisujemy w rozdziale <a href="/dokument/mechanika/">Mechanika gry</a>.</p>
+  </section>
+
+  <section class="event-part" aria-labelledby="event-inspirations">
+    <div class="event-part-index" aria-hidden="true">IV</div>
+    <h2 id="event-inspirations">Inspiracje</h2>
+    <p>Literackim patronem Nevermore jest Edgar Allan Poe. Szczególne znaczenie mają <em>Upadek domu Usherów</em>, <em>Serce oskarżycielem</em>, <em>Przedwczesny pogrzeb</em> oraz <em>Kruki</em> jego wyobraźni — czytelne w opowieści o rodzie, który przywiązuje wielką wagę do pamięci o zmarłych.</p>
+    <p>Wśród pozostałych inspiracji znajdują się <em>Portret Doriana Graya</em> Oscara Wilde'a, <em>Doktor Jekyll i pan Hyde</em> Roberta Louisa Stevensona oraz <em>Rebeka</em> Daphne du Maurier. Z filmów i seriali bliskie są nam między innymi <em>Crimson Peak</em> i <em>The Fall of the House of Usher</em>. Nie jest wymagana znajomość żadnego z tych utworów.</p>
+  </section>
+
+  <section class="event-cta" aria-label="Dalsze informacje">
+    <div><span class="event-overview-label">Ravensmoor · MCMV</span><h2>Przed złożeniem zgłoszenia</h2><p>Wszystkie aktualne komunikaty o terminach, płatnościach i naborze sprawdzaj w oficjalnym wydarzeniu. Portrety dostępnych postaci znajdują się na naszej stronie.</p></div>
+    <div class="event-cta-links"><a class="event-cta-primary" href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">Wydarzenie na Facebooku ↗</a><a href="/dokument/postacie/">Dramatis Personae ↗</a></div>
+  </section>
+</div>
