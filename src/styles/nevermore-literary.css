@@ -2,6 +2,7 @@
 
 /* The hand-written comments appear on selected leaves, never on every page. */
 .chapter-section,.cast-intro{position:relative}
+.chapter-section::after{content:'';display:block;clear:both}
 .folio-marginalia{position:absolute;top:15px;width:174px;z-index:2;color:#775357;transform:rotate(-3deg)}
 .folio-marginalia--right{right:-215px}
 .folio-marginalia--left{left:-218px;transform:rotate(3deg)}
@@ -16,7 +17,7 @@
   float:none!important;font:inherit!important;color:inherit!important;padding:0!important;
 }
 .folio-marginalia::after{content:'';display:block;width:64%;height:7px;margin:8px 0 0 2px;border-bottom:1px solid rgba(129,71,79,.5);border-radius:50%;transform:rotate(-4deg)}
-@media(max-width:1530px){
+@media(max-width:1800px){
  .folio-marginalia{position:relative;top:auto;left:auto!important;right:auto!important;float:right;clear:right;width:210px;margin:0 0 19px 27px;transform:rotate(-2deg)}
  .folio-marginalia--left{float:left;clear:left;margin:0 28px 18px 0;transform:rotate(2deg)}
  .article .folio-marginalia p{font-size:21px!important}
