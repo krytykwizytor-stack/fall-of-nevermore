@@ -83,6 +83,139 @@ export const chapters = [
     }
   ]
 },
-{slug:'mechanika',number:'V',title:'Mechanika gry',description:'Zasady współtworzenia historii i bezpieczeństwo.',paragraphs:['Zasady mają ułatwiać budowanie wiarygodnych relacji oraz rozwiązywanie sytuacji w grze.','Wspólne zasady służą czytelnej komunikacji, poszanowaniu granic i bezpiecznemu przeżywaniu intensywnych scen.']},
+{
+  "slug": "mechanika",
+  "number": "V",
+  "title": "Mechanika gry",
+  "description": "Zasady bezpieczeństwa, deklaracje, Fatum oraz mechaniki fabularne Nevermore.",
+  "sections": [
+    {
+      "heading": "Zasady ogólne",
+      "paragraphs": [
+        "Fall of Nevermore korzysta z uproszczonego systemu mechanicznego, którego zadaniem jest wspieranie rozgrywki i bezpieczne rozstrzyganie sytuacji wymagających ustalonych reguł. Większość interakcji między postaciami nie wymaga udziału Mistrza Gry.",
+        "W grze występują różnice statusu społecznego i zależności rodzinne. Postacie mogą wykorzystywać swoją pozycję do wywierania nacisku na innych, ale przewaga fabularna nie oznacza prawa do ograniczania komfortu uczestnika. Konflikty powinny pozostawiać wszystkim zaangażowanym możliwość dalszej gry.",
+        "W razie wątpliwości dotyczących działania mechaniki należy skontaktować się z Mistrzem Gry. Rozstrzygnięcia organizatorskie są nadrzędne wobec prywatnych interpretacji zasad."
+      ]
+    },
+    {
+      "heading": "Bezpieczeństwo",
+      "paragraphs": [
+        "Podstawowym narzędziem komunikowania granic są trzy kolory bezpieczeństwa. Wypowiada się je poza postacią. Nie stanowią elementu fabuły i nie należy komentować ich użycia podczas gry.",
+        "GREEN — potwierdza komfort lub zaprasza do rozpoczęcia bądź zwiększenia intensywności sceny. Nie oznacza ogólnej zgody na dowolne działania.",
+        "YELLOW — oznacza konieczność zmniejszenia intensywności lub usunięcia wskazanego elementu. Scenę można kontynuować po dostosowaniu jej przebiegu.",
+        "RED — natychmiast przerywa scenę albo wskazane zachowanie. Nie wymaga wyjaśnienia. Nie wolno negocjować decyzji osoby korzystającej z tego komunikatu.",
+        "Dodatkowo dopuszczamy dyskretny gest sprawdzenia komfortu: znak OK skierowany do drugiego gracza. Kciuk w górę oznacza możliwość kontynuowania sceny, falująca dłoń prośbę o zmniejszenie intensywności, a kciuk w dół potrzebę przerwania interakcji lub uzyskania pomocy organizatora.",
+        "Każdy uczestnik ma prawo opuścić scenę, która przekracza jego granice."
+      ]
+    },
+    {
+      "heading": "Kontakt fizyczny i intymność",
+      "paragraphs": [
+        "Obowiązuje zasada No Pain. Wszelka przemoc fizyczna jest odgrywana teatralnie, bez rzeczywistego zadawania bólu. Nie wolno ograniczać oddechu, uciskać szyi ani stosować technik powodujących utratę kontroli nad własnym ciałem.",
+        "Kontakt fizyczny wymaga zgody zaangażowanych graczy. Należy ją uzyskać szczególnie przed scenami przytrzymywania, szarpaniny i bliskości intymnej.",
+        "Sceny erotyczne pozostają umowne. Uczestnicy ustalają poza postacią dopuszczalny poziom bliskości, a ich przebieg nie może obejmować rzeczywistych czynności seksualnych. Zbliżenie można również rozegrać poprzez fade to black, bez odgrywania jego fizycznego przebiegu.",
+        "Zgoda może zostać cofnięta w dowolnym momencie."
+      ]
+    },
+    {
+      "heading": "Przestrzeń gry i fotografowanie",
+      "paragraphs": [
+        "Nie wszystkie pomieszczenia Nevermore Hall będą dostępne fabularnie. Ograniczenia zostaną oznaczone przez organizatorów. Nie wolno wchodzić do przestrzeni wyłączonych z gry ani próbować omijać zabezpieczeń.",
+        "Pokoje uczestników nie są automatycznie dostępne dla innych postaci. Wejście do zajmowanego pokoju wymaga respektowania prywatności jego mieszkańców.",
+        "Fotograf obecny podczas larpa jest osobą techniczną i pozostaje niewidoczny dla świata gry. Uczestnicy mogą zgłosić, że nie życzą sobie fotografowania określonej sceny. Szczegółowe zasady dotyczące zdjęć zostaną przekazane przed wydarzeniem."
+      ]
+    },
+    {
+      "heading": "Deklaracje i korespondencja",
+      "paragraphs": [
+        "Deklaracje pozwalają podejmować działania dotyczące spraw wykraczających poza bezpośrednią przestrzeń gry. Mogą obejmować sytuację majątkową rodziny, zobowiązania wobec osób nieobecnych w Nevermore lub inne wydarzenia rozgrywające się poza posiadłością.",
+        "Wiadomości będą dostarczane za pośrednictwem przygotowanej korespondencji i posłańców. Niektóre wymagają wyboru jednej z przedstawionych możliwości, inne pozwalają na samodzielne sformułowanie odpowiedzi.",
+        "Każda deklaracja określa termin podjęcia decyzji. Brak odpowiedzi może mieć konsekwencje fabularne, zgodne z treścią wiadomości. Posłańców pełniących funkcję techniczną nie należy zatrzymywać w sposób utrudniający ich pracę.",
+        "Uczestnicy mogą również sporządzać własne oświadczenia, umowy i zobowiązania. Dokumenty takie mogą zostać przekazane do weryfikacji Mistrzowi Gry. Samo podpisanie umowy nie gwarantuje automatycznie jej skuteczności prawnej w świecie przedstawionym.",
+        "W sprawach wymagających wiedzy prawniczej postacie mogą korzystać z pomocy Horace'a Fincha."
+      ]
+    },
+    {
+      "heading": "Fatum",
+      "paragraphs": [
+        "Podczas gry uczestnicy mogą otrzymywać Karty Fatum, opisujące szczególne doświadczenia ich postaci.",
+        "Wyróżniamy trzy rodzaje kart: Niepokój dotyczy niepokojących doznań i zmian w postrzeganiu otoczenia. Ciało określa czasowe stany fizyczne, wynikające między innymi z choroby. Pamięć przywołuje wspomnienia lub skojarzenia związane z przeszłością bohatera.",
+        "Karta określa charakter doświadczenia oraz czas jego trwania. Gracz powinien uwzględnić otrzymaną informację w dalszej rozgrywce, zachowując swobodę wyboru reakcji swojej postaci.",
+        "Fatum nie zmusza do podejmowania konkretnych decyzji ani ujawniania sekretów. Nie każda karta opisuje obiektywnie istniejące zjawisko. Wrażenia postaci mogą być subiektywne lub wynikać z wydarzeń, których przyczyny pozostają nieznane.",
+        "Część kart będzie związana z indywidualną historią bohatera i przypisanym mu Wielkim Arkanum Tarota."
+      ]
+    },
+    {
+      "heading": "Blackboxy",
+      "paragraphs": [
+        "Blackbox to wydzielona scena rozgrywana poza zwyczajnym czasem lub przestrzenią larpa. W Fall of Nevermore będziemy wykorzystywać je przede wszystkim do odgrywania wydarzeń z przeszłości postaci, a także snów i wizji.",
+        "Blackboxy są przygotowywane i prowadzone przez organizatorów. Uczestnicy otrzymują informacje o charakterze sceny przed jej rozpoczęciem. Mogą przedstawiać rzeczywiste wydarzenia albo ich subiektywne wspomnienia.",
+        "Informacje uzyskane podczas blackboxu nie zawsze stanowią obiektywną wiedzę postaci. W szczególności wizja nie musi przedstawiać wydarzeń, które rzeczywiście miały miejsce.",
+        "Udział w blackboxie wymaga zgody uczestnika. Zakończenie sceny oraz powrót do bieżącego czasu gry zostaną wyraźnie oznaczone przez prowadzącego."
+      ]
+    },
+    {
+      "heading": "Widma i manifestacje",
+      "paragraphs": [
+        "W trakcie gry mogą pojawiać się zjawiska oznaczone kolorowym światłem. Oznaczenie wskazuje dopuszczalny sposób interakcji, nie przesądza jednak, czy zjawisko jest rzeczywiste, czy stanowi złudzenie postaci.",
+        "BŁĘKITNE ŚWIATŁO — WIDMO. Widmo można obserwować, lecz nie można nawiązać z nim bezpośredniej, obustronnej interakcji. Próby zatrzymania lub dotknięcia widma pozostają bezskuteczne. Nie należy blokować drogi odgrywającemu je NPC.",
+        "FIOLETOWE ŚWIATŁO — MANIFESTACJA. Z manifestacją można próbować nawiązać kontakt i podejmować wobec niej działania wynikające z przebiegu sceny. Manifestacja nie musi odpowiadać na pytania. Kontakt fizyczny wymaga osobnego uzgodnienia.",
+        "Samo oznaczenie jest sygnałem technicznym, którego barwy nie należy automatycznie uwzględniać w opisie zjawiska. Jeżeli manifestację lub widmo mogą postrzegać tylko wybrane postacie, uczestnicy otrzymają odpowiednią informację od Mistrza Gry."
+      ]
+    },
+    {
+      "heading": "Seanse spirytystyczne",
+      "paragraphs": [
+        "Seanse stanowią szczególny rodzaj scen związanych z praktykami okultystycznymi. Mogą wykorzystywać Fatum, oznaczenia świetlne oraz komunikaty przekazywane przez MG.",
+        "Uczestnictwo w seansie nie gwarantuje uzyskania prawdziwych informacji. Przebieg wydarzenia i charakter ewentualnych manifestacji zależą od przygotowanych elementów fabularnych."
+      ]
+    },
+    {
+      "heading": "Trucizny i preparaty medyczne",
+      "paragraphs": [
+        "W grze pojawi się ograniczona liczba trucizn i specjalnych preparatów przygotowanych przez organizatorów. Ich użycie będzie rozgrywane umownie.",
+        "Nie wolno samodzielnie dodawać jakichkolwiek substancji do prawdziwego jedzenia ani napojów. Zatrucie następuje wyłącznie za pomocą dopuszczonej mechaniki i musi zostać zgłoszone Mistrzowi Gry.",
+        "Osoba dotknięta efektem otrzyma kartę określającą objawy i dalszy przebieg zatrucia. Preparaty mogą powodować osłabienie, czasową utratę sprawności lub zaburzenia postrzegania.",
+        "W niektórych przypadkach możliwe będzie zastosowanie odtrutki albo innej formy pomocy.",
+        "Trucizna śmiertelna nie powoduje natychmiastowego zakończenia gry postacią. Ewentualny zgon wymaga potwierdzenia przez organizatorów."
+      ]
+    },
+    {
+      "heading": "Choroby, leczenie i pozorna śmierć",
+      "paragraphs": [
+        "Niektóre postacie cierpią na przewlekłe choroby, których objawy i ograniczenia zostały opisane w ich indywidualnych materiałach.",
+        "Badania, diagnozy i leczenie rozgrywane są teatralnie. Medyczne konsekwencje szczególnych zdarzeń mogą zostać przekazane za pomocą kart efektów.",
+        "Wprowadzamy również mechanikę pozornej śmierci. Pozwala ona odegrać stan, w którym postać zostaje błędnie uznana za zmarłą, choć w rzeczywistości pozostaje przy życiu.",
+        "Pozorna śmierć wymaga potwierdzenia przez MG. Nie należy utożsamiać jej ze zwykłą nieprzytomnością ani rzeczywistym zgonem. Gracz pozostający w takim stanie nie ma obowiązku długotrwałego bezruchu lub przebywania w niewygodnej pozycji. Zabronione jest rzeczywiste unieruchamianie oraz zamykanie uczestnika w ograniczonej przestrzeni.",
+        "Wszelkie działania związane ze stwierdzeniem zgonu i dalszym postępowaniem z ciałem postaci odbywają się pod nadzorem organizatorów."
+      ]
+    },
+    {
+      "heading": "Pojedynki i przemoc",
+      "paragraphs": [
+        "Fall of Nevermore nie wykorzystuje systemu punktów życia ani statystyk walki. Bezpośrednie starcia pozostają teatralne i powinny mieć wcześniej uzgodniony przebieg.",
+        "Formalny pojedynek wymaga wyzwania, wskazania sekundantów oraz ustalenia czasu, miejsca i warunków starcia. Przed pojedynkiem należy dopuścić możliwość mediacji między stronami.",
+        "Używać można wyłącznie rekwizytów zatwierdzonych przez organizatorów. Prawdziwa broń jest niedozwolona.",
+        "Rany odgrywa się zgodnie z ustalonym rezultatem sceny. Ciężkie obrażenia i śmierć postaci wymagają potwierdzenia przez Mistrza Gry."
+      ]
+    },
+    {
+      "heading": "Gra w Epitafia",
+      "paragraphs": [
+        "Gra w Epitafia jest dawną zabawą młodszego pokolenia Ravensmoorów. Podczas rozgrywki jedna z postaci zostaje symbolicznie uznana za zmarłą, a pozostali uczestnicy wygłaszają poświęcone jej epitafia.",
+        "Scena może mieć charakter lekki lub znacznie bardziej konfrontacyjny. Przed jej rozpoczęciem należy uzgodnić dopuszczalną intensywność i zakres poruszanych tematów.",
+        "Udział w Grze w Epitafia nie oznacza zgody na przekraczanie osobistych granic gracza. Uczestnicy zachowują możliwość ograniczenia intensywności albo przerwania sceny zgodnie z zasadami bezpieczeństwa."
+      ]
+    },
+    {
+      "heading": "Ceremonie i portrety",
+      "paragraphs": [
+        "Odczytanie testamentu oraz ceremonia ślubna będą posiadały przygotowaną oprawę fabularną. Niektóre decyzje podjęte podczas tych wydarzeń mogą wymagać pisemnego potwierdzenia lub odpowiedniej deklaracji.",
+        "Portrety członków rodziny mogą stanowić element oficjalnego uznania ich pozycji w rodzie. Samo wykonanie obrazu nie wywołuje automatycznie skutków prawnych ani nie przyznaje postaci dodatkowych uprawnień.",
+        "Wydarzenia ceremonialne nie zwalniają uczestników z przestrzegania zasad bezpieczeństwa."
+      ]
+    }
+  ]
+},
 {slug:'produkcja',number:'VI',title:'Forma i produkcja',description:'Scenografia, kostiumy i oprawa doświadczenia.',paragraphs:['Przestrzeń, ubiór i detale epoki budują materialny język Nevermore.','Kostiumy, światło, muzyka i scenografia czerpią z estetyki przełomu wieków, gotyckiej powieści oraz elegancji naznaczonej przemijaniem.']}
 ];
