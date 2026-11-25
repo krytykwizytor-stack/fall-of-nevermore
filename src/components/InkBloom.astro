@@ -1,0 +1,50 @@
+---
+const { compact = false } = Astro.props;
+---
+<div class:list={["ink-emergence",{"ink-emergence--compact":compact}]} aria-hidden="true" data-ink-emergence>
+  <svg viewBox="0 0 360 124" xmlns="http://www.w3.org/2000/svg" focusable="false">
+    <defs>
+      <radialGradient id="ink-puddle" cx="45%" cy="41%" r="70%">
+        <stop offset="0" stop-color="#44303d" stop-opacity=".9"/>
+        <stop offset=".62" stop-color="#503342" stop-opacity=".76"/>
+        <stop offset="1" stop-color="#87606e" stop-opacity=".39"/>
+      </radialGradient>
+    </defs>
+    <g class="ink-emergence__rules" fill="none" stroke="#94766e" stroke-width=".8" opacity=".62">
+      <path d="M17 63H125"/>
+      <path d="M235 63H343"/>
+    </g>
+    <g class="ink-emergence__body">
+      <path class="ink-emergence__halo" d="M164 34C177 28 185 23 197 33C204 38 217 35 224 47C230 56 222 63 229 73C233 82 216 84 209 93C196 103 187 92 178 95C166 100 152 91 151 80C142 77 143 61 148 55C149 44 155 39 164 34Z" fill="#9d7177" opacity=".17"/>
+      <path d="M163 37C174 34 183 26 194 34C200 40 210 37 216 47C219 55 219 61 224 68C227 77 212 81 208 86C200 96 186 90 181 91C166 96 155 86 154 77C147 74 148 65 151 56C152 47 156 42 163 37Z" fill="url(#ink-puddle)"/>
+      <path d="M158 42C153 49 149 51 146 46M204 37L214 30M218 73L234 81M159 83L147 90" fill="none" stroke="#603d4d" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+    </g>
+    <g class="ink-emergence__satellites" fill="#664653">
+      <circle cx="125" cy="47" r="2.4"/><circle cx="132" cy="74" r="1.7"/><circle cx="245" cy="53" r="3.1"/><circle cx="230" cy="98" r="1.8"/><circle cx="163" cy="19" r="1.6"/><circle cx="199" cy="109" r="2.3"/><circle cx="111" cy="63" r="1.4"/><circle cx="252" cy="80" r="1.2"/>
+      <path d="M139 49Q134 45 132 37Q140 40 141 46Z"/>
+      <path d="M238 91Q243 95 247 100Q238 100 236 94Z"/>
+    </g>
+    <g class="ink-emergence__mark" fill="#f4e7d7" opacity=".8">
+      <path d="M177 45Q184 57 181 77" fill="none" stroke="#f4e7d7" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M180 54Q187 49 197 44" fill="none" stroke="#f4e7d7" stroke-width="1" stroke-linecap="round"/>
+    </g>
+  </svg>
+</div>
+<script>
+  const blooms=document.querySelectorAll('[data-ink-emergence]');
+  if(blooms.length){
+    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      const observer=new IntersectionObserver(entries=>{
+        for(const entry of entries){
+          if(entry.isIntersecting){
+            entry.target.classList.add('is-emerged');
+            observer.unobserve(entry.target);
+          }
+        }
+      },{threshold:.18});
+      blooms.forEach(bloom=>observer.observe(bloom));
+    }else{
+      blooms.forEach(bloom=>bloom.classList.add('is-emerged'));
+    }
+  }
+</script>
