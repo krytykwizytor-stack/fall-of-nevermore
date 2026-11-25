@@ -22,7 +22,7 @@
     radial-gradient(circle at 77% 84%,rgba(75,45,52,.28) 0 3%,transparent 13%);
   filter:blur(.7px);
   mix-blend-mode:multiply;
-  opacity:.14;
+  opacity:.47;
   transform:rotate(var(--ink-turn)) scale(1);
   transform-origin:center;
 }
@@ -52,8 +52,8 @@
 }
 @keyframes ink-spread{
   0%{opacity:0;transform:rotate(var(--ink-turn)) scale(.48);filter:blur(6px)}
-  46%{opacity:.12;filter:blur(2px)}
-  100%{opacity:.14;transform:rotate(var(--ink-turn)) scale(1);filter:blur(.7px)}
+  46%{opacity:.31;filter:blur(2px)}
+  100%{opacity:.47;transform:rotate(var(--ink-turn)) scale(1);filter:blur(.7px)}
 }
 .ink-side-quill{
   position:absolute;
@@ -116,10 +116,10 @@
 }
 /* Long reading pages should never carry decorative ink into the text column. */
 @media(max-width:1360px){
-  .ink-ambience .ink-blot{opacity:.075}
+  .ink-ambience .ink-blot{opacity:.32}
   .ink-ambience .ink-side-quill{display:none}
 }
-@media(max-width:1160px){
+@media(max-width:900px){
   .ink-ambience .ink-blot{display:none}
 }
 @media(max-width:580px){
@@ -131,7 +131,45 @@
   .chapter-card:hover{transform:none}
 }
 @media(prefers-reduced-motion:reduce){
-  .ink-blot.ink-bloom{animation:none!important;opacity:.12!important;filter:blur(.7px)!important;transform:rotate(var(--ink-turn)) scale(1)!important}
-  .ink-blot.ink-waiting{opacity:.12!important}
+  .ink-blot.ink-bloom{animation:none!important;opacity:.34!important;filter:blur(.7px)!important;transform:rotate(var(--ink-turn)) scale(1)!important}
+  .ink-blot.ink-waiting{opacity:.34!important}
   .chapter-card,.cover-info-link{transition:none!important}
+}
+
+/* A visible ink stain is placed between chapters, not across text. */
+.ink-emergence{display:block;flex:none;width:min(360px,90%);height:124px;margin:0 auto;pointer-events:none;overflow:visible}
+.ink-emergence svg{display:block;width:100%;height:100%;overflow:visible}
+.ink-emergence--compact{width:184px;height:70px}
+.ink-emergence__body{transform-origin:180px 62px}
+.ink-emergence__satellites{transform-origin:180px 62px}
+.ink-emergence.is-awaiting .ink-emergence__body,
+.ink-emergence.is-awaiting .ink-emergence__satellites,
+.ink-emergence.is-awaiting .ink-emergence__mark{opacity:0}
+.ink-emergence.is-emerged .ink-emergence__body{animation:ink-form 2.9s cubic-bezier(.19,.55,.19,1) both}
+.ink-emergence.is-emerged .ink-emergence__satellites{animation:ink-spatter 2.25s cubic-bezier(.23,.66,.26,1) .5s both}
+.ink-emergence.is-emerged .ink-emergence__mark{animation:ink-spatter 1.9s ease 1.2s both}
+@keyframes ink-form{
+  0%{opacity:0;transform:scale(.08) rotate(-5deg);filter:blur(8px)}
+  34%{opacity:.7;filter:blur(2px)}
+  74%{opacity:1;transform:scale(1.07) rotate(1.2deg);filter:blur(.3px)}
+  100%{opacity:1;transform:scale(1) rotate(0);filter:blur(0)}
+}
+@keyframes ink-spatter{
+  from{opacity:0;transform:scale(.6)}
+  to{opacity:1;transform:scale(1)}
+}
+.gothic-epigraph .ink-emergence{margin:-28px auto 10px}
+.gothic-epigraph::before{display:none}
+.ornament-line .ink-emergence{margin:-13px 0}
+@media(max-width:600px){
+  .gothic-epigraph .ink-emergence{width:min(300px,90%);height:104px}
+  .ink-emergence--compact{width:168px;height:66px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ink-emergence.is-emerged .ink-emergence__body,
+  .ink-emergence.is-emerged .ink-emergence__satellites,
+  .ink-emergence.is-emerged .ink-emergence__mark{animation:none!important;opacity:1!important;filter:none!important;transform:none!important}
+  .ink-emergence.is-awaiting .ink-emergence__body,
+  .ink-emergence.is-awaiting .ink-emergence__satellites,
+  .ink-emergence.is-awaiting .ink-emergence__mark{opacity:1!important}
 }
