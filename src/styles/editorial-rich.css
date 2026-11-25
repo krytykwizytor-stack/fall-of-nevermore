@@ -244,3 +244,11 @@
   .cover .eyebrow{letter-spacing:.12em}
   .masthead a.masthead-logo{width:95px}
 }
+
+/* Dramaturgia: a plain opening paragraph, not a typographic drop cap. */
+.article--dramaturgia .chapter-section:first-child p:first-of-type::first-letter{
+  float:none;
+  font:inherit;
+  color:inherit;
+  padding:0;
+}
