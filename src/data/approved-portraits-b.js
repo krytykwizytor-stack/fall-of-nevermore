@@ -10,11 +10,10 @@ export const approvedPortraitsB={
   ],
   "06": [
     "Nie radziłbym próbować oszukać Lady Beatrice na rachunkach.",
-    "Pewien daleki krewny opowiadał mi z oburzeniem, jak podczas rozmowy o rodzinnych finansach wytknęła mu nieścisłość dotyczącą wydatku sprzed trzech lat. Nie pamiętał już samej transakcji. Beatrice pamiętała nawet nazwisko osoby, która ją zatwierdziła.",
+    "Pewien daleki krewny opowiadał mi z oburzeniem, jak podczas rozmowy o rodzinnych finansach wytknęła mu nieścisłość dotyczącą wydatku sprzed trzech lat. Biedaczek nie pamiętał już samej transakcji, zaś ta dumna sroka pamiętała nawet nazwisko osoby, która ją zatwierdziła!",
     "Wdowa po Blackwoodzie od dawna zajmuje się interesami Ravensmoorów. Nie ma dzieci, o czym niektóre starsze damy zdają się przypominać sobie przy każdej sposobności. Beatrice pozwala im mówić. Nigdy nie widziałem, aby podobna rozmowa przeszkodziła jej dokończyć pracę.",
     "W kwestiach majątku Beatrice pozostaje bezlitosną realistką. Uważa, że długi należy spłacać, nawet gdy na odwrocie wezwania widnieje nazwisko Ravensmoor.",
-    "Gdy zapytałem ją kiedyś o przyszłość majątku, nie próbowała mnie uspokoić. Sięgnęła po księgę rachunkową i wskazała kwotę, którą należało zapłacić przed końcem miesiąca.",
-    "Rozmowa trwała krótko."
+    "Gdy zapytałem ją kiedyś o przyszłość majątku, nie próbowała mnie uspokoić. Sięgnęła po księgę rachunkową i wskazała kwotę, którą należało zapłacić przed końcem miesiąca, a potem z żalem pokiwała głową. Jednego byłem wtedy pewien: sprawy Ravensmoorów pozostają w najlepszych rękach, jeśli chodzi o ich prowadzenie, i w najgorszych, jeśli ktoś liczy na pobłażliwość przy egzekwowaniu należności."
   ],
   "07": [
     "Malcolm opowiedział mi kiedyś historię o własnym aresztowaniu. Była tak zabawna, że uwierzyłem w każde słowo, dopóki następnego dnia nie usłyszałem zupełnie odmiennej wersji wydarzeń.",
@@ -33,10 +32,8 @@ export const approvedPortraitsB={
   ],
   "09": [
     "Nathaniel wypytywał mnie kiedyś o okoliczności śmierci pewnego człowieka, którego nazwiska nigdy wcześniej nie słyszałem.",
-    "Rozmowa trwała blisko godzinę.",
     "Jest genealogiem rodziny i badaczem rzeczy, które w innych domach uznano by za niegodne zainteresowania poważnego dżentelmena. W Nevermore mówi się o jego spirytystycznych doświadczeniach z pobłażaniem, choć niektórzy krewni wyraźnie unikają zaproszeń na organizowane przez niego seanse.",
     "Jego notatki wypełnia drobne, pochyłe pismo; na marginesach pozostawia miejsce dla spóźnionych świadków. Doktor Ashdown nie przepada za jego pytaniami o choroby Ravensmoorów.",
-    "Nathaniel nie rozumie niechęci krewnych do genealogicznych dochodzeń. Na pytanie, po co właściwie przeglądać stare akty zgonu, odpowiada zwykle, że na tym właśnie polega badanie historii.",
-    "Podczas jednej z wizyt pokazał mi księgę, w której ktoś wykreślił nazwisko zmarłego. Nathaniel cierpliwie odczytywał je pod światło, narzekając na niechlujstwo dawnego archiwisty."
+    "Nathaniel nie rozumie niechęci krewnych do genealogicznych dochodzeń. Na pytanie, po co właściwie przeglądać stare akty zgonu, odpowiada zwykle, że na tym właśnie polega badanie historii. Podczas jednej z wizyt pokazał mi księgę, w której ktoś wykreślił nazwisko zmarłego. Nathaniel cierpliwie odczytywał je pod światło, narzekając na niechlujstwo dawnego archiwisty."
   ]
 };
