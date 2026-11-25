@@ -1,48 +1,60 @@
 export const approvedPortraitsD={
   "16": [
-    "Basil March poznał Orlanda podczas studiów. Łączyła ich fascynacja sztuką, a zapewne także szczególna przyjemność z drażnienia ludzi przekonanych, że młodzi dżentelmeni powinni zajmować się czymś pożyteczniejszym.",
-    "Do Nevermore przyjechał jako przyjaciel domu i malarz portretu Orlanda. Jest tu mile widziany, choć rodzina najchętniej rozmawia z nim o obrazie, a nie o jego własnych planach. Basil przyjmuje to ze spokojem. Przy sztalugach ma znacznie więcej do powiedzenia.",
-    "Orlando nie jest łatwym modelem. Potrafi przerwać sesję, aby odczytać świeżo napisany wiersz, po czym oburza się, że malarz nie zapamiętał każdej strofy. Basil słucha go cierpliwie do chwili, gdy trzeba po raz czwarty poprawić ułożenie włosów.",
-    "— Jeszcze jedna chwila — prosił Orlando podczas ostatniego pozowania.",
-    "— Powtarzasz to od godziny — odpowiedział malarz, nie odrywając wzroku od płótna."
+    "Basil March poprawił kiedyś ustawienie mojego fotela podczas rozmowy. Uczynił to bez pytania. Po chwili wyjaśnił, że drażnił go cień padający na moją twarz. Przyznam, że wolałbym, aby zainteresował się moimi poglądami.",
+    "Malarstwo traktuje ze śmiertelną powagą, choć poza pracownią bywa człowiekiem nadzwyczaj pogodnym. Potrafi oczarować towarzystwo opowieścią o podróży do galerii, a następnego dnia obrazić się na cały świat, ponieważ ktoś przesunął jego sztalugi. Szczególnie drażnią go ludzie, którzy pragną na portretach wyglądać inaczej niż w rzeczywistości. Stanowią oni, niestety, znaczną część potencjalnej klienteli.",
+    "Basil poznał Orlanda podczas studiów. Do Nevermore przyjeżdża jako jego przyjaciel i portrecista, ale nie zamierza ograniczać pobytu do pracy. Lubi dobre towarzystwo, jeszcze bardziej lubi ludzi, których nie wypadałoby zapraszać do dobrego towarzystwa. Sam nosi się z artystyczną swobodą, jakiej zapewne nie wybaczono by komuś o mniej ujmujących manierach.",
+    "Miałem okazję przeglądać kilka jego szkicowników. Między studiami postaci znalazłem liczne notatki, złośliwe uwagi i karykatury osób, których nazwiska wolę przemilczeć. Basil zapewnił mnie, że podobieństwo jest zupełnie przypadkowe.",
+    "Nie uwierzyłem mu ani przez chwilę."
   ],
   "17": [
-    "Pan Horace Finch jest prawnikiem.",
-    "Na przyjęciu trudno go zauważyć. Finch nie przerywa rozmów i prawie nigdy nie usiłuje ich prowadzić. Za to pamięta dobrze, kto zwrócił się do niego o pomoc nazajutrz.",
-    "Finch prowadzi sprawy Ravensmoorów od lat. Zna testamenty i dawne dokumenty, których treść bywa niekiedy przedmiotem rodzinnych sporów. Przywykł też, że ludzie przekonani o własnej nieomylności proszą go następnie o pomoc w naprawianiu skutków swoich decyzji.",
-    "Kiedy Ambrose zapowiedział ogłoszenie ostatniej woli, podobno pierwszą osobą wezwaną do jego gabinetu był właśnie prawnik.",
-    "Widziałem później Fincha przy kolacji. Jeden z krewnych próbował wypytać go o treść testamentu, drugi zaś przedstawił własną opinię o prawie dziedziczenia. Finch wysłuchał obu, poprosił o sól i wrócił do posiłku."
+    "Przez długi czas sądziłem, że pan Horace Finch zajmuje się przede wszystkim sporządzaniem testamentów. Nie mogłem zrozumieć, dlaczego lord Ambrose traktuje swojego prawnika z tak szczególną atencją, skoro człowiek ten przez cały wieczór potrafi nie powiedzieć niczego godnego zapamiętania.",
+    "Dopiero później dowiedziałem się, jak niewiele rozumiem z zawodu pana Fincha.",
+    "Ravensmoorowie powierzają mu sprawy od przeszło trzydziestu lat. Zajmuje się majątkiem, reprezentuje rodzinę przed sądem, a w razie konieczności podejmuje się również obowiązków, których żaden szanujący się dżentelmen nie chciałby omawiać podczas kolacji. Finch posiada w tych kwestiach niemałe doświadczenie. Podobno potrafi skłonić wierzyciela do cierpliwości nawet wówczas, gdy należności dawno przekroczyły wszelkie rozsądne terminy.",
+    "Nie przepada za niepotrzebnym zamieszaniem. Zwykle zjawia się osobiście dopiero wtedy, gdy listy przestają przynosić oczekiwany skutek. Nosi przy sobie skórzaną teczkę, której zawartością interesowałem się kiedyś z czystej ciekawości. Odpowiedział, że znajdują się w niej dokumenty zawodowe, po czym zamknął ją na klucz.",
+    "Wiele osób myli jego powściągliwość z łagodnością. Sam miałem okazję przekonać się o tym podczas wizyty pewnego dżentelmena, którego interesy weszły w konflikt z interesami Ravensmoorów. Człowiek ów przybył niezwykle wzburzony i domagał się natychmiastowej rozmowy z lordem Ambrose'em. Finch zaprosił go do biblioteki.",
+    "Nie słyszałem ich rozmowy. Trwała niespełna dwadzieścia minut.",
+    "Kiedy dżentelmen opuszczał dom, był już znacznie spokojniejszy. Tak spokojny, że zapomniał nawet zabrać kapelusza.",
+    "Pan Finch osobiście mu go odniósł.",
+    "Nie wiem, czy Horace Finch darzy Ravensmoorów szczególną sympatią. Z pewnością jednak traktuje swoje obowiązki z wielką powagą. Przywiązanie do raz powierzonych spraw wydaje się u niego silniejsze niż niechęć do ludzi, którzy je powodują.",
+    "Gdy zapytałem kiedyś, czy nie zdarza mu się odmawiać przyjęcia zlecenia, przyznał, że oczywiście.",
+    "— A jakiego rodzaju sprawy pan odrzuca?",
+    "Przyjrzał mi się przez chwilę.",
+    "— Takie, za które nie otrzymałem jeszcze zapłaty."
   ],
   "18": [
-    "Doktor Ashdown ma niezwykle spokojne dłonie.",
-    "Zauważyłem to podczas jednej z wizyt, gdy Lucinda poczuła się gorzej. Wszyscy w pokoju okazali niepokój, z wyjątkiem lekarza. Ten otworzył torbę, wyjął przyrządy i przystąpił do badania z taką dokładnością, jakby nic poza chorą nie miało w owej chwili znaczenia.",
-    "Rodzina ufa mu od lat. Podczas wojny burskiej zdobył doświadczenie, o którym niechętnie opowiada w towarzystwie.",
-    "Po wojnie zainteresował się nowymi preparatami leczniczymi. Kiedy wspomniałem o niedawnej publikacji medycznej, natychmiast zaprosił mnie do gabinetu.",
-    "Spędziliśmy tam dwie godziny. Na stole leżały zapisane drobnym pismem arkusze, a kilka szklanych naczyń nosiło etykiety z nazwami substancji, których nie rozpoznałem.",
-    "Doktor objaśniał wyniki doświadczeń aż do późnego wieczora. Dopiero gdy służący przyszedł po raz drugi, przypomniał sobie o kolacji."
+    "Doktor Samuel Ashdown ma niezwykle spokojne dłonie i zwyczaj wydawania poleceń tonem tak uprzejmym, że pacjent zwykle spostrzega dopiero po fakcie, iż nie pozostawiono mu żadnego wyboru.",
+    "Przez wiele lat praktyki zdobył uznanie jako lekarz sumienny, choć nie zawsze szczególnie wyrozumiały. W chorobie interesuje go wszystko, co można zbadać, zmierzyć lub poddać doświadczeniu. Gdy człowiek zaczyna opowiadać o swoim cierpieniu z większą swobodą, doktor bywa już myślami przy możliwym rozpoznaniu.",
+    "Podczas wojny burskiej służył jako lekarz wojskowy. Rzadko wspomina ten okres, lecz zachował z niego pewne przyzwyczajenia. Nie znosi bezczynności, a w nagłych przypadkach porusza się z szybkością, której trudno byłoby oczekiwać od pięćdziesięciopięcioletniego dżentelmena.",
+    "Po powrocie do Anglii zainteresował się szczególnie nowymi osiągnięciami chemii medycznej. Jego gabinet wypełniają podręczniki, fiolki i własnoręczne notatki. Zdarza mu się spędzać tam całe wieczory, niekiedy ku niezadowoleniu osób oczekujących go przy kolacji.",
+    "Podczas jednej z rozmów zapytałem doktora, czy nie obawia się skutków niektórych doświadczeń.",
+    "Odpowiedział, że obawia się przede wszystkim niewiedzy.",
+    "Zważywszy na liczbę nieopisanych naczyń stojących na jego stole, nie poczułem się szczególnie uspokojony."
   ],
   "19": [
-    "Ojciec Matthias słucha ze spuszczonym wzrokiem. Kiedy ktoś długo szuka odpowiednich słów, nie ponagla go ani gestem, ani pytaniem.",
-    "Zna Ravensmoorów od lat i pozostaje jednym z niewielu gości domu, których obecność nikogo nie dziwi.",
-    "Podczas nabożeństwa przy słowach o odpuszczeniu grzechów na chwilę zamilkł. Kiedy wierni wyszli, długo pozostawał w pustym kościele.",
-    "Rozmowa z Lady Morwen trwała krótko. Później duchowny przeprosił gospodarzy i nie pojawił się przy wieczornej kolacji."
+    "Ojciec Matthias należy do nielicznych duchownych, których słuchałem z przyjemnością także poza kościołem. Ma głos spokojny, lecz donośny, i nie przerywa rozmówcy nawet wówczas, gdy ten najwyraźniej nie wie, dokąd zmierza jego opowieść.",
+    "Jako spowiednik cieszy się znacznym zaufaniem. Dobrze zna ludzkie słabości, choć nigdy nie zauważyłem, aby opowiadał o nich z pobłażaniem. Potrafi być zadziwiająco surowy wobec człowieka, który usiłuje przedstawić własne przewinienie jako przykry obowiązek.",
+    "Nie lubi rozmów o religii prowadzonych wyłącznie dla intelektualnej rozrywki. Kiedy jeden z młodych Ravensmoorów zaczął podczas kolacji dowodzić, że grzech stanowi pojęcie względne, Matthias wysłuchał go cierpliwie, po czym zapytał, czy podobnie rozumuje się wówczas, gdy krzywda dotyczy kogoś bliskiego.",
+    "Dyskusja zakończyła się znacznie wcześniej, niż przewidywał jej inicjator.",
+    "Duchowny niekiedy znika z towarzystwa bez wyjaśnienia. Znalazłem go kiedyś samotnie w kaplicy, długo po zakończeniu nabożeństwa. Na mój widok przeprosił, jak gdybym zastał go przy czymś niestosownym.",
+    "Nie wydawał się człowiekiem pogrążonym w modlitwie. Sprawiał raczej wrażenie kogoś, komu bardzo trudno ją rozpocząć."
   ],
   "20": [
-    "Alaric Vane jest człowiekiem, z którym nie należy prowadzić rozmowy, jeżeli nie pamięta się dokładnie własnych wcześniejszych słów.",
-    "Kiedy podczas przyjęcia usłyszał dwie różne wersje drobnego zajścia, zapamiętał obie. Następnego dnia wrócił do sprawy, chociaż nikt inny nie przywiązywał już do niej znaczenia.",
-    "Uczynił to z wyraźnym zadowoleniem.",
-    "Vane służył podczas wojny burskiej i zna Sir Edgara od wielu lat. W Nevermore nie jest traktowany jak osoba obca, choć jego zawodowa dociekliwość bywa przyczyną zakłopotania gospodarzy.",
-    "Z dawnych lat wojskowych pamięta Sir Edgara dobrze. Gdy rozmowa przechodzi od towarzyskich wspomnień do wojennych raportów, Vane odpowiada coraz oszczędniej.",
-    "Zapytałem go kiedyś o Edgara, licząc na ciekawą historię z wojny. Otrzymałem kilka słów o sprawnym dowodzeniu i wzorowej dyscyplinie.",
-    "Trudno byłoby zacytować bardziej urzędową pochwałę przyjaciela."
+    "Alaric Vane posiada irytującą zdolność zapamiętywania szczegółów, które inni ludzie uważają za niewarte uwagi. Nie polecam opowiadania mu zabawnych historii z własnej młodości. Podczas następnego spotkania może bowiem zapytać o osobę, którą wymieniło się zaledwie mimochodem, a której nazwiska samemu już się nie pamięta.",
+    "Jako śledczy cieszy się opinią człowieka sumiennego i upartego. Przepisy zna równie dobrze jak ich niedoskonałości, choć tych drugich niechętnie przyznaje się w obecności osób postronnych. Szczególnie nie lubi, gdy ktoś próbuje zastąpić zeznania zapewnieniem o własnej nieskazitelnej reputacji.",
+    "Vane służył podczas wojny burskiej. Z tego okresu zachował wojskową dyscyplinę, pewną oszczędność gestów i niechęć do opowieści o bohaterstwie. Kiedy inni weterani wspominają dawne triumfy, Alaric najczęściej pyta o daty.",
+    "Pozostaje spowinowacony z Ravensmoorami i bywa w Nevermore od lat. Jego stosunek do rodziny jest jednak bardziej skomplikowany, niż sugerowałaby sama serdeczność powitań. Zdarza mu się bronić krewnych z żarliwością zawodowego adwokata, a nazajutrz wypytywać ich o sprawy, których żaden gość nie powinien poruszać.",
+    "Podczas pewnego spotkania zarzuciłem mu, że traktuje wszystkich jak podejrzanych.",
+    "— Doprawdy? — zapytał.",
+    "Po chwili wyjął notes i poprosił, abym przypomniał mu, kto pierwszy użył tego określenia."
   ],
   "21": [
-    "— Sebastian, proszę odłożyć tę książkę.",
-    "Usłyszałem kiedyś, jak Mrs. Prudence Grace-Ashdown zwróciła się tymi słowami do dorosłego już młodzieńca podczas rodzinnego spotkania.",
-    "Wszyscy wybuchnęli śmiechem. Sebastian również, choć posłusznie zamknął tom.",
-    "Prudence spędziła w Nevermore wiele lat jako guwernantka młodego pokolenia. Obecnie pozostaje towarzyszką Lucindy, której zdrowie wymaga częstej opieki. Dla pozostałych wychowanków jest nadal osobą dobrze znaną, a niektórzy nie potrafią w jej obecności pozbyć się dawnych uczniowskich przyzwyczajeń.",
-    "Prudence zna dorosłych dziś Ravensmoorów od czasów, gdy musiała pilnować ich lekcji. Zna ich znacznie lepiej, niż pozwalałaby jej o tym mówić pozycja dawnej guwernantki.",
-    "Widziałem, jak podczas jednego z obiadów Clara zwróciła się do niej po imieniu. Prudence spojrzała na młodą damę z tak szczerym zdumieniem, że ta natychmiast poprawiła się i użyła właściwego tytułu.",
-    "Przez resztę posiłku obie zachowywały się nadzwyczaj uprzejmie."
+    "Mrs. Prudence Grace-Ashdown potrafi skłonić dorosłego mężczyznę do wyprostowania pleców, wypowiadając jedynie jego imię. Byłem świadkiem podobnego zdarzenia podczas obiadu i przyznaję, że sam również odruchowo poprawiłem postawę.",
+    "Przez lata była guwernantką młodych Ravensmoorów. Uczyła ich właściwego zachowania i pisania listów, a przy tym usiłowała przekonać swoich wychowanków, że dobrze wychowany człowiek nie musi oznajmiać całemu światu, iż otrzymał należyte wykształcenie.",
+    "W pracy ceniła dyscyplinę. Niektórych uczniów wspomina z wyraźną dumą, o innych mówi tak oględnie, że trudno nie podejrzewać dawnych przewinień. Z czasem nabrała też mniej pochlebnego przekonania o skuteczności wychowania w wielkich rodzinach: zdaniem Prudence nawet najlepsza lekcja może zostać zaprzepaszczona w ciągu jednego rodzinnego obiadu.",
+    "Obecnie towarzyszy chorującej Lucindzie. Nie wykonuje już obowiązków nauczycielki, lecz w Nevermore niewiele osób przywykło do traktowania jej jak zwyczajnego gościa. Sama również nie zawsze potrafi powstrzymać się od udzielania rad, zwłaszcza gdy zauważy rażący brak rozsądku u kogoś, kogo niegdyś uczyła alfabetu.",
+    "Jej pozycja jest osobliwa. Zna dom od podszewki, ale pozostaje od niego zawodowo zależna. Być może dlatego starannie wybiera chwile, w których pozwala sobie na szczerość.",
+    "Raz zdarzyło mi się zapytać, czy nie tęskni za czasami, gdy jej wychowankowie byli dziećmi.",
+    "Prudence spojrzała na mnie zdumiona.",
+    "— Mój drogi panie, czy pan kiedykolwiek próbował wychować pięcioro Ravensmoorów?"
   ]
 };
