@@ -1,0 +1,41 @@
+---
+const letter = [
+  "Lord Ambrose Ravensmoor ma zaszczyt prosić o przybycie do Nevermore Hall.",
+  "Z okazji rodzinnego zjazdu zostanie ogłoszona ostatnia wola gospodarza. W następnych dniach odbędą się również uroczystości związane ze ślubem Sebastiana Ravensmoora i panny Eleanor Wycliffe.",
+  "Obecność Państwa będzie mile widziana."
+];
+---
+<section class="invitation-feature" aria-labelledby="invitation-feature-title" data-nevermore-invitation>
+  <span class="invitation-feature__folio">Korespondencja domu Ravensmoorów · 1905</span>
+  <h2 id="invitation-feature-title">List z Nevermore Hall</h2>
+  <p>Wystarczy jedno zaproszenie, aby po latach ponownie znaleźć się w rodzinnym domu.</p>
+  <button class="nevermore-envelope" type="button" data-invitation-toggle aria-expanded="false" aria-controls="nevermore-letter" aria-label="Otwórz zaproszenie do Nevermore Hall">
+    <span class="nevermore-envelope__paper" aria-hidden="true"></span>
+    <span class="nevermore-envelope__flap" aria-hidden="true"></span>
+    <span class="nevermore-envelope__fold" aria-hidden="true"></span>
+    <span class="nevermore-envelope__seal" aria-hidden="true">R</span>
+    <span class="nevermore-envelope__hint" aria-hidden="true">Naciśnij pieczęć, aby otworzyć</span>
+  </button>
+  <div id="nevermore-letter" class="nevermore-letter" hidden>
+    <div class="nevermore-letter__heading">NEVERMORE HALL · YORKSHIRE</div>
+    <span class="nevermore-letter__ornament" aria-hidden="true">❧</span>
+    {letter.map(paragraph=><p>{paragraph}</p>)}
+    <div class="nevermore-letter__signature">Z upoważnienia lorda Ambrose’a Ravensmoora</div>
+    <div class="nevermore-letter__actions">
+      <a href="/dokument/postacie/">Poznaj zaproszonych ↗</a>
+      <a href="/dokument/informacje/">Informacje o wydarzeniu ↗</a>
+    </div>
+  </div>
+</section>
+<script>
+  const invitation = document.querySelector('[data-nevermore-invitation]');
+  const toggle = invitation?.querySelector('[data-invitation-toggle]');
+  const paper = invitation?.querySelector('#nevermore-letter');
+  toggle?.addEventListener('click',()=>{
+    const open = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label', open ? 'Zamknij zaproszenie do Nevermore Hall' : 'Otwórz zaproszenie do Nevermore Hall');
+    invitation?.classList.toggle('is-open',open);
+    if(paper) paper.hidden = !open;
+  });
+</script>
