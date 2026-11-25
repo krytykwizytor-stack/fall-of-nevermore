@@ -1,0 +1,137 @@
+/*
+ * Fall of Nevermore — restrained Gothic editorial ambience.
+ * The ink blooms once as it enters view; no looping motion and no overlays on text.
+ */
+.main-frame .ink-ambience{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  overflow:hidden;
+  pointer-events:none;
+}
+.ink-blot{
+  --ink-turn:-11deg;
+  position:absolute;
+  width:245px;
+  height:250px;
+  border-radius:56% 38% 63% 42% / 35% 60% 37% 62%;
+  background:
+    radial-gradient(ellipse at 41% 46%,rgba(68,45,60,.47) 0 5%,rgba(82,54,62,.26) 15%,rgba(99,63,68,.13) 35%,transparent 67%),
+    radial-gradient(circle at 70% 28%,rgba(82,52,68,.23) 0 7%,transparent 19%),
+    radial-gradient(circle at 19% 76%,rgba(75,45,52,.27) 0 4%,transparent 16%),
+    radial-gradient(circle at 77% 84%,rgba(75,45,52,.28) 0 3%,transparent 13%);
+  filter:blur(.7px);
+  mix-blend-mode:multiply;
+  opacity:.14;
+  transform:rotate(var(--ink-turn)) scale(1);
+  transform-origin:center;
+}
+.ink-blot::before,
+.ink-blot::after{
+  content:"";
+  position:absolute;
+  inset:-25%;
+  pointer-events:none;
+  background:
+    radial-gradient(circle at 7% 45%,rgba(68,39,53,.42) 0 1.5%,transparent 2.1%),
+    radial-gradient(circle at 22% 13%,rgba(68,39,53,.35) 0 1%,transparent 1.4%),
+    radial-gradient(circle at 78% 19%,rgba(68,39,53,.27) 0 1.4%,transparent 1.9%),
+    radial-gradient(circle at 94% 66%,rgba(68,39,53,.42) 0 1.3%,transparent 1.7%),
+    radial-gradient(circle at 42% 95%,rgba(68,39,53,.32) 0 1.1%,transparent 1.7%);
+}
+.ink-blot::after{
+  transform:rotate(63deg) scale(.82);
+  opacity:.65;
+}
+.ink-blot--first{--ink-turn:-19deg;left:-115px;top:12%}
+.ink-blot--second{--ink-turn:24deg;right:-119px;top:42%;width:285px;height:300px}
+.ink-blot--third{--ink-turn:7deg;left:-134px;top:78%;width:265px;height:280px}
+.ink-blot.ink-waiting{opacity:0}
+.ink-blot.ink-bloom{
+  animation:ink-spread 7s cubic-bezier(.22,.47,.25,.99) forwards;
+}
+@keyframes ink-spread{
+  0%{opacity:0;transform:rotate(var(--ink-turn)) scale(.48);filter:blur(6px)}
+  46%{opacity:.12;filter:blur(2px)}
+  100%{opacity:.14;transform:rotate(var(--ink-turn)) scale(1);filter:blur(.7px)}
+}
+.ink-side-quill{
+  position:absolute;
+  width:120px;
+  height:330px;
+  background:url('/images/ornaments/raven-quill.svg') center/contain no-repeat;
+  pointer-events:none;
+  filter:sepia(.1);
+  opacity:.22;
+}
+.ink-side-quill--first{top:490px;right:10px;transform:rotate(14deg)}
+.ink-side-quill--second{top:64%;left:-13px;transform:rotate(-172deg)}
+/* The raven quills live inside the double frame rather than on top of the title. */
+.cover .cover-quill{
+  position:absolute;
+  display:block;
+  width:112px;
+  height:245px;
+  z-index:0;
+  opacity:.25;
+  pointer-events:none;
+  background:url('/images/ornaments/raven-quill.svg') center/contain no-repeat;
+  filter:brightness(2.65) sepia(.3);
+}
+.cover .cover-quill--left{left:20px;top:50px;transform:rotate(-24deg)}
+.cover .cover-quill--right{right:25px;bottom:52px;transform:rotate(157deg)}
+.cover > .cover-ornament,
+.cover > .eyebrow,
+.cover > .cover-logo-heading,
+.cover > .flourish,
+.cover > .subtitle,
+.cover > .cover-desc,
+.cover > .cover-links,
+.cover > .cover-bottom{position:relative;z-index:1}
+.cover-links{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  margin:10px auto 15px;
+}
+.cover-links .start{margin:0}
+.cover-info-link{
+  display:inline-block;
+  padding:9px 10px 5px;
+  border-bottom:1px solid rgba(215,182,141,.58);
+  color:#e1c7a4;
+  font:600 11px/1.4 'DM Sans',sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition:color .2s,border-color .2s;
+}
+.cover-info-link:hover{color:#fff0d7;border-color:#fff0d7}
+.chapter-card{transition:transform .25s ease,box-shadow .25s ease,background .25s}
+.chapter-card:hover,.chapter-card:focus-visible{
+  transform:translateY(-3px);
+  box-shadow:0 10px 23px rgba(59,35,45,.13),0 2px 0 rgba(101,70,62,.16);
+}
+/* Long reading pages should never carry decorative ink into the text column. */
+@media(max-width:1360px){
+  .ink-ambience .ink-blot{opacity:.075}
+  .ink-ambience .ink-side-quill{display:none}
+}
+@media(max-width:1160px){
+  .ink-ambience .ink-blot{display:none}
+}
+@media(max-width:580px){
+  .cover .cover-quill{opacity:.16;width:73px;height:154px}
+  .cover .cover-quill--left{left:3px;top:56px}
+  .cover .cover-quill--right{right:6px;bottom:88px}
+  .cover-links{margin-top:12px}
+  .cover-links .start{padding:13px 18px}
+  .chapter-card:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .ink-blot.ink-bloom{animation:none!important;opacity:.12!important;filter:blur(.7px)!important;transform:rotate(var(--ink-turn)) scale(1)!important}
+  .ink-blot.ink-waiting{opacity:.12!important}
+  .chapter-card,.cover-info-link{transition:none!important}
+}
