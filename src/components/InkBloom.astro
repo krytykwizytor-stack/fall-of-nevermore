@@ -34,9 +34,11 @@ const { compact = false } = Astro.props;
   const blooms=document.querySelectorAll('[data-ink-emergence]');
   if(blooms.length){
     if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      blooms.forEach(bloom=>bloom.classList.add('is-awaiting'));
       const observer=new IntersectionObserver(entries=>{
         for(const entry of entries){
           if(entry.isIntersecting){
+            entry.target.classList.remove('is-awaiting');
             entry.target.classList.add('is-emerged');
             observer.unobserve(entry.target);
           }
