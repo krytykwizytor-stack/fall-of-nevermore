@@ -199,3 +199,48 @@
  .article--produkcja .article-head::before{opacity:.085}
  .article--swiat .chapter-section:nth-child(2)::before{opacity:.045;width:75%}
 }
+
+
+/* Official, transparent FoN wordmarks: generous scale on the cover, restrained in masthead. */
+.cover h1.cover-logo-heading{
+  width:min(100%,640px);
+  margin:28px auto 13px;
+  padding:0;
+  font:inherit;
+  line-height:1;
+  letter-spacing:normal;
+  position:relative;
+  z-index:1;
+}
+.cover .cover-official-logo{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 15px rgba(5,5,7,.34));
+}
+.masthead a.masthead-logo{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  width:138px;
+  flex-shrink:0;
+  padding:0;
+  min-height:44px;
+}
+.masthead .masthead-logo img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:58px;
+  object-fit:contain;
+}
+@media(max-width:700px){
+  .cover h1.cover-logo-heading{width:100%;margin:30px auto 17px}
+  .masthead a.masthead-logo{width:105px}
+}
+@media(max-width:420px){
+  .cover h1.cover-logo-heading{margin:28px auto 12px}
+  .cover .eyebrow{letter-spacing:.12em}
+  .masthead a.masthead-logo{width:95px}
+}
