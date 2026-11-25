@@ -1,6 +1,9 @@
 ---
 import { genealogy } from '../data/genealogy.js';
+import { familyNotes } from '../data/familyNotes.js';
+import { cast } from '../data/cast.js';
 const nodes = new Map(genealogy.nodes.map(node=>[node.id,node]));
+const castById = new Map(cast.map(person=>[person.id,person]));
 const relations = genealogy.relations.map(r=>({...r,a:nodes.get(r.from),b:nodes.get(r.to)}));
 const lineKind = {
   parent:'blood', marriage:'marriage', engagement:'engagement', public_friendship:'friendship'
@@ -10,7 +13,7 @@ const lineKind = {
   <div class="genealogy-intro">
     <span class="genealogy-kicker">ARCHIVUM FAMILIAE · ANNO DOMINI MCMV</span>
     <h2 id="genealogy-heading">Rodowód domu Ravensmoor</h2>
-    <p>Wybierz nazwisko, aby otworzyć portret.</p>
+    <p>Wskaż postać, aby zobaczyć jej więzi rodzinne. Kliknij nazwisko, by przejść do portretu.</p>
   </div>
   <div class="genealogy-scroll" tabindex="0" aria-label="Przewijana tablica genealogiczna Ravensmoorów">
     <svg class="genealogy-chart" viewBox="0 0 1380 1100" role="img" aria-label="Drzewo genealogiczne Ravensmoorów" xmlns="http://www.w3.org/2000/svg">
@@ -45,13 +48,15 @@ const lineKind = {
           stroke-dasharray={link.type==='engagement'?'9 6':link.type==='public_friendship'?'2 7':undefined}
           stroke-linecap="round"
           class={`relation relation--${lineKind[link.type]}`}
+          data-from={link.from}
+          data-to={link.to}
         />)}
         {relations.filter(link=>link.type==='marriage').map(link => <g aria-label="Małżeństwo" class="genealogy-marriage-mark" transform={`translate(${(link.a.x+link.b.x)/2},${(link.a.y+link.b.y)/2})`}>
           <rect x="-12" y="-11" width="24" height="22" rx="7" fill="#f5ead9" stroke="#ad875b" stroke-width=".85"/>
           <text x="0" y="6" font-family="Georgia,serif" text-anchor="middle" font-size="19" font-weight="700" fill="#906637">⚭</text>
         </g>)}
       </g>
-      {genealogy.nodes.map(node => <g class:list={['genealogy-person',`genealogy-person--${node.kind}`]}>
+      {genealogy.nodes.map(node => <g class:list={['genealogy-person',`genealogy-person--${node.kind}`]} data-person-id={node.id} data-person-label={castById.get(node.id)?.name ?? node.label} data-person-note={familyNotes[node.id] ?? node.sub} data-person-arcana={castById.get(node.id)?.arcanaName ?? (node.kind==='deceased'?'Osoba zmarła':'Starsze pokolenie')}>
         <rect x={node.x-73} y={node.y-38} width="146" height="76" rx="3"
           fill={node.kind==='deceased'?'#e2d6ca':node.kind==='guest'?'#eee6da':'#f9f1e5'}
           stroke={node.kind==='deceased'?'#938080':node.kind==='guest'?'#aa957e':'#815661'}
@@ -71,6 +76,10 @@ const lineKind = {
         <text x={node.x} y={node.y+28} text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="14" letter-spacing=".4" fill="#865767">{node.born}</text>
       </g>)}
     </svg>
+  </div>
+  <div class="genealogy-inspector" aria-live="polite" aria-atomic="true">
+    <span class="genealogy-inspector__label">Z archiwum rodzinnego · wybrana osoba</span>
+    <div class="genealogy-inspector__main"><div><h3 data-genealogy-inspector-name>Wybierz nazwisko</h3><p data-genealogy-inspector-note>Podświetlimy osoby związane z wybranym członkiem rodu. Rodowód przedstawia tylko jawne więzi.</p></div><a data-genealogy-inspector-link href="#rola-01" hidden>Otwórz portret ↗</a></div>
   </div>
   <div class="genealogy-legend" aria-label="Legenda linii i oznaczeń">
     <span><i class="line blood"></i> Pokrewieństwo</span>
@@ -100,4 +109,63 @@ const lineKind = {
 .genealogy-legend i.marriage{border-color:#ac8357}\n.genealogy-legend .marriage-symbol{font:700 22px/1 Georgia,serif;color:#906637;display:inline-flex;align-items:center;justify-content:center;width:32px;height:18px;border:1px solid #bd9a6b;border-radius:8px;background:#f5ead9}
 .genealogy-legend strong{font:24px Georgia,serif;color:#865965;line-height:.6}
 @media(max-width:760px){.genealogy-plate{padding:10px;margin:2rem 0}.genealogy-scroll{max-height:65vh}.genealogy-intro{padding:13px 4px}.genealogy-legend{justify-content:flex-start;padding:16px 7px}}
+
+/* Living family-tree interactions, preserving the existing public genealogy. */
+.genealogy-plate .relation{transition:stroke .24s ease,stroke-width .24s ease,opacity .24s ease}
+.genealogy-plate.is-inspecting .relation:not(.is-related){opacity:.21}
+.genealogy-plate.is-inspecting .relation.is-related{stroke:#a13349;stroke-width:5.8;opacity:1}
+.genealogy-plate .genealogy-person{transition:opacity .2s ease}
+.genealogy-plate.is-inspecting .genealogy-person:not(.is-selected):not(.is-related){opacity:.38}
+.genealogy-plate .genealogy-person.is-selected>rect:first-of-type{stroke:#99374c;stroke-width:4;fill:#f9e5d5}
+.genealogy-plate .genealogy-person.is-related>rect:first-of-type{stroke:#ab6472;stroke-width:2.6}
+.genealogy-plate .genealogy-person.is-selected text{fill:#6c3045}
+.genealogy-inspector{display:block;margin:12px 0 0;padding:18px 22px;background:linear-gradient(120deg,#e7d6c5,#f3e8db);border:1px solid rgba(139,95,91,.45);border-left:4px solid #8b495c;box-shadow:inset 0 1px rgba(255,255,255,.3)}
+.genealogy-inspector__label{display:block;font:600 10px/1.4 'DM Sans',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#85616a;margin-bottom:7px}
+.genealogy-inspector__main{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.genealogy-inspector h3{font:600 28px/1.1 'Cormorant Garamond',serif;margin:0 0 5px;color:#51313e}
+.genealogy-inspector p{font:17px/1.45 'Cormorant Garamond',serif;margin:0;color:#5a4c4b}
+.genealogy-inspector a{font:600 12px/1.35 'DM Sans',sans-serif;color:#734255;text-decoration:none;white-space:nowrap;border-bottom:1px solid #9a6776;padding-bottom:4px}
+.genealogy-inspector a:hover{color:#a34e66;border-color:#a34e66}
+@media(max-width:600px){.genealogy-inspector{padding:15px}.genealogy-inspector__main{display:block}.genealogy-inspector a{display:inline-block;margin-top:11px}.genealogy-inspector h3{font-size:25px}}
+@media(prefers-reduced-motion:reduce){.genealogy-plate .relation,.genealogy-plate .genealogy-person{transition:none!important}}
 </style>
+
+<script>
+  const tree=document.querySelector('.genealogy-plate');
+  if(tree){
+    const people=[...tree.querySelectorAll('.genealogy-person[data-person-id]')];
+    const lines=[...tree.querySelectorAll('.relation[data-from][data-to]')];
+    const title=tree.querySelector('[data-genealogy-inspector-name]');
+    const note=tree.querySelector('[data-genealogy-inspector-note]');
+    const link=tree.querySelector('[data-genealogy-inspector-link]');
+    let lastId='';
+    function select(person){
+      const id=person?.dataset.personId;
+      if(!id || id===lastId)return;
+      lastId=id;
+      const related=new Set([id]);
+      for(const line of lines){
+        const hit=line.dataset.from===id || line.dataset.to===id;
+        line.classList.toggle('is-related',hit);
+        if(hit)related.add(line.dataset.from===id ? line.dataset.to : line.dataset.from);
+      }
+      tree.classList.add('is-inspecting');
+      for(const item of people){
+        item.classList.toggle('is-selected',item===person);
+        item.classList.toggle('is-related',item!==person && related.has(item.dataset.personId));
+      }
+      if(title)title.textContent=person.dataset.personLabel||'';
+      if(note)note.textContent=person.dataset.personNote||'';
+      if(link){
+        const hasPortrait=/^\d{2}$/.test(id);
+        link.hidden=!hasPortrait;
+        if(hasPortrait)link.href='#rola-'+id;
+      }
+    }
+    for(const person of people){
+      person.addEventListener('pointerenter',()=>select(person));
+      person.addEventListener('focusin',()=>select(person));
+      person.addEventListener('click',()=>select(person));
+    }
+  }
+</script>
