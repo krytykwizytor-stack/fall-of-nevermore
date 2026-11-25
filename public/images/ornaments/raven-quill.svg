@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 510" role="img" aria-labelledby="title">
+<title id="title">Rysunek kruczego pióra</title>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M51 481 C72 384 105 232 161 29" stroke="#866855" stroke-width="3.4"/>
+<path d="M161 27 C107 42 65 80 47 137 C25 208 50 275 79 335 C93 304 116 288 139 250 C178 185 196 99 161 27Z" fill="#594148" fill-opacity=".22" stroke="#6b5050" stroke-width="2.2"/>
+<path d="M161 29 C107 88 89 177 77 335" stroke="#665052" stroke-width="1.6" stroke-dasharray="2 5" opacity=".6"/>
+<path d="M150 56 Q114 61 76 88 M144 81 Q103 89 62 119 M137 108 Q96 120 52 154 M130 134 Q88 151 46 187 M123 161 Q83 183 48 218 M116 190 Q79 215 56 250 M107 222 Q81 244 64 277 M99 257 Q83 275 73 309" stroke="#685054" stroke-width="1.5" opacity=".8"/>
+<path d="M150 59 Q172 88 179 116 M145 81 Q180 113 181 143 M139 107 Q176 143 174 173 M131 137 Q170 173 163 198 M125 161 Q160 196 154 217 M118 187 Q149 217 143 236 M109 215 Q137 240 130 260 M100 247 Q124 263 113 287" stroke="#685054" stroke-width="1.5" opacity=".8"/>
+<path d="M51 481 Q49 489 44 496 M59 444 Q51 460 48 469" stroke="#957b61" stroke-width="2"/>
+<path d="M47 188 Q36 203 31 208 M178 143 Q184 154 184 163 M48 218 Q40 224 35 229 M163 198 Q170 206 169 214 M65 277 Q57 287 52 289" stroke="#6b5050" stroke-width="1.8"/>
+</g></svg>
