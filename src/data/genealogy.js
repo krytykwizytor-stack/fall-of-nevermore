@@ -23,7 +23,7 @@ nodes:[
 {id:"17",label:"Horace Finch",sub:"prawnik Ravensmoorów",born:"ur. ok. 1847",kind:"guest",x:300,y:1010},
 {id:"18",label:"Samuel",sub:"Ashdown · lekarz rodziny",born:"ur. ok. 1850",kind:"guest",x:590,y:1010},
 {id:"19",label:"Father Matthias",sub:"duchowny domu",born:"ur. ok. 1843",kind:"guest",x:880,y:1010},
-{id:"20",label:"Alaric Vane",sub:"śledczy · znajomy rodu",born:"ur. ok. 1864",kind:"guest",x:1160,y:1010}
+{id:"20",label:"Inspector Vane",sub:"inspektor · znajomy rodu",born:"ur. ok. 1864",kind:"guest",x:1160,y:1010}
 ],
 relations:[
 {from:"basilius",to:"01",type:"parent"},{from:"basilius",to:"02",type:"parent"},{from:"basilius",to:"03",type:"parent"},
