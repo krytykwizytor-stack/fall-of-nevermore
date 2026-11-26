@@ -85,66 +85,85 @@ export const chapters = [
   "slug": "dramaturgia",
   "number": "IV",
   "title": "Dramaturgia",
-  "description": "Konwencja dramatyczna, obyczaje Ravensmoorów oraz przebieg rodzinnego zjazdu.",
+  "description": "O wielkich tragediach, drobnych złośliwościach i pewnym rodzinnym weselu.",
   "sections": [
     {
-      "heading": "Konwencja",
+      "heading": "Między Ibsenem, Wilde’em a Poem",
       "paragraphs": [
-        "Fall of Nevermore czerpie z gotyckiej literatury, dramatu rodzinnego oraz obyczajowości angielskiej arystokracji początku XX wieku. Znaczną część rozgrywki wypełni życie towarzyskie Ravensmoorów, podporządkowane kalendarzowi rodzinnych uroczystości. Wraz z upływem czasu do rozmów prowadzonych w salonach zaczną przenikać sprawy znacznie mniej stosowne do omawiania w dobrym towarzystwie.",
-        "Zależy nam na atmosferze powieści gotyckiej, wraz z jej obyczajową i psychologiczną różnorodnością. Przez znaczną część weekendu Ravensmoorowie będą zajmować się sprawami, które sami uznają za zupełnie zwyczajne. Ktoś będzie próbował przekonać krewnego do korzystniejszego rozporządzenia majątkiem, ktoś inny zechce uniknąć kolejnej wizyty lekarza. W salonie może wybuchnąć spór o przyszłość rodziny, podczas gdy w sąsiednim pokoju dwoje dawnych znajomych będzie z przyjemnością wspominać młodość.",
-        "Nie każda rozmowa przy herbacie musi zakończyć się awanturą. Ravensmoorowie potrafią być czarujący, a ich goście nie przyjeżdżają wyłącznie po to, by cierpieć. Zresztą trudno wyobrazić sobie skuteczniejszą złośliwość niż tę wypowiedzianą z uprzejmym uśmiechem, kiedy cała reszta towarzystwa doskonale rozumie jej znaczenie.",
-        "Nie oznacza to jednak konieczności zachowywania powściągliwości za wszelką cenę. Konwencja dopuszcza zdecydowaną teatralność, zwłaszcza kiedy konflikt wymyka się spod kontroli uczestniczących w nim osób. Rodzinna kłótnia może przybrać rozmiary sceny godnej wielkiej tragedii, a obraza honoru zakończyć się wyzwaniem na pojedynek. W podobnych chwilach nie trzeba obawiać się patosu ani silnej ekspresji. Poe, do którego twórczości tak chętnie się odwołujemy, również nie należał do pisarzy szczególnie oszczędnych w wyrażaniu emocji.",
-        "Najważniejsze będzie wyczucie sytuacji i partnerów scenicznych. Niektórzy bohaterowie znoszą nieszczęście w milczeniu; inni nie potrafią nawet zamknąć za sobą drzwi bez teatralnego gestu. Dla obu postaw znajdzie się miejsce w Nevermore."
+        "Gdybyśmy mieli wyobrazić sobie Fall of Nevermore jako przedstawienie teatralne, potrzebowalibyśmy całkiem osobliwej obsady dramaturgów. Henrik Ibsen zająłby się małżeństwami i rodzinnymi zobowiązaniami, Oscar Wilde odpowiadałby za rozmowy przy stole, a Edgar Allan Poe z pewnością upomniałby się o ostatni akt.",
+        "Bardzo zależy nam na obyczajowej stronie tej historii. Chcemy zobaczyć Ravensmoorów podczas wspólnych posiłków, przygotowań do wesela, odwiedzin w pokojach krewnych i rozmów prowadzonych z ludźmi, których nie widzieli od lat. Interesują nas ich przyzwyczajenia, poczucie humoru, drobne próżności i antypatie, które przez lata zdążyły przybrać postać rodzinnych anegdot.",
+        "Wyobraźmy sobie choćby Lady Beatrice usiłującą omówić stan rodzinnych finansów w towarzystwie zajętym wyborem kwiatów na uroczystość ślubną. Albo Orlanda, który z właściwą sobie powagą wygłasza opinię o sztuce przed krewnym zainteresowanym przede wszystkim jego perspektywami zawodowymi. Z podobnych sytuacji może wyniknąć znakomita komedia obyczajowa, nawet jeśli dla samych zainteresowanych sprawa jest śmiertelnie poważna.",
+        "Mamy też ogromną słabość do teatralności dziewiętnastowiecznych melodramatów. Publiczne deklaracje, gwałtowne zerwania, pojedynki, wyznania miłosne i rodzinne awantury w pełni mieszczą się w naszej konwencji. Jeżeli okoliczności sprzyjają scenie rodem z wielkiej tragedii, tym lepiej! Poe z całą pewnością nie wzbraniałby się przed podobną ekspresją.",
+        "Wiele uroku Nevermore chcielibyśmy odnaleźć właśnie w zmienności nastrojów. Rodzinny obiad może być naprawdę udany, a spotkanie dawnych przyjaciół przynieść im autentyczną radość. Ravensmoorowie mają przecież powody, dla których przez wszystkie te lata pozostawali sobie bliscy."
       ]
     },
     {
-      "heading": "Etykieta i hierarchia",
+      "heading": "Ach, te dobre maniery!",
       "paragraphs": [
-        "Jesienią 1905 roku Ravensmoorowie pozostają rodziną głęboko przywiązaną do własnej pozycji społecznej. Nawet krewni odrzucający tradycję doskonale wiedzą, jakie zachowanie uchodzi w Nevermore za niestosowne.",
-        "Przy stole liczą się starszeństwo i miejsce w rodzinie. Oficjalne spotkanie wymaga odpowiedniego sposobu zwracania się do gospodarzy, a pewnych spraw nie wypada poruszać w obecności gości, nawet jeśli ci od wielu lat traktowani są niemal jak członkowie rodziny. Właściwe maniery potrafią skutecznie ograniczyć swobodę rozmowy. Dają też doskonałą sposobność do okazania komuś niechęci bez wypowiadania choćby jednego obraźliwego słowa.",
-        "Etykieta będzie istotnym narzędziem dramaturgicznym. Uczestnicy mogą korzystać z niej całkiem szczerze, lecz równie interesujące bywa umyślne naruszenie konwenansu. W domu lorda Ambrose'a otwarte zakwestionowanie autorytetu gospodarza jest poważnym wydarzeniem towarzyskim, nawet jeśli odbywa się bez podnoszenia głosu. Niektóre postacie uznają podobne zachowanie za skandal. Inne mogą poczuć niekłamaną satysfakcję.",
-        "Nie oczekujemy od uczestników specjalistycznej wiedzy o etykiecie edwardiańskiej. Przed rozpoczęciem gry przedstawimy podstawowe formy grzecznościowe i obyczaje istotne dla rozgrywki. Zależy nam na spójnej atmosferze, a nie na testowaniu graczowskiej znajomości historii i obyczaju, chociaż ta będzie szalenie mile widziana.",
-        "Ważne pozostaną również różnice między rodziną a ludźmi pozostającymi na jej usługach. Prawnik może znać najbardziej kompromitujące szczegóły spraw majątkowych Ravensmoorów, lecz przy rodzinnym stole nigdy nie będzie równy nawet przybranemu bratu gospodarza. Lekarzowi powierza się zdrowie najbliższych, a zarazem oczekuje, że nie przekroczy granic swojej zawodowej pozycji. Podobnie duchowny, choć obdarzany szacunkiem, nie otrzymuje przez to prawa do rozstrzygania spraw rodu.",
-        "Osobne miejsce zajmuje służba Nevermore Hall. Rodzina Crowe'ów i pozostali pracownicy posiadłości towarzyszą Ravensmoorom od lat, a niektórzy pamiętają wydarzenia, o których młodsze pokolenie zna jedynie rodzinne opowieści. Ich praca wymaga dyskrecji, choć trudno oczekiwać, by ludzie przebywający tak blisko domowników nie wyrabiali sobie własnych opinii. Relacje między służbą a rodziną będą obecne w rozgrywce, także w scenach, w których wzajemna znajomość okazuje się ważniejsza od oficjalnego dystansu."
+        "Trudno wyobrazić sobie angielski dramat obyczajowy bez ludzi, którym szczególnie zależy na zachowaniu pozorów przyzwoitości.",
+        "Lord Ambrose ma swoje miejsce przy stole, Lady Morwen posiada ustalone poglądy na temat wychowania młodzieży, a Lady Augusta z pewnością nie pozostawi bez komentarza wszystkiego, co dotyczy przygotowań do ślubu jej syna. W życiu rodziny istnieje mnóstwo drobnych ceremonii i przywilejów, o które współczesnemu człowiekowi zapewne nie przyszłoby do głowy się spierać.",
+        "W Nevermore podobne sprawy mogą mieć ogromne znaczenie. Pominięcie kogoś przy przedstawianiu gości, zajęcie niewłaściwego miejsca przy stole czy publiczne zwrócenie się do krewnego w zbyt poufały sposób mogą dostarczyć tematów do rozmów na resztę wieczoru.",
+        "Równie interesująca jest pozycja osób spoza rodziny. Pan Finch posiada wiedzę niezbędną do prowadzenia interesów Ravensmoorów. Doktor Ashdown bywa dopuszczany do najbardziej prywatnych spraw domowników. Inspektor Vane reprezentuje władzę, która istnieje niezależnie od autorytetu lorda Ambrose’a. Każdy z tych panów może okazać się niezwykle wpływowym człowiekiem, choć żaden nie zawdzięcza swojej pozycji nazwisku Ravensmoor.",
+        "Szczególną sympatią darzymy pod tym względem rodzinę Crowe’ów. Wieloletnia służba w jednym domu pozwala na pewną zażyłość z jego mieszkańcami. Stara niania może przemówić do dorosłego już wychowanka w sposób, na który nie pozwoliłby sobie nawet jego dobry znajomy. Z kolei zarządca posiadłości ma niekiedy znacznie lepsze rozeznanie w sprawach gospodarstwa niż młody człowiek, który ma je kiedyś odziedziczyć.",
+        "Nie zamierzamy przeprowadzać egzaminu z edwardiańskich manier. Do najważniejszych obyczajów przygotujemy uczestników przed grą, a zainteresowanych zgłębieniem tematu odsyłamy również do opracowania panny Whitmore."
       ]
     },
     {
-      "heading": "Rodzinny zjazd",
+      "heading": "Powody, dla których się spotykamy",
       "paragraphs": [
-        "Rozgrywka rozpocznie się w piątek, wraz ze spotkaniem członków rodu Ravensmoor i zaproszonych gości w Nevermore Hall.",
-        "Lord Ambrose zamierza ogłosić swoją ostatnią wolę, a rodzina przygotowuje się do sobotniego ślubu Sebastiana i Eleanor Wycliffe. Powrót Vivienne i Clary po latach nieobecności z pewnością wzbudzi zainteresowanie, podobnie jak wciąż niewyjaśniona sytuacja prawna Thomasa Vale-Ravensmoora. Niepokój budzi również zdrowie sędziwego Basiliusa, ojca lorda Ambrose'a i jego rodzeństwa. Nad rodzinnymi planami ciąży ponadto coraz trudniejsza sytuacja finansowa majątku.",
-        "Przygotowywane są także portrety przedstawicieli młodszego pokolenia. Galeria Rodu zajmuje szczególne miejsce w Nevermore Hall, a sposób przedstawiania członków rodziny od dawna podlega ocenie krewnych. Wybór stroju, pozy czy miejsca przeznaczonego na nowy obraz może okazać się zaskakująco drażliwą sprawą.",
-        "Piątkowe spotkanie rozpocznie się od przyjęcia gości i rodzinnych spraw wymagających osobistego omówienia. Nieobecni od lat krewni będą musieli ponownie odnaleźć się w towarzystwie, którego obyczaje doskonale pamiętają, choć niekoniecznie darzą je sympatią. Przygotowania do ślubu dostarczą kolejnych powodów do spotkań, także poza oficjalnymi uroczystościami.",
-        "Późnym piątkowym wieczorem odbędzie się odczytanie testamentu lorda Ambrose'a.",
-        "Sobota upłynie pod znakiem przygotowań do małżeństwa Sebastiana i Eleanor oraz spraw pozostawionych otwartymi poprzedniego wieczoru. Zbliżająca się uroczystość nie zwolni nikogo z konieczności dotrzymania wcześniejszych zobowiązań. Dla części Ravensmoorów będzie to również ostatnia okazja, aby porozmawiać o przyszłości rodziny przed zawarciem kolejnego małżeństwa w głównej linii rodu.",
-        "Ceremonia ślubna zaplanowana jest na sobotni wieczór. Jej przebieg oraz następujące po niej wydarzenia doprowadzą do zakończenia larpa w godzinach wieczorno-nocnych. Niedziela pozostanie dniem wyjazdu."
+        "Na jesień 1905 roku zaplanowano w Nevermore dwa wydarzenia o szczególnym znaczeniu dla przyszłości rodu: ogłoszenie testamentu lorda Ambrose’a oraz małżeństwo Sebastiana Ravensmoora z Eleanor Wycliffe.",
+        "Już sam dobór zaproszonych osób budzi spore zainteresowanie. Po długiej nieobecności powracają Lady Vivienne i jej córka. Wciąż otwarta pozostaje kwestia miejsca Thomasa Vale-Ravensmoora w rodzinie. Zdrowie sędziwego Basiliusa wymaga troski, a stan majątku dostarcza Beatrice powodów do zmartwień.",
+        "Do tego wszystkiego dochodzi wesele. Należy zadbać o gości, dopełnić przygotowań i rozstrzygnąć wszystkie te sprawy, które w rodzinie o podobnych ambicjach zwykło się omawiać przy okazji zawierania małżeństwa.",
+        "Przygotowywane są również portrety młodego pokolenia Ravensmoorów. Pan Basil March otrzymał tym samym znakomitą sposobność do poznania osób, których wizerunki mają znaleźć się w rodzinnej galerii."
       ]
     },
     {
-      "heading": "Sceny towarzyskie i prywatne",
+      "heading": "Piątek — przybycie gości",
       "paragraphs": [
-        "Większość rodzinnych spraw nie nadaje się do omawiania przy wspólnym stole. Ravensmoorowie wiedzą o tym doskonale, choć nie zawsze udaje im się przestrzegać własnych zasad. Niewygodna rozmowa rozpoczęta podczas obiadu może znaleźć dalszy ciąg w gabinecie gospodarza, gdzie brak świadków pozwala na znacznie większą szczerość.",
-        "Życie w Nevermore dostarcza zresztą wielu okazji do takich spotkań. Pozowanie do portretu wymaga cierpliwości i pozostawia sporo czasu na rozmowę. Wizyty lekarskie odbywają się w mniej przyjemnych okolicznościach, szczególnie gdy najbliżsi krewni nalegają na swoją obecność przy badaniu. Nie wszystkim pacjentom odpowiada zainteresowanie rodziny, podobnie jak nie każdy lekarz potrafi uszanować życzenie pozostawienia chorego w spokoju.",
-        "Ważną rolę odegra również rodzinna korespondencja. Ravensmoorowie od pokoleń przywiązują dużą wagę do dokumentowania własnych spraw, choć nie wszystkie zachowane świadectwa zgadzają się z opowieściami przekazywanymi przy stole. Niektórzy członkowie rodziny pamiętają wydarzenia, których oficjalna wersja została ustalona jeszcze przed ich narodzinami.",
-        "W Nevermore istnieje długa tradycja załatwiania drażliwych spraw w możliwie wąskim gronie. Osoby dopuszczone do podobnych rozmów mogą uważać się za szczególnie wyróżnione. Bywa jednak, że gospodarz pragnie po prostu uniknąć świadków."
+        "Pierwszy wieczór poświęcimy powitaniom, odnowieniu znajomości i sprawom, które sprowadziły poszczególnych bohaterów do Nevermore. Dla niektórych będzie to pierwsze od lat spotkanie z najbliższymi.",
+        "Późnym wieczorem lord Ambrose zgromadzi rodzinę i zainteresowanych gości na odczytaniu testamentu."
+      ]
+    },
+    {
+      "heading": "Sobota — dzień wesela",
+      "paragraphs": [
+        "Przed rodziną jeszcze cały dzień przygotowań do ceremonii. Będzie również okazja, aby powrócić do rozmów rozpoczętych w piątek i zająć się konsekwencjami ogłoszenia ostatniej woli gospodarza.",
+        "Sobotni wieczór przyniesie uroczystość ślubną Sebastiana i Eleanor. Wydarzenia rozgrywające się wokół ceremonii oraz bezpośrednio po niej stanowić będą finał naszej historii."
+      ]
+    },
+    {
+      "heading": "Niedziela",
+      "paragraphs": [
+        "Dzień przeznaczony na zakończenie pobytu i wyjazd z posiadłości."
+      ]
+    },
+    {
+      "heading": "Z życia Nevermore Hall",
+      "paragraphs": [
+        "Przygotowując dramaturgię gry, przywiązujemy dużą wagę do zajęć, którym domownicy oddawaliby się niezależnie od nadchodzących wydarzeń.",
+        "Chcemy wykorzystać choćby portretowanie młodych Ravensmoorów. Siedzenie przez dłuższy czas w towarzystwie malarza daje zupełnie inne możliwości rozmowy niż spotkanie w pełnym ludzi salonie. Ciekawi nas również, jak poszczególni bohaterowie chcieliby zostać przedstawieni dla potomności i ile do powiedzenia w tej kwestii będą mieli ich krewni.",
+        "Podobny potencjał widzimy w konsultacjach lekarskich, spotkaniach z prawnikiem, przygotowywaniu rodzinnej korespondencji czy zwyczajnych odwiedzinach u starszych członków rodu. Każde z tych zajęć posiada swój własny obyczaj, określony krąg zainteresowanych oraz pewien zakres prywatności.",
+        "Będziemy również korzystać z dokumentów fabularnych. Listy, zapiski, świadectwa i inne pamiątki pozwolą bohaterom poznawać dzieje rodziny z perspektywy osób, które nie zasiądą już z nimi przy stole."
       ]
     },
     {
       "heading": "Gra w Epitafia",
       "paragraphs": [
-        "Wśród młodszego pokolenia Ravensmoorów od lat praktykuje się osobliwą zabawę zwaną Grą w Epitafia.",
-        "Na czas spotkania jeden z uczestników zostaje symbolicznie uznany za zmarłego. Pozostali układają dla niego pośmiertne wspomnienia, korzystając ze swobody, na jaką zwykle pozwala dopiero pogrzeb. Wybrany „nieboszczyk” musi tymczasem wysłuchać, jak zostanie zapamiętany przez swoich najbliższych.",
-        "Dawniej zabawa dostarczała młodym Ravensmoorom niemało rozrywki. Nie wszystkie napisane wówczas epitafia były jednak szczególnie życzliwe, a kilka zachowano na tyle długo, by ich autorzy zdążyli pożałować własnej pomysłowości.",
-        "Gra w Epitafia powróci podczas rodzinnego zjazdu jako jedna z charakterystycznych form rozgrywki grupowej. Jej zasady i granice zostaną omówione przed rozpoczęciem larpa."
+        "Młodzi Ravensmoorowie, jak przystało na potomków tak szacownego rodu, znaleźli sobie przed laty dość makabryczną rozrywkę.",
+        "Zasada jest prosta: jedno z nich umiera. Na szczęście jedynie na potrzeby zabawy.",
+        "Pozostali otrzymują przywilej wygłoszenia bądź napisania kilku słów ku czci zmarłego. Mogą wspominać jego zasługi, opłakiwać utracone talenty, rozpamiętywać wady charakteru i snuć przypuszczenia na temat przyszłości, której nie było mu dane doczekać. Sam zainteresowany ma tymczasem rzadką sposobność wysłuchania własnych mów pogrzebowych.",
+        "Epitafia bywały rozczulające, dowcipne i potwornie złośliwe. Wyobrażamy sobie, że szczególną popularnością cieszyły się te ostatnie.",
+        "Podczas rodzinnego zjazdu powrócimy do tej osobliwości młodych Ravensmoorów. Będzie to jeden z przygotowanych przez nas elementów rozgrywki grupowej."
       ]
     },
     {
-      "heading": "Gotycka groza",
+      "heading": "Godzina duchów",
       "paragraphs": [
-        "W Nevermore nie brakuje osób zainteresowanych sprawami nadprzyrodzonymi. Nathaniel Ravensmoor od dawna zajmuje się spirytyzmem, a jego próby porozumiewania się ze zmarłymi znajdują zarówno zwolenników, jak i zdecydowanych przeciwników. Nie wszyscy bowiem życzą sobie, aby zmarłych krewnych niepokojono kolejnymi pytaniami.",
-        "Rodzinne opowieści bywają równie nieprzyjemne. W pamięci starszego pokolenia zachowały się wydarzenia, dla których nie znaleziono przekonującego wyjaśnienia. Młodsi słyszeli o nich najczęściej w dzieciństwie, choć z wiekiem niekoniecznie przestali w nie wierzyć.",
-        "Osobne miejsce zajmuje problem zdrowia Ravensmoorów. Rodzina od dawna korzysta z usług lekarzy, a część mieszkańców wymaga stałej opieki. Stan pacjenta może stać się przedmiotem poważnego sporu, zwłaszcza jeśli zainteresowani mają odmienne wyobrażenia o tym, co należy uczynić dla jego dobra.",
-        "W trakcie weekendu pojawią się również wydarzenia o wyraźnie nadprzyrodzonym charakterze. Ich obecność będzie narastała wraz ze zbliżaniem się sobotniego wieczoru. Przewidujemy zarówno sceny kameralne, jak i sytuacje angażujące większą część rodziny."
+        "Edgar Allan Poe pozostawił po sobie całkiem pokaźny katalog rzeczy, których człowiek może obawiać się we własnym domu. Znajdziemy w nim chorobę, obłęd, śmierć najbliższych, zawodność ludzkiej pamięci i osobliwą fascynację tym, co dzieje się z człowiekiem po śmierci.",
+        "Po podobne motywy sięgamy w Nevermore.",
+        "Nathaniel Ravensmoor od dawna interesuje się spirytyzmem, ku rozmaitym reakcjom swoich krewnych. W rodzinie nie brakuje ludzi skłonnych do rozważań metafizycznych, ale też osób pokładających znacznie większe zaufanie w medycynie, religii bądź zdrowym rozsądku. Szczególnie interesują nas sytuacje, w których przekonania te prowadzą do odmiennych decyzji dotyczących losu najbliższych.",
+        "Gotycką grozę będziemy wprowadzać stopniowo. Jej obecność stanie się coraz wyraźniejsza w miarę zbliżania się sobotniego wieczoru, zarówno w kameralnych historiach poszczególnych bohaterów, jak i wydarzeniach obejmujących większą część rodziny.",
+        "Chcemy jednak dać naszym bohaterom czas, byśmy mogli poznać ich podczas zwyczajnego życia w Nevermore. Wielka tragedia rodzinna wiele zyskuje, kiedy zdążyliśmy wcześniej polubić jej uczestników."
       ]
     }
   ]
