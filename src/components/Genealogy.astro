@@ -11,9 +11,10 @@ const lineKind = {
 ---
 <section class="genealogy-plate" aria-labelledby="genealogy-heading">
   <div class="genealogy-intro">
+    <img class="genealogy-crest" src="/images/identity/ravensmoor-herb.png" alt="" width="1018" height="1322" loading="lazy"/>
     <span class="genealogy-kicker">ARCHIVUM FAMILIAE · ANNO DOMINI MCMV</span>
-    <h2 id="genealogy-heading">Rodowód domu Ravensmoor</h2>
-    <p>Wskaż postać, aby zobaczyć jej więzi rodzinne. Kliknij nazwisko, by przejść do portretu.</p>
+    <h2 id="genealogy-heading">Genealogia rodu Ravensmoor</h2>
+    <p class="genealogy-motto">Domus Manet</p>
   </div>
   <div class="genealogy-scroll" tabindex="0" aria-label="Przewijana tablica genealogiczna Ravensmoorów">
     <svg class="genealogy-chart" viewBox="0 0 1380 1100" role="img" aria-label="Drzewo genealogiczne Ravensmoorów" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +80,7 @@ const lineKind = {
   </div>
   <div class="genealogy-inspector" aria-live="polite" aria-atomic="true">
     <span class="genealogy-inspector__label">Z archiwum rodzinnego · wybrana osoba</span>
-    <div class="genealogy-inspector__main"><div><h3 data-genealogy-inspector-name>Wybierz nazwisko</h3><p data-genealogy-inspector-note>Podświetlimy osoby związane z wybranym członkiem rodu. Rodowód przedstawia tylko jawne więzi.</p></div><a data-genealogy-inspector-link href="#rola-01" hidden>Otwórz portret ↗</a></div>
+    <div class="genealogy-inspector__main"><div><h3 data-genealogy-inspector-name>Wybierz nazwisko</h3><p data-genealogy-inspector-note>Wskaż osobę na tablicy, aby przejrzeć jej jawne więzi.</p></div><a data-genealogy-inspector-link href="#rola-01" hidden>Otwórz portret ↗</a></div>
   </div>
   <div class="genealogy-legend" aria-label="Legenda linii i oznaczeń">
     <span><i class="line blood"></i> Pokrewieństwo</span>
@@ -128,6 +129,7 @@ const lineKind = {
 .genealogy-inspector a:hover{color:#a34e66;border-color:#a34e66}
 @media(max-width:600px){.genealogy-inspector{padding:15px}.genealogy-inspector__main{display:block}.genealogy-inspector a{display:inline-block;margin-top:11px}.genealogy-inspector h3{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.genealogy-plate .relation,.genealogy-plate .genealogy-person{transition:none!important}}
+.genealogy-crest{display:block;width:90px;height:auto;margin:0 auto 16px;object-fit:contain}.genealogy-intro .genealogy-motto{font:italic 23px/1.2 'Cormorant Garamond',serif;color:#88636c;margin:12px 0 4px}
 </style>
 
 <script>
