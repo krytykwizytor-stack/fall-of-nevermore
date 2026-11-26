@@ -39,7 +39,7 @@ export const approvedPortraitsD={
     "Nie wydawał się człowiekiem pogrążonym w modlitwie. Sprawiał raczej wrażenie kogoś, komu bardzo trudno ją rozpocząć."
   ],
   "20": [
-    "Alaric Vane posiada irytującą zdolność zapamiętywania szczegółów, które inni ludzie uważają za niewarte uwagi. Nie polecam opowiadania mu zabawnych historii z własnej młodości. Podczas następnego spotkania może bowiem zapytać o osobę, którą wymieniło się zaledwie mimochodem, a której nazwiska samemu już się nie pamięta.",
+    "Inspector Alaric Vane posiada irytującą zdolność zapamiętywania szczegółów, które inni ludzie uważają za niewarte uwagi. Nie polecam opowiadania mu zabawnych historii z własnej młodości. Podczas następnego spotkania może bowiem zapytać o osobę, którą wymieniło się zaledwie mimochodem, a której nazwiska samemu już się nie pamięta.",
     "Jako śledczy cieszy się opinią człowieka sumiennego i upartego. Przepisy zna równie dobrze jak ich niedoskonałości, choć tych drugich niechętnie przyznaje się w obecności osób postronnych. Szczególnie nie lubi, gdy ktoś próbuje zastąpić zeznania zapewnieniem o własnej nieskazitelnej reputacji.",
     "Vane służył podczas wojny burskiej. Z tego okresu zachował wojskową dyscyplinę, pewną oszczędność gestów i niechęć do opowieści o bohaterstwie. Kiedy inni weterani wspominają dawne triumfy, Alaric najczęściej pyta o daty.",
     "Pozostaje spowinowacony z Ravensmoorami i bywa w Nevermore od lat. Jego stosunek do rodziny jest jednak bardziej skomplikowany, niż sugerowałaby sama serdeczność powitań. Zdarza mu się bronić krewnych z żarliwością zawodowego adwokata, a nazajutrz wypytywać ich o sprawy, których żaden gość nie powinien poruszać.",
