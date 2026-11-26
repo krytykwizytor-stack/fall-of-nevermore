@@ -217,6 +217,6 @@ export const chapters = [
     }
   ]
 },
-{slug:'produkcja',number:'VI',title:'Forma i produkcja',description:'Scenografia, kostiumy i oprawa doświadczenia.',paragraphs:['Przestrzeń, ubiór i detale epoki budują materialny język Nevermore.','Kostiumy, światło, muzyka i scenografia czerpią z estetyki przełomu wieków, gotyckiej powieści oraz elegancji naznaczonej przemijaniem.']},
+{slug:'produkcja',number:'VI',title:'Epoka i inspiracje',description:'Przewodnik po Anglii roku 1905, obyczajach, garderobie i kulturze Nevermore.',kind:'epoch'},
 {slug:'informacje',number:'VII',title:'Informacje praktyczne',description:'Miejsce, czas, koszt udziału, obsada, treści trudne i inspiracje.',kind:'practical'}
 ];
