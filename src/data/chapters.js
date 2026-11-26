@@ -70,7 +70,17 @@ export const chapters = [
     ]
   }
 ]},
-{slug:'postacie',number:'III',title:'Dramatis Personae',description:'Rodowód Ravensmoorów, ich goście oraz portrety osób, które spotkają się w Nevermore Hall.',paragraphs:['W rodzinie Ravensmoorów nawet najdalsze pokrewieństwo potrafi okazać się sprawą wielkiej wagi. Kto po kim dziedziczy, komu przysługuje tytuł i czyje małżeństwo uznano za rozsądne — podobne kwestie omawiano w Nevermore na długo przed obecnym zjazdem. Nie znaczy to, że wszyscy krewni przywiązują do nich jednakową wagę. Lady Morwen potrafiłaby zapewne przytoczyć właściwy precedens, podczas gdy Vivienne wolałaby najpierw zapytać, kogo dana decyzja rzeczywiście dotyczy.','Poniższy rodowód przedstawia znane więzi rodzinne. Obok Ravensmoorów znajdziemy osoby, które przybywają do domu w innym charakterze: Eleanor Wycliffe, przyszłą pannę młodą, przyjaciół, lekarza, duchownego, prawnika i pozostałych gości. Część zna rodzinę od lat; inni będą dopiero musieli przywyknąć do jej zwyczajów.','Każdy portret opisuje publiczną reputację i sposób bycia postaci, nie zaś całą zawartość jej prywatnej korespondencji. W Nevermore nie brakuje osób, o których można opowiadać godzinami; znacznie rzadziej zdarzają się takie, które lubią słuchać tych opowieści o sobie.']},
+{
+  "slug": "postacie",
+  "number": "III",
+  "title": "Dramatis Personae",
+  "description": "Portrety członków rodu Ravensmoor, mieszkańców Nevermore Hall oraz zaproszonych gości.",
+  "paragraphs": [
+    "Wśród osób, które tej jesieni zagoszczą w Nevermore, znajdziemy przedstawicieli aż czterech pokoleń Ravensmoorów. Niektórych łączą więzy szczególnej serdeczności, innych wieloletnia antypatia. Są i tacy krewni, których spotkanie przy jednym stole samo w sobie stanowić będzie wydarzenie towarzyskie.",
+    "Do tego szacownego grona dołączą osoby spoza rodu. Panna Wycliffe wkrótce przyjmie nazwisko Ravensmoor; pan Finch od lat prowadzi interesy rodziny, doktor Ashdown zaś zna jej przypadłości lepiej, niż zapewne życzyliby sobie niektórzy z jego pacjentów.",
+    "Pozwólmy sobie zatem na kilka słów o każdym z naszych bohaterów."
+  ]
+},
 {
   "slug": "dramaturgia",
   "number": "IV",
