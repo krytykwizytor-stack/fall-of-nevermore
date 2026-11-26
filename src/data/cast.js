@@ -210,12 +210,12 @@ export const cast=[
   },
   {
     "id": "20",
-    "name": "Constable Alaric Vane",
+    "name": "Inspector Alaric Vane",
     "age": 41,
     "arcana": "VII",
     "arcanaName": "Rydwan",
     "poe": "Przygody Artura Gordona Pyma",
-    "role": "Śledczy",
+    "role": "Inspektor policji",
     "group": "Goście",
     "generation": "guest"
   },
