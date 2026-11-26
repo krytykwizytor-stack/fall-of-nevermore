@@ -19,19 +19,19 @@ const entries=[
 <div class="article-meta"><a href="/dokument/swiat/">← Świat Nevermore</a><span>Dodatek do rozdziału II</span></div>
 <div class="book-shell" data-book><header class="chronicle-cover">
 <div class="eyebrow">Ex libris · Ravensmoor</div>
-<svg viewBox="0 0 180 205" width="150" height="171" role="img" aria-label="Ozdobny emblemat Ravensmoorów z krukiem">
+<img class="ravensmoor-crest" src="/images/identity/ravensmoor-herb.png" alt="Herb Ravensmoorów — Domus Manet" width="1018" height="1322" onerror="this.hidden=true;this.nextElementSibling.hidden=false"/><div class="crest-fallback" hidden><svg viewBox="0 0 180 205" width="150" height="171" role="img" aria-label="Ozdobny emblemat Ravensmoorów z krukiem">
 <path d="M32 15 H148 V91 Q148 145 90 174 Q32 145 32 91Z" fill="#e2d4bc" stroke="currentColor" stroke-width="2"/>
 <path d="M39 23 H141 V91 Q141 139 90 165 Q39 139 39 91Z" fill="none" stroke="currentColor"/>
 <path d="M89 72 Q64 46 47 44 L57 60 L47 55 L61 76 L51 70 L69 96 L81 104 L77 137 L90 126 L103 137 L99 104 L111 96 L129 70 L119 76 L133 55 L123 60 L133 44 Q113 47 97 73 L99 60 L109 55 L99 52 Q87 49 85 62 Z" fill="currentColor"/>
 <circle cx="95" cy="58" r="1.8" fill="#e2d4bc"/>
 <path d="M14 161 Q90 175 166 161 L159 183 Q90 194 21 183Z" fill="#e2d4bc" stroke="currentColor"/>
-<text x="90" y="180" font-size="11" text-anchor="middle" fill="currentColor" letter-spacing="2">DOMUS MANET</text></svg>
+<text x="90" y="180" font-size="11" text-anchor="middle" fill="currentColor" letter-spacing="2">DOMUS MANET</text></svg></div>
 <h1>Z kronik rodu Ravensmoor</h1><p class="motto">Domus Manet</p><p>Wydanie dla gości Nevermore Hall · MCMV</p>
 <button type="button" class="book-open" hidden>Otwórz księgę <span aria-hidden="true"> →</span></button></header>
-<div class="book-reader"><div class="book-intro" data-sheet><figure class="chronicle-map"><a href={source(map)}><img src={image(map)} alt="Historyczna mapa North Riding of Yorkshire" decoding="async"/></a><figcaption>North Riding of Yorkshire, 1787 · David Rumsey Map Collection / Wikimedia Commons</figcaption></figure>
+<div class="book-reader"><div class="book-binding" aria-hidden="true"></div><div class="book-intro" data-sheet><span class="leaf-kicker">RAVENSMOOR · MCMV</span><figure class="chronicle-map"><a href={source(map)}><img src={image(map)} alt="Historyczna mapa North Riding of Yorkshire" decoding="async"/></a><figcaption>North Riding of Yorkshire, 1787 · David Rumsey Map Collection / Wikimedia Commons</figcaption></figure>
 <p class="chronicle-lead">Gościom przybywającym do Nevermore przedstawiamy kilka ustępów z dziejów rodziny. W galerii portretów napotkają Państwo nazwiska, które pojawiają się na dalszych kartach. Najstarsze zapiski dotyczą jeszcze czasów, gdy przodkowie obecnych właścicieli posługiwali się nazwiskiem de Ravenemere.</p>
 <nav class="chronicle-index" aria-label="Spis kroniki">{entries.map((entry,i)=><a href={'#karta-'+(i+1)}><span>{entry.year}</span>{entry.title}</a>)}</nav>
-</div><div class="chronicle-pages">{entries.map((entry,i)=><section id={'karta-'+(i+1)} class="chronicle-entry" data-sheet><div class="chronicle-date">{entry.year}</div><div><h2>{entry.title}</h2>{entry.file&&<figure class="chronicle-plate"><a href={source(entry.file)}><img src={image(entry.file)} alt={entry.caption} loading="lazy" decoding="async"/></a><figcaption>{entry.caption}</figcaption></figure>}{entry.body.map(p=><p>{p}</p>)}</div></section>)}</div><nav class="book-controls" hidden aria-label="Przewracanie kart"><button type="button" data-prev>← Poprzednia karta</button><span data-folio aria-live="polite"></span><button type="button" data-next>Następna karta →</button></nav><div class="book-actions" hidden><button type="button" data-index>Spis kart</button><button type="button" data-close>Zamknij księgę</button><button type="button" data-all>Czytaj całość</button></div></div></div>
+</div><div class="chronicle-pages">{entries.map((entry,i)=><section id={'karta-'+(i+1)} class="chronicle-entry" data-sheet><div class="chronicle-date"><span>EX LIBRIS RAVENSMOOR</span><b>{entry.year}</b></div><div><h2>{entry.title}</h2>{entry.file&&<figure class="chronicle-plate"><a href={source(entry.file)}><img src={image(entry.file)} alt={entry.caption} loading="lazy" decoding="async"/></a><figcaption>{entry.caption}</figcaption></figure>}{entry.body.map(p=><p>{p}</p>)}</div></section>)}</div><nav class="book-controls" hidden aria-label="Przewracanie kart"><button type="button" data-prev>← Poprzednia karta</button><span data-folio aria-live="polite"></span><button type="button" data-next>Następna karta →</button></nav><div class="book-actions" hidden><button type="button" data-index>Spis kart</button><button type="button" data-close>Zamknij księgę</button><button type="button" data-all>Czytaj całość</button></div></div></div>
 <div class="chronicle-end"><span aria-hidden="true">❦</span><p>Domus Manet — Dom trwa</p><a href="/dokument/swiat/">Powrót do świata Nevermore</a></div>
 <details class="chronicle-credits"><summary>Źródła ilustracji historycznych</summary><p>Reprodukcje przedstawiają rzeczywiste materiały historyczne, służące oprawie fikcyjnej kroniki.</p><ul><li><a href={source(map)}>Mapa North Riding, 1787</a></li>{entries.filter(e=>e.file).map(e=><li><a href={source(e.file)}>{e.caption}</a></li>)}</ul></details>
 </article>
@@ -53,20 +53,20 @@ if(root){
  function show(i:number,animate=false){
   if(busy)return;
   current=Math.max(0,Math.min(i,sheets.length-1));
-  sheets.forEach((s,j)=>s.hidden=!all&&j!==current);
-  prev.disabled=current===0;next.disabled=current===sheets.length-1;
-  folio.textContent='Karta '+(current+1)+' / '+sheets.length;
+  const wide=window.matchMedia('(min-width: 1150px)').matches; const spread=wide&&current>0; root.classList.toggle('spread',spread&&!all); const partner=spread?(current%2===1?current+1:current-1):-1; sheets.forEach((s,j)=>s.hidden=!all&&j!==current&&j!==partner);
+  prev.disabled=current===0;next.disabled=current===sheets.length-1||(spread&&partner===sheets.length-1);
+  folio.textContent=spread?'Karty '+(Math.min(current,partner)+1)+'–'+(Math.max(current,partner)+1)+' / '+sheets.length:'Karta '+(current+1)+' / '+sheets.length;
   if(animate&&!reduce.matches){sheets[current].animate([{transform:'perspective(1300px) rotateY(-12deg)',opacity:.45},{transform:'perspective(1300px) rotateY(0)',opacity:1}],{duration:420,easing:'ease-out'});}
  }
  function enter(i=0){all=false;reader.hidden=false;cover.hidden=true;controls.hidden=false;actions.hidden=false;show(i);root.classList.add('is-open');root.scrollIntoView({block:'start'});}
  root.classList.add('enhanced');reader.hidden=true;open.hidden=false;
  open.addEventListener('click',()=>{if(busy)return; if(reduce.matches){enter();return;}busy=true;cover.classList.add('opening');window.setTimeout(()=>{busy=false;cover.classList.remove('opening');enter();next.focus({preventScroll:true});},650);});
- prev.addEventListener('click',()=>show(current-1,true));next.addEventListener('click',()=>show(current+1,true));
+ const move=(d:number)=>{const wide=window.matchMedia('(min-width: 1150px)').matches;show(wide&&current>0?(current%2===0?current-1:current)+d*2:current+d,true);};prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));window.matchMedia('(min-width: 1150px)').addEventListener('change',()=>{if(!reader.hidden)show(current);});
  root.querySelector('[data-index]')?.addEventListener('click',()=>{all=false;controls.hidden=false;show(0);});
  root.querySelector('[data-close]')?.addEventListener('click',()=>{reader.hidden=true;cover.hidden=false;root.classList.remove('is-open');open.focus();});
  root.querySelector('[data-all]')?.addEventListener('click',()=>{all=!all;controls.hidden=all;show(current);const b=root.querySelector('[data-all]');if(b)b.textContent=all?'Czytaj kartami':'Czytaj całość';});
  root.querySelectorAll<HTMLAnchorElement>('.chronicle-index a').forEach((a,i)=>a.addEventListener('click',e=>{if(all)return;e.preventDefault();show(i+1,true);root.scrollIntoView({block:'start'});}));
- root.addEventListener('keydown',e=>{if(reader.hidden||all||e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==='ArrowRight'){e.preventDefault();show(current+1,true);}if(e.key==='ArrowLeft'){e.preventDefault();show(current-1,true);}});
+ root.addEventListener('keydown',e=>{if(reader.hidden||all||e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==='ArrowRight'){e.preventDefault();move(1);}if(e.key==='ArrowLeft'){e.preventDefault();move(-1);}});
  const hash=location.hash.match(/^#karta-(\d+)$/);if(hash)enter(Number(hash[1]));
 }
 </script>
@@ -74,4 +74,33 @@ if(root){
 .chronicle{color:#49363a}.chronicle-cover{text-align:center;border:4px double #ab9276;padding:clamp(22px,5vw,56px) 16px;background:#f1e8d8;margin:2rem 0}.chronicle-cover svg{display:block;margin:16px auto;color:#50333a}.chronicle-cover h1{font-size:clamp(40px,6vw,72px);line-height:1.02;margin:14px 0}.chronicle-cover p{margin:8px 0}.motto{font-style:italic;font-size:28px;letter-spacing:.08em}.chronicle-map{margin:25px 0}.chronicle-map img{display:block;width:100%;max-height:420px;object-fit:contain;background:#e6d9c3;border:1px solid #ab9276}.chronicle figcaption{font:12px/1.5 'DM Sans',sans-serif;color:#705745;padding:8px 0}.chronicle-lead{font-size:24px;line-height:1.55}.chronicle-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-block:3px double #ab9276;padding:14px 0;gap:8px 24px;margin:24px 0}.chronicle-index a{display:flex;gap:10px;color:inherit;font-size:17px;text-decoration:none}.chronicle-index span{font-variant-numeric:tabular-nums;min-width:84px;color:#795743}.chronicle-entry{display:grid;grid-template-columns:100px minmax(0,1fr);gap:24px;border-bottom:1px solid #bca68b;padding:30px 0;scroll-margin-top:80px}.chronicle-date{font-size:23px;color:#795743;font-variant-numeric:tabular-nums;padding-top:5px}.chronicle-entry h2{font-size:32px;line-height:1.13;margin:0 0 16px}.chronicle-entry p{font-size:21px;line-height:1.55;margin:0 0 14px}.chronicle-plate{float:right;width:38%;margin:0 0 12px 20px}.chronicle-plate img{width:100%;display:block;border:1px solid #ab9276}.chronicle-end{text-align:center;margin:38px 0}.chronicle-end span{font-size:40px}.chronicle-end p{font-size:25px;font-style:italic}.chronicle-credits{font-size:15px;border-top:1px solid #ab9276;padding-top:12px}.chronicle-credits summary{cursor:pointer}@media(max-width:600px){.chronicle-index{grid-template-columns:1fr}.chronicle-entry{grid-template-columns:1fr;gap:8px}.chronicle-plate{width:42%}.chronicle-entry p{font-size:19px}}
 
 .chronicle{font-family:'Cormorant Garamond',serif}.chronicle .article-meta{font-family:'DM Sans',sans-serif}.book-shell{perspective:1600px;scroll-margin-top:24px}.chronicle-cover{color:#ead4af;background:radial-gradient(ellipse at 50% 30%,#51363e,#282329 72%,#19181b);border:1px solid #ae906d;outline:double 5px #957b62;outline-offset:-15px;box-shadow:9px 10px 0 -4px #b5a28b,12px 14px 0 -5px #74634f,0 20px 35px #33251e30;transform-origin:left center;position:relative;padding:55px 24px 45px}.chronicle-cover .eyebrow,.chronicle-cover svg{color:#d2b087}.chronicle-cover h1{color:#f4e7d1;font-weight:500}.chronicle-cover::before{content:'';position:absolute;inset:24px;border:1px solid #8e7056;pointer-events:none}.book-open,.book-controls button,.book-actions button{font:600 12px/1.4 'DM Sans',sans-serif;letter-spacing:.035em;cursor:pointer;padding:11px 15px;border:1px solid #9d8066;background:transparent;color:inherit}.book-open{margin-top:24px;color:#f2dfbb;border-color:#c7a478}.book-open:hover{background:#c5a478;color:#211e21}.chronicle-cover.opening{animation:open-volume .65s ease-in-out both}@keyframes open-volume{0%{transform:rotateY(0);opacity:1}85%{opacity:.9}100%{transform:rotateY(-89deg);opacity:0}}.book-reader{background:linear-gradient(90deg,#ddd0b9 0,#f7eedf 5%,#f4ead8 94%,#e6d6bc 100%);border:1px solid #ab9276;box-shadow:4px 4px 0 #d4c2a5,7px 7px 0 #aa9678,0 16px 28px #39291e20;padding:clamp(18px,4vw,42px);margin:24px 0}.enhanced .chronicle-entry{display:block;border:0;padding:0;min-height:240px;transform-origin:left center}.enhanced .chronicle-date{border-bottom:1px solid #bca68b;padding:0 0 10px;margin-bottom:16px}.book-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:3px double #ab9276;padding-top:16px;margin-top:20px}.book-controls span{font:12px 'DM Sans',sans-serif;color:#795743}.book-controls button:disabled{opacity:.4;cursor:default}.book-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:9px;margin-top:14px}.book-actions button{font-size:11px;border-color:transparent;text-decoration:underline;text-underline-offset:3px}.book-intro .chronicle-map{margin-top:0}.chronicle-entry::after{content:'';display:block;clear:both}.chronicle-index a:hover{text-decoration:underline}@media(max-width:600px){.book-controls{flex-wrap:wrap}.book-controls button{font-size:11px;padding:9px}.book-controls span{order:-1;flex-basis:100%;text-align:center}.chronicle-cover{padding:40px 20px}.book-reader{padding:18px}}@media(prefers-reduced-motion:reduce){.chronicle-cover.opening{animation:none}}
+
+.chronicle{width:min(1100px,calc(100% - 54px));margin-top:38px}
+.book-shell{max-width:1000px;margin:auto}
+.chronicle-cover{max-width:495px;min-height:590px;margin:32px auto 48px;padding:52px 38px 42px;background:repeating-linear-gradient(115deg,transparent 0 3px,#ffffff04 3px 4px),radial-gradient(ellipse at 48% 37%,#493038,#291f26 74%);border-radius:3px 12px 12px 3px;box-shadow:inset 13px 0 17px #100c12a0,inset 18px 0 0 #a5805230,9px 7px 0 -2px #d6c5a8,12px 10px 0 -2px #90765d,18px 17px 0 -3px #302328,0 28px 45px #2b1d2638}
+.chronicle-cover::before{inset:26px;border:1px solid #b4936766;border-radius:2px 5px 5px 2px}
+.chronicle-cover h1{font-size:clamp(38px,4.6vw,58px);max-width:350px;margin:16px auto 8px;line-height:.98}
+.ravensmoor-crest{display:block;width:min(210px,64%);height:auto;max-height:280px;object-fit:contain;margin:18px auto 8px}
+.chronicle-cover .motto{font-size:24px;color:#d8bc91}
+.chronicle-cover .book-open{padding:12px 25px;border:1px solid #b4946c;background:#241d2350}
+.book-reader{position:relative;isolation:isolate;border-radius:3px 5px 5px 3px;padding:clamp(20px,4vw,52px);background:linear-gradient(90deg,#b9a68a 0,#f3e7d1 3%,#f8efdd 9%,#f5ead7 95%,#dfcbae 100%);box-shadow:0 0 0 5px #493137,4px 7px 0 6px #b5a083,9px 13px 0 6px #493137,0 24px 40px #39291e36}
+.book-reader::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.38;background:repeating-linear-gradient(0deg,transparent 0 5px,#8c6a4011 5px 6px);z-index:-1}
+.book-intro{max-width:740px;margin:auto}
+.leaf-kicker,.chronicle-date span{display:block;font:600 10px/1.5 'DM Sans',sans-serif;letter-spacing:.19em;color:#8b675b;margin:0 0 13px;text-align:center}
+.chronicle-date b{display:block;font:500 28px/1.2 'Cormorant Garamond',serif;text-align:center}
+.enhanced .chronicle-entry h2{font:600 clamp(29px,3vw,39px)/1.05 'Cormorant Garamond',serif;text-align:center;color:#57343d;margin:20px 0 25px}
+.enhanced .chronicle-entry p{font:22px/1.43 'Cormorant Garamond',serif;color:#423338}
+.enhanced .chronicle-entry p:first-of-type:first-letter{float:left;font-size:62px;line-height:.8;padding:7px 7px 0 0;color:#793d49}
+.chronicle-plate{float:none;width:100%;max-width:220px;margin:0 auto 18px}
+.chronicle-plate img{max-height:230px;object-fit:contain}
+.book-controls{margin:30px 0 0;border-color:#a88b6a}
+.book-controls button{color:#613c44;border-color:#b39b7f;background:#f9f0e0;font-weight:500}
+.book-controls button:hover:not(:disabled){background:#e4d2b7}
+.book-binding{display:none}
+.spread .book-reader{padding:38px 35px 24px;background:linear-gradient(90deg,#e5d5b9 0,#f8efdd 5%,#f4e9d6 46%,#c8b496 49.5%,#a58c6e 50%,#e3d0b2 50.6%,#f8efdd 54%,#f4e9d6 96%,#dec9aa 100%)}
+.spread .chronicle-pages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:55px;align-items:start;min-height:480px}
+.spread .book-binding{display:block;position:absolute;top:0;bottom:0;left:50%;width:1px;background:#8b715c66;pointer-events:none}
+.spread .chronicle-entry p{font-size:21px}
+.spread .chronicle-entry{min-width:0}
+@media(max-width:600px){.chronicle{width:calc(100% - 34px)}.chronicle-cover{min-height:0;padding:44px 25px 38px}.book-reader{padding:22px 17px}.enhanced .chronicle-entry p{font-size:20px}.chronicle-cover h1{font-size:39px}}
 </style>
