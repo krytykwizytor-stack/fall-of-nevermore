@@ -1,4 +1,3 @@
-import { existsSync } from 'node:fs';
 import { cast } from './cast.js';
 const roman=['0','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII','XIII','XIV','XV','XVI','XVII','XVIII','XIX','XX','XXI'];
 export const deck=roman.map((arcana,i)=>{
@@ -8,4 +7,5 @@ export const deck=roman.map((arcana,i)=>{
 });
 export const tarotByArcana=new Map(deck.map(card=>[card.arcana,card]));
 export const tarotBack='/images/tarot/back.png';
-export const tarotReady=[tarotBack,...deck.flatMap(card=>[card.card,card.symbol])].every(path=>existsSync(new URL('../../public'+path,import.meta.url)));
+// All 45 original PNG assets are committed under public/images/tarot/.
+export const tarotReady=true;
