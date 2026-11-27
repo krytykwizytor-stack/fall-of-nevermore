@@ -1,12 +1,4 @@
 ---
-const themes = [
-  'dramat rodzinny i konflikty pokoleń',
-  'dziedziczenie, reputacja i zobowiązania',
-  'romanse, małżeństwo i presja społeczna',
-  'gotycka groza i tajemnice przeszłości',
-  'choroba, żałoba i stosunek do śmierci',
-  'religia, okultyzm i moralne kompromisy'
-];
 const warnings = [
   'silne motywy okultystyczne, lucyferianizm i profanacja religijna',
   'przemoc psychiczna, kontrola w rodzinie i przymus małżeński',
@@ -19,76 +11,71 @@ const warnings = [
   'uzależnienia, używki i nierówności klasowe',
   'kazirodztwo i obsesja czystości krwi jako temat rodzinnego tła, bez odgrywania scen erotycznych'
 ];
+const sections = [
+['termin','Miejsce i termin'],['platnosci','Koszt uczestnictwa'],['noclegi','Zakwaterowanie'],['wyzywienie','Przy stole Ravensmoorów'],['casting','Zgłoszenia i casting'],['przygotowanie','Przygotowanie do wydarzenia'],['garderoba','Garderoba i charakteryzacja'],['dojazd','Dojazd i dostępność'],['tresci','Treści trudne'],['zespol','Zespół organizatorski']
+];
 ---
 <div class="practical-info">
-  <section class="event-overview" aria-labelledby="event-overview-title">
-    <div class="event-overview-label">Informator uczestnika · Fall of Nevermore</div>
-    <h2 id="event-overview-title">Przed przyjazdem do Nevermore</h2>
-    <p>Najważniejsze informacje organizacyjne dotyczące kameralnego larpa w konwencji edwardiańskiego dramatu rodzinnego i gotyckiej grozy. Akcja rozgrywa się jesienią 1905 roku w fikcyjnym Nevermore Hall; uczestnicy spotykają się w rzeczywistym Pałacu Gruszów.</p>
-    <dl class="event-facts">
-      <div class="event-fact">
-        <dt>Gdzie?</dt>
-        <dd><strong>Pałac Gruszów</strong><span>Gruszów 10, 58-124 Marcinowice, Dolny Śląsk</span><a href="https://www.palac-gruszow.pl/" target="_blank" rel="noopener noreferrer">Strona obiektu ↗</a></dd>
-      </div>
-      <div class="event-fact">
-        <dt>Kiedy?</dt>
-        <dd><strong>Piątek–niedziela</strong><span>Gra w piątek i sobotę, do godzin wieczorno-nocnych. Niedziela jest dniem wyjazdu.</span><a href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">Dokładne daty w wydarzeniu ↗</a></dd>
-      </div>
-      <div class="event-fact">
-        <dt>Koszt udziału</dt>
-        <dd><strong>1440 zł / osoba</strong><span>Zasady płatności i zakres świadczeń sprawdź w komunikacie organizatorów.</span></dd>
-      </div>
-      <div class="event-fact">
-        <dt>Liczba wakatów</dt>
-        <dd><strong>21 postaci graczy</strong><span>14 osób z rodu Ravensmoorów i 7 gości oraz osób spoza rodziny. Służbę i część postaci drugoplanowych prowadzi obsługa.</span><a href="/dokument/postacie/">Przejrzyj wakaty ↗</a></dd>
-      </div>
-    </dl>
-  </section>
-
-  <section class="event-part" aria-labelledby="event-tempo">
-    <div class="event-part-index" aria-hidden="true">I</div>
-    <h2 id="event-tempo">Przebieg weekendu</h2>
-    <div class="event-timeline">
-      <div><span>Piątek</span><p>Przyjazd do Nevermore i pierwsze wydarzenia rodzinnego zjazdu. Późnym wieczorem odbędzie się odczytanie testamentu lorda Ambrose'a.</p></div>
-      <div><span>Sobota</span><p>Dalsza część rozgrywki, przygotowania do ślubu Sebastiana i Eleanor. Ceremonia ślubna zaplanowana jest na wieczór, a finał larpa na godziny wieczorno-nocne.</p></div>
-      <div><span>Niedziela</span><p>Zakończenie pobytu i wyjazd; bez dalszej rozgrywki fabularnej.</p></div>
-    </div>
-    <p class="event-fineprint">Dokładne daty, godziny przyjazdu, warunki zakwaterowania i wyżywienia oraz harmonogram organizacyjny należy sprawdzić w <a href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">oficjalnym wydarzeniu na Facebooku</a>.</p>
-  </section>
-
-  <section class="event-part" aria-labelledby="event-character">
-    <div class="event-part-index" aria-hidden="true">II</div>
-    <h2 id="event-character">Charakter gry i uczestnictwo</h2>
-    <p><em>Fall of Nevermore</em> jest larpem nastawionym na relacje. Uczestnicy otrzymują przygotowane postacie z własną historią i powiązaniami. Rozgrywka korzysta z realiów edwardiańskiej Anglii, rodzinnej hierarchii oraz etykiety epoki, ale pozostawia miejsce na gotycką teatralność.</p>
-    <p>Najwięcej znajdą tu dla siebie osoby zainteresowane dramatem rodzinnym, niejednoznacznymi moralnie bohaterami i powoli narastającym horrorem. Nie jest to larp bojowy ani gra oparta na zdobywaniu punktów czy wykonywaniu zadań. Znajomość realiów epoki będzie mile widziana; przed wydarzeniem przewidujemy podstawowe przygotowanie do konwencji.</p>
-    <div class="event-themes" aria-label="Główne motywy">
-      {themes.map(theme => <span>{theme}</span>)}
-    </div>
-  </section>
-
-  <section class="event-part" aria-labelledby="event-triggers">
-    <div class="event-part-index" aria-hidden="true">III</div>
-    <h2 id="event-triggers">Treści trudne</h2>
-    <p>Gra zawiera tematy związane z przemocą psychiczną, chorobą i śmiercią. Istotną częścią konwencji jest również silny okultyzm. Przed wyborem postaci warto zapoznać się z pełniejszą listą treści trudnych.</p>
-    <details class="event-trigger-details">
-      <summary><span aria-hidden="true">✥</span> Ujawnij szczegółowe ostrzeżenia <small>Lista może lekko zdradzać tematykę niektórych wątków</small><b aria-hidden="true">⌄</b></summary>
-      <div class="event-trigger-body">
-        <ul>{warnings.map(warning => <li>{warning}</li>)}</ul>
-        <p>Obecność motywu w ostrzeżeniach nie oznacza, że każdy uczestnik zetknie się z nim bezpośrednio. Indywidualne ostrzeżenia znajdują się przy <a href="/dokument/postacie/">poszczególnych wakatach</a>.</p>
-      </div>
-    </details>
-    <p class="event-fineprint">Zasady komunikowania granic, przerywania scen i odgrywania przemocy opisujemy w rozdziale <a href="/dokument/mechanika/">Mechanika gry</a>.</p>
-  </section>
-
-  <section class="event-part" aria-labelledby="event-inspirations">
-    <div class="event-part-index" aria-hidden="true">IV</div>
-    <h2 id="event-inspirations">Inspiracje</h2>
-    <p>Literackim patronem Nevermore jest Edgar Allan Poe. Szczególnie ważne są <em>Upadek domu Usherów</em>, <em>Serce oskarżycielem</em>, <em>Przedwczesny pogrzeb</em> i <em>Kruk</em>. W tych utworach znajdziemy wiele tematów obecnych także w historii Ravensmoorów: obsesję, żałobę i niepokój wobec własnego dziedzictwa.</p>
-    <p>Wśród pozostałych inspiracji znajdują się <em>Portret Doriana Graya</em> Oscara Wilde'a, <em>Doktor Jekyll i pan Hyde</em> Roberta Louisa Stevensona oraz <em>Rebeka</em> Daphne du Maurier. Z filmów i seriali bliskie są nam między innymi <em>Crimson Peak</em> i <em>The Fall of the House of Usher</em>. Nie jest wymagana znajomość żadnego z tych utworów.</p>
-  </section>
-
-  <section class="event-cta" aria-label="Dalsze informacje">
-    <div><span class="event-overview-label">Ravensmoor · MCMV</span><h2>Przed złożeniem zgłoszenia</h2><p>Wszystkie aktualne komunikaty o terminach, płatnościach i naborze sprawdzaj w oficjalnym wydarzeniu. Portrety dostępnych postaci znajdują się na naszej stronie.</p></div>
-    <div class="event-cta-links"><a class="event-cta-primary" href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">Wydarzenie na Facebooku ↗</a><a href="/dokument/postacie/">Dramatis Personae ↗</a></div>
-  </section>
+<section class="event-overview" aria-labelledby="event-overview-title">
+<div class="event-overview-label">Larphobia · Informator uczestnika</div>
+<h2 id="event-overview-title">Przed przyjazdem do Nevermore</h2>
+<div class="practical-date">12–14 listopada 2027</div>
+<p>Fall of Nevermore jest zamkniętym, niezarobkowym wydarzeniem hobbystycznym organizowanym przez poznańską grupę larpową Larphobia.</p>
+<dl class="event-facts">
+<div class="event-fact"><dt>Miejsce</dt><dd><strong>Pałac Gruszów</strong><span>Gruszów 10, 58-124 Marcinowice, Dolny Śląsk</span><a href="https://www.palac-gruszow.pl/" target="_blank" rel="noopener noreferrer">Strona obiektu ↗</a></dd></div>
+<div class="event-fact"><dt>Opłata uczestnictwa</dt><dd><strong>1440 zł / osoba</strong><span>Dwa noclegi i wyżywienie w cenie</span></dd></div>
+<div class="event-fact"><dt>Obsada</dt><dd><strong>21 wakatów</strong><a href="/dokument/postacie/">Przejrzyj postacie ↗</a></dd></div>
+<div class="event-fact"><dt>Uczestnicy</dt><dd><strong>18+ · język polski</strong><span>Wymagane wcześniejsze doświadczenie larpowe</span></dd></div>
+</dl>
+</section>
+<nav class="practical-index" aria-label="Spis informacji praktycznych">{sections.map(([id,name],i)=><a href={`#${id}`}><small>{String(i+1).padStart(2,'0')}</small>{name}</a>)}</nav>
+<section class="event-part" id="termin"><div class="event-part-index" aria-hidden="true">I</div><h2>Miejsce i termin</h2>
+<p>Wydarzenie rozpoczyna się w piątek 12 listopada o godz. 15:00 i kończy w niedzielę 14 listopada we wczesnych godzinach popołudniowych. Godziny przyjazdu, warsztatów oraz opuszczenia pałacu zostaną przekazane uczestnikom przed wydarzeniem.</p>
+<div class="event-timeline"><div><span>Piątek · 12 XI</span><p>Przyjazd, przygotowania i rozpoczęcie gry.</p></div><div><span>Sobota · 13 XI</span><p>Rozgrywka, finał i afterparty.</p></div><div><span>Niedziela · 14 XI</span><p>Śniadanie i wyjazd. Bez dalszej rozgrywki fabularnej.</p></div></div>
+</section>
+<section class="event-part" id="platnosci"><div class="event-part-index" aria-hidden="true">II</div><h2>Koszt uczestnictwa</h2><p class="practical-price">1440 zł <small>od osoby</small></p>
+<ul class="practical-list"><li>Dwa noclegi w Pałacu Gruszów.</li><li>Wyżywienie, napoje, stoły przekąskowe i ograniczona ilość alkoholu.</li><li>Profesjonalna obsługa fotograficzna — Ewa Łaganowska, MOON PROJECT.</li><li>Indywidualne materiały postaci i rekwizyty fabularne.</li><li>Niezbędna charakteryzacja i uzgodnione elementy kostiumowe.</li><li>Przygotowanie i realizacja wydarzenia.</li></ul>
+<h3>Płatności</h3><p>Jednorazowo, w trzech ratach po 480 zł płatnych w dwumiesięcznych odstępach lub według indywidualnego harmonogramu. Pierwsza rata albo pełna wpłata potwierdza wakat.</p>
+<div class="practical-deadline"><strong>30 czerwca 2027</strong><span>Termin uregulowania całości opłaty.</span></div>
+<p>W przypadku zaległości stosujemy 30-dniowy okres naprawczy. Jeżeli po przypomnieniach i ostatecznym ostrzeżeniu nie zostanie uregulowana zaległość ani uzgodniony nowy harmonogram, wakat może zostać przekazany osobie z listy rezerwowej.</p>
+<h3>Rezygnacja i zwroty</h3><div class="practical-deadline"><strong>30 września 2027</strong><span>Ostatni dzień rezygnacji z pełnym zwrotem wpłaconych środków.</span></div>
+<p>Po tym terminie rozliczenie uwzględnia uzasadnione, niemożliwe do odzyskania koszty udziału, oszczędności wynikające z rezygnacji oraz wpłatę osoby przejmującej wakat, również w formule Pay What You Want. Zastępstwa koordynują organizatorzy. Te same zasady obowiązują przy utracie wakatu z powodu zaległości lub braku kontaktu.</p>
+<p>W przypadku odwołania wydarzenia przez organizatorów uczestnikom przysługuje pełny zwrot wpłat.</p>
+</section>
+<section class="event-part" id="noclegi"><div class="event-part-index" aria-hidden="true">III</div><h2>Zakwaterowanie</h2><p>Wszyscy uczestnicy nocują w pałacu. Pokoje wyposażone są w prywatne łazienki, pościel i ręczniki. Przydział pokoi wynika z relacji fabularnych; nie prowadzimy swobodnego wyboru współlokatorów.</p><p>Przewidujemy współdzielenie łóżek przez postacie pozostające w bliskich relacjach rodzinnych lub romantycznych, wyłącznie za zgodą zainteresowanych uczestników. W razie odmowy ustalimy alternatywne rozwiązanie organizacyjne.</p><p>Pokoje noclegowe pełnią również funkcję pokoi postaci. Zachęcamy do ich częściowego udostępniania na potrzeby gry za zgodą mieszkańców i do przechowywania współczesnych przedmiotów poza widoczną przestrzenią fabularną. Nie przewidujemy wcześniejszego przyjazdu ani przedłużenia pobytu w ramach wydarzenia.</p></section>
+<section class="event-part" id="wyzywienie"><div class="event-part-index" aria-hidden="true">IV</div><h2>Przy stole Ravensmoorów</h2><p>Posiłki odbywają się fabularnie, zgodnie z etykietą Nevermore Hall i ustalonym usadzeniem gości. Służba jada osobno.</p>
+<div class="practical-menu">{[['Piątek','Obiadokolacja','Stół przekąskowy'],['Sobota','Śniadanie','Obiadokolacja','Stół przekąskowy'],['Niedziela','Śniadanie']].map(([day,...meals])=><div><strong>{day}</strong>{meals.map(meal=><span>{meal}</span>)}</div>)}</div>
+<h3>Diety i alergie</h3><p>Uwzględniamy indywidualne potrzeby żywieniowe. Należy zgłosić je organizatorom odpowiednio wcześnie; informacje o alergiach i zdrowiu przekazuje się dobrowolnie w niezbędnym zakresie.</p>
+<h3>Jedzenie i napoje</h3><p>Ze względu na działalność restauracyjną pałacu własne jedzenie i napoje można spożywać wyłącznie w zajmowanych pokojach. Dodatkowy alkohol dostępny jest na własny koszt zgodnie z ofertą restauracji. Osoby nietrzeźwe mogą zostać wykluczone z gry; rozliczenie opłaty uwzględnia okoliczności, wykonane świadczenia, koszty i obowiązujące przepisy.</p></section>
+<section class="event-part" id="casting"><div class="event-part-index" aria-hidden="true">V</div><h2>Zgłoszenia i casting</h2><div class="practical-dates">{[['01.12.2026','Otwarcie zgłoszeń'],['13.12.2026 · 23:59','Zamknięcie zgłoszeń'],['Do 16.12.2026','Wyniki drogą mailową']].map(([date,label])=><div><strong>{date}</strong><span>{label}</span></div>)}</div>
+<p>O wyborze obsady decyduje jakość zgłoszeń, zrozumienie konwencji, wrażliwość na proponowaną tematykę i dopasowanie do postaci, nie kolejność zgłoszeń. Każdy kandydat może wskazać maksymalnie trzy wakaty. Nie uwzględniamy gotowych grup ani duetów.</p><p>Nie przewidujemy obowiązkowych rozmów castingowych; w razie wątpliwości możliwa jest indywidualna konsultacja. Prowadzimy listę rezerwową. Samo przesłanie zgłoszenia nie rodzi obowiązku wpłaty.</p><p class="practical-deadline"><strong>Formularz zgłoszeniowy</strong><span>Dostępny od 1 grudnia 2026 roku.</span></p></section>
+<section class="event-part" id="przygotowanie"><div class="event-part-index" aria-hidden="true">VI</div><h2>Przygotowanie do wydarzenia</h2><p>Karty postaci przekażemy najpóźniej na początku października 2027 roku. Przewidujemy konsultacje z autorami oraz możliwość spotkań online ze współgraczami, także przy asyście Mistrza Gry. Zachęcamy do wspólnego przygotowywania relacji. Warsztaty relacyjne odbędą się przed rozpoczęciem gry.</p>
+<h3>Discord</h3><p>Posiadanie konta, dołączenie do dedykowanego serwera i odbieranie komunikatów organizatorskich są warunkiem uczestnictwa. Jeżeli przez 30 dni uczestnik nie odpowiada na wymagane bezpośrednie wiadomości i nie potwierdza dalszej chęci udziału, po ostatecznym ostrzeżeniu wysłanym również mailowo możemy przekazać wakat osobie z listy rezerwowej. Do 30 września włącznie przysługuje pełny zwrot wpłat; później stosujemy zasady rozliczenia zastępstwa.</p></section>
+<section class="event-part" id="garderoba"><div class="event-part-index" aria-hidden="true">VII</div><h2>Garderoba i charakteryzacja</h2><p>Nie wymagamy rekonstrukcji historycznej. Dopuszczamy swobodę interpretacyjną w ramach mody przełomu XIX i XX wieku, bez elementów fantastycznych i strojów z odległych epok.</p><ul class="practical-list"><li>Strój dzienny.</li><li>Strój wieczorowy, obowiązujący także podczas sobotniego ślubu.</li><li>Zalecana maska balowa — wystarczy prosty model.</li></ul><p>Zapewniamy konsultacje kostiumowe i wsparcie charakteryzatorów. Więcej informacji w rozdziale <a href="/dokument/produkcja/">Epoka i inspiracje</a>.</p></section>
+<section class="event-part" id="dojazd"><div class="event-part-index" aria-hidden="true">VIII</div><h2>Dojazd i dostępność</h2><p>Bezpłatny parking znajduje się na terenie pałacu. Ograniczony transport z pobliskiej stacji kolejowej zostanie zapowiedziany przed wydarzeniem. Wspólne przejazdy koordynujemy na Discordzie.</p>
+<p><a href="https://www.google.com/maps/search/?api=1&amp;query=Pa%C5%82ac+Grusz%C3%B3w+10+Marcinowice" target="_blank" rel="noopener noreferrer">Otwórz mapę dojazdu ↗</a></p>
+<div class="practical-caution"><h3>Dostępność architektoniczna</h3><p>Rozgrywka wymaga częstego korzystania ze schodów. Przewidujemy pojedyncze sceny na zewnątrz. Dostępność obiektu dla osób z ograniczeniami ruchowymi jest istotnie ograniczona; w razie potrzeb szczególnych skontaktuj się z nami przed zgłoszeniem.</p><h3>Efekty sceniczne</h3><p>Możliwe są efekty stroboskopowe, dym sceniczny, głośne dźwięki, kadzidła oraz otwarty ogień. Za bezpieczeństwo i dobrostan odpowiada główny organizator i Mistrz Gry.</p></div></section>
+<section class="event-part" id="tresci"><div class="event-part-index" aria-hidden="true">IX</div><h2>Treści trudne</h2><p>Przed wyborem postaci zapoznaj się z ostrzeżeniami dotyczącymi tematyki wydarzenia.</p><details class="event-trigger-details"><summary><span aria-hidden="true">✥</span> Ujawnij szczegółowe ostrzeżenia <small>Lista może lekko zdradzać tematykę niektórych wątków</small><b aria-hidden="true">⌄</b></summary><div class="event-trigger-body"><ul>{warnings.map(warning=><li>{warning}</li>)}</ul><p>Indywidualne ostrzeżenia znajdują się przy <a href="/dokument/postacie/">poszczególnych wakatach</a>.</p></div></details><p>Obowiązujące zasady bezpieczeństwa opisano w rozdziale <a href="/dokument/mechanika/">Mechanika gry</a>.</p></section>
+<section class="event-part" id="zespol"><div class="event-part-index" aria-hidden="true">X</div><h2>Zespół organizatorski</h2><div class="practical-team"><div><small>Larphobia · organizacja</small><strong>Bartosz Kiersztan<br/>Mateusz Kopeć<br/>Natan Murlik</strong></div><div><small>Współpraca</small><strong>Alicja Artemska<br/>Martin Buława</strong></div><div><small>Fotografia</small><strong>Ewa Łaganowska</strong><span>MOON PROJECT</span></div></div><p>Skład zespołu będzie uzupełniany wraz z postępem przygotowań. Zgoda na publiczną publikację wizerunku jest dobrowolna. Prywatna galeria będzie dostępna również osobom, które jej nie udzielą.</p><p>Kontakt: <a href="mailto:larphobia@gmail.com">larphobia@gmail.com</a>.</p></section>
+<section class="event-cta" aria-label="Dalsze informacje"><div><span class="event-overview-label">Fall of Nevermore</span><h2>Przed złożeniem zgłoszenia</h2><p>Aktualności i informacje o naborze znajdziesz w oficjalnym wydarzeniu.</p></div><div class="event-cta-links"><a class="event-cta-primary" href="https://fb.me/e/7jCmB6JOb" target="_blank" rel="noopener noreferrer">Wydarzenie na Facebooku ↗</a><a href="/dokument/postacie/">Dramatis Personae ↗</a></div></section>
 </div>
+<style>
+.practical-date{font:600 clamp(32px,5vw,54px)/1.1 'Cormorant Garamond',serif;color:#713c49;margin:15px 0}
+.practical-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 22px;border-block:3px double #b19a80;padding:18px 0;margin:28px 0}
+.practical-index a{display:flex;gap:12px;align-items:baseline;font:500 14px/1.5 'DM Sans',sans-serif;text-decoration:none;color:#633e49;padding:5px 0;border-bottom:1px solid #b19a8038}
+.practical-index small{color:#8b7056;font-size:11px}.event-part{scroll-margin-top:24px}
+.practical-price{font:600 45px/1.1 'Cormorant Garamond',serif!important;color:#713c49}.practical-price small{font-size:22px}
+.practical-list{padding-left:23px}.practical-list li{margin:6px 0}
+.practical-deadline{border-left:3px solid #9c7558;background:#ecdfc8;padding:13px 16px;margin:16px 0;color:#44333a}
+.practical-deadline strong,.practical-deadline span{display:block}.practical-deadline strong{font:600 26px/1.2 'Cormorant Garamond',serif}
+.practical-deadline span{font:14px/1.5 'DM Sans',sans-serif}
+.practical-menu,.practical-team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+.practical-menu>div,.practical-team>div{padding:14px;border:1px solid #b8a18a;background:#f0e5d5;color:#49343a}
+.practical-menu strong,.practical-menu span,.practical-team small,.practical-team strong,.practical-team span{display:block}
+.practical-menu strong,.practical-team strong{font:600 24px/1.15 'Cormorant Garamond',serif;margin:6px 0}
+.practical-menu span,.practical-team span,.practical-team small{font:13px/1.55 'DM Sans',sans-serif}
+.practical-team small{color:#795b43;text-transform:uppercase;font-size:10px;letter-spacing:.09em}
+.practical-dates{border-block:3px double #b19a80;margin:18px 0}.practical-dates>div{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px 0;border-bottom:1px solid #b19a8050}.practical-dates strong{color:#713c49}.practical-dates span{font:14px/1.5 'DM Sans',sans-serif}
+.practical-caution{border-left:4px solid #88454e;background:#f0e0db;padding:12px 18px;color:#49343a}
+@media(max-width:650px){.practical-index,.practical-menu,.practical-team{grid-template-columns:1fr}.practical-dates>div{grid-template-columns:1fr;gap:3px}}
+</style>
