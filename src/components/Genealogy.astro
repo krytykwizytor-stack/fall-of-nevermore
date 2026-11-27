@@ -2,6 +2,7 @@
 import { genealogy } from '../data/genealogy.js';
 import { familyNotes } from '../data/familyNotes.js';
 import { cast } from '../data/cast.js';
+import {tarotReady,tarotByArcana} from '../data/tarot.js';
 const nodes = new Map(genealogy.nodes.map(node=>[node.id,node]));
 const castById = new Map(cast.map(person=>[person.id,person]));
 const relations = genealogy.relations.map(r=>({...r,a:nodes.get(r.from),b:nodes.get(r.to)}));
@@ -73,6 +74,7 @@ const lineKind = {
               font-size={node.label.length>13?15:18} font-weight="600" fill="#51323e" text-decoration="underline">{node.label}</text>
           </a>}
         <text x={node.x} y={node.y+7} text-anchor="middle" font-family="DM Sans, sans-serif" font-size={node.sub.length>25?9:10} fill="#685861">{node.sub}</text>
+        {tarotReady && castById.has(node.id) && <image href={tarotByArcana.get(castById.get(node.id).arcana).symbol} x={node.x-65} y={node.y+15} width="19" height="19" aria-hidden="true" pointer-events="none"/>}
         <path d={`M${node.x-24} ${node.y+14}h48`} stroke="#c7a98d" stroke-width=".8"/>
         <text x={node.x} y={node.y+28} text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="14" letter-spacing=".4" fill="#865767">{node.born}</text>
       </g>)}
