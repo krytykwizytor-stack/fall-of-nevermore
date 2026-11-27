@@ -16,13 +16,13 @@
   height:250px;
   border-radius:56% 38% 63% 42% / 35% 60% 37% 62%;
   background:
-    radial-gradient(ellipse at 41% 46%,rgba(68,45,60,.47) 0 5%,rgba(82,54,62,.26) 15%,rgba(99,63,68,.13) 35%,transparent 67%),
+    radial-gradient(ellipse at 41% 46%,rgba(57,31,35,.65) 0 8%,rgba(82,49,46,.43) 20%,rgba(99,63,52,.22) 40%,transparent 72%),
     radial-gradient(circle at 70% 28%,rgba(82,52,68,.23) 0 7%,transparent 19%),
     radial-gradient(circle at 19% 76%,rgba(75,45,52,.27) 0 4%,transparent 16%),
     radial-gradient(circle at 77% 84%,rgba(75,45,52,.28) 0 3%,transparent 13%);
-  filter:blur(.7px);
+  filter:blur(.35px);
   mix-blend-mode:multiply;
-  opacity:.47;
+  opacity:var(--ink-strength,.86);
   transform:rotate(var(--ink-turn)) scale(1);
   transform-origin:center;
 }
@@ -43,17 +43,17 @@
   transform:rotate(63deg) scale(.82);
   opacity:.65;
 }
-.ink-blot--first{--ink-turn:-19deg;left:-115px;top:12%}
-.ink-blot--second{--ink-turn:24deg;right:-119px;top:42%;width:285px;height:300px}
-.ink-blot--third{--ink-turn:7deg;left:-134px;top:78%;width:265px;height:280px}
+.ink-blot--first{--ink-turn:-19deg;left:-86px;top:260px}
+.ink-blot--second{--ink-turn:24deg;right:-98px;top:44%;width:285px;height:300px}
+.ink-blot--third{--ink-turn:7deg;left:-105px;top:76%;width:265px;height:280px}
 .ink-blot.ink-waiting{opacity:0}
 .ink-blot.ink-bloom{
   animation:ink-spread 7s cubic-bezier(.22,.47,.25,.99) forwards;
 }
 @keyframes ink-spread{
   0%{opacity:0;transform:rotate(var(--ink-turn)) scale(.48);filter:blur(6px)}
-  46%{opacity:.31;filter:blur(2px)}
-  100%{opacity:.47;transform:rotate(var(--ink-turn)) scale(1);filter:blur(.7px)}
+  46%{opacity:calc(var(--ink-strength,.86) * .7);filter:blur(1px)}
+  100%{opacity:var(--ink-strength,.86);transform:rotate(var(--ink-turn)) scale(1);filter:blur(.35px)}
 }
 .ink-side-quill{
   position:absolute;
@@ -116,7 +116,7 @@
 }
 /* Long reading pages should never carry decorative ink into the text column. */
 @media(max-width:1360px){
-  .ink-ambience .ink-blot{opacity:.32}
+  .ink-ambience .ink-blot{--ink-strength:.65}
   .ink-ambience .ink-side-quill{display:none}
 }
 @media(max-width:900px){
@@ -131,8 +131,8 @@
   .chapter-card:hover{transform:none}
 }
 @media(prefers-reduced-motion:reduce){
-  .ink-blot.ink-bloom{animation:none!important;opacity:.34!important;filter:blur(.7px)!important;transform:rotate(var(--ink-turn)) scale(1)!important}
-  .ink-blot.ink-waiting{opacity:.34!important}
+  .ink-blot.ink-bloom{animation:none!important;opacity:var(--ink-strength,.86)!important;filter:blur(.7px)!important;transform:rotate(var(--ink-turn)) scale(1)!important}
+  .ink-blot.ink-waiting{opacity:var(--ink-strength,.86)!important}
   .chapter-card,.cover-info-link{transition:none!important}
 }
 
@@ -173,3 +173,14 @@
   .ink-emergence.is-awaiting .ink-emergence__satellites,
   .ink-emergence.is-awaiting .ink-emergence__mark{opacity:1!important}
 }
+
+/* Visual pass I — real ink silhouettes, confined to the page edges. */
+.main-frame .ink-ambience{background:linear-gradient(90deg,rgba(64,39,32,.055),transparent 11%,transparent 89%,rgba(64,39,32,.055));}
+.main-frame .ink-ambience::before,.main-frame .ink-ambience::after{content:"";position:absolute;pointer-events:none;width:clamp(72px,10vw,158px);height:300px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20370%22%3E%3Cg%20fill%3D%22%2354333a%22%3E%3Cpath%20opacity%3D%22.18%22%20d%3D%22M0%200H151L133%209%20120%208%20113%2022%20103%2019%2096%2032%2083%2024%2073%2037%2062%2028%2048%2035%2039%2024%2024%2036%2012%2023%200%2029Z%22%2F%3E%3Cpath%20opacity%3D%22.54%22%20d%3D%22M0%200H119L109%209%2096%207%2087%2017%2081%2014%2074%2028%2070%2062%2067%2028%2058%2022%2049%2034%2045%20110%2042%20156%2039%20110%2038%2048%2031%2036%2022%2029%2017%2046%2015%2092%2012%2049%200%2040Z%22%2F%3E%3Cpath%20opacity%3D%22.7%22%20d%3D%22M24%200Q35%2021%2039%2044L41%2097%2043%20151%2046%20172%2048%20187%2045%20196%2041%20194%2038%20187%2040%20170%2040%20151%2037%2091%2035%2042%2029%2027%2018%200Z%22%2F%3E%3Cpath%20opacity%3D%22.55%22%20d%3D%22M79%200L77%2034%2074%2068%2073%2092%2075%20102%2072%20110%2068%20104%2070%2092%2071%2066%2073%2030%2072%200Z%22%2F%3E%3Cpath%20opacity%3D%22.35%22%20d%3D%22M6%200L10%2058%208%20125%205%20142%203%20121%205%2059%200%2025Z%22%2F%3E%3Cellipse%20cx%3D%2243%22%20cy%3D%22211%22%20rx%3D%223%22%20ry%3D%227%22%20opacity%3D%22.6%22%2F%3E%3Cellipse%20cx%3D%2271%22%20cy%3D%22126%22%20rx%3D%222%22%20ry%3D%224%22%20opacity%3D%22.52%22%2F%3E%3Cpath%20opacity%3D%22.27%22%20d%3D%22M103%2034l12%204%203%208-7%205-9-5-2-7zM128%2017l5%202-1%205-6%201-2-4zM20%20111l4-3%204%205-3%206-5-1zM58%2083l3-4%204%202-1%206-4%201zM90%2051l3-2%204%202-1%204-4%201z%22%2F%3E%3Ccircle%20cx%3D%2252%22%20cy%3D%22236%22%20r%3D%222%22%20opacity%3D%22.36%22%2F%3E%3Ccircle%20cx%3D%2219%22%20cy%3D%22167%22%20r%3D%222%22%20opacity%3D%22.34%22%2F%3E%3Ccircle%20cx%3D%2283%22%20cy%3D%22156%22%20r%3D%221.6%22%20opacity%3D%22.42%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") left top/100% 100% no-repeat;mix-blend-mode:multiply;opacity:.68;}
+.main-frame .ink-ambience::before{top:70px;left:0;}
+.main-frame .ink-ambience::after{top:48%;right:0;transform:scaleX(-1);opacity:.55;}
+.ink-blot--third::after{opacity:.8;}
+/* Keep the reading column clean, particularly on narrow layouts. */
+@media(max-width:1360px){.main-frame .ink-ambience::before,.main-frame .ink-ambience::after{width:74px;opacity:.52;}}
+@media(max-width:900px){.main-frame .ink-ambience::before,.main-frame .ink-ambience::after{width:32px;height:180px;opacity:.25;}.main-frame .ink-ambience{background:none;}}
+.main-frame:has(.article--informacje) .ink-ambience,.main-frame:has(.article--mechanika) .ink-ambience{opacity:.62;}
